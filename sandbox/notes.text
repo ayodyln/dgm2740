@@ -1,0 +1,17 @@
+Do height: auto in your css or width auto if your minimizing the height in anyway.
+
+
+SHOULD BE ON ALL WEBSITES:
+
+/* Prevent adjustments of font size when orientation chagnes, iphones. */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

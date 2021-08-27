@@ -1,0 +1,6 @@
+/* rem is your base font multipled by 16; 30rem = 480px*/
+@media only screen and (min-width: 30rem) {
+  main p {
+    color: green;
+  }
+}
