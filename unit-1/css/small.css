@@ -97,7 +97,7 @@ main figure img {
 }
 main figcaption {
   text-align: center;
-  color: var(--main-color);
+  color: var(--dark-color);
 }
 
 /* Footer Rules */
