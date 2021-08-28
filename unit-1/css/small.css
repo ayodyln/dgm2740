@@ -1,0 +1,102 @@
+/* rules here will be applied to all sizes, medium and large will modify from that */
+
+/* Prevent adjustments of font size when orientation chagnes, iphones. */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #4b7ba6;
+  --secondary-color: #84b8d9;
+  --dark-color: #0d0600;
+  --grey-color: #8c8c87;
+  --beige-color: #a68c6d;
+}
+
+/* Body Rules */
+body {
+  font-family: Arial;
+}
+
+/* Header Rules */
+header {
+  background-color: var(--main-color);
+  max-width: 75rem;
+  padding: 0.5rem 2%;
+}
+
+header h1,
+header h2 {
+  margin: 0;
+}
+
+header h2 {
+  font-size: 1.375rem;
+}
+
+/* Nav Rules */
+nav {
+  background-color: var(--secondary-color);
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul a {
+  text-decoration: none;
+}
+nav li {
+  list-style: none;
+}
+nav li.active {
+  background-color: #4d9bcc;
+}
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  font-size: 2.25rem;
+  text-decoration: none;
+  color: var(--dark-color);
+}
+nav a:hover {
+  background-color: var(--grey-color);
+}
+
+/* Main Rules */
+main h1 {
+  padding: 00.5rem 2%;
+  /* font-size: 3.75rem; */
+  margin: 0%;
+  /* font-weight: 200; */
+}
+
+main p {
+  padding: 00.5rem 2%;
+}
+
+/* Img rules */
+main figure {
+  margin: 0;
+  padding: 00.5rem 2%;
+}
+main figure img {
+  width: 100%;
+}
+
+/* Footer Rules */
+footer {
+  margin: 0;
+  background-color: var(--main-color);
+  padding: 00.5rem 2%;
+}
