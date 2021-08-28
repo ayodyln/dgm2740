@@ -45,6 +45,7 @@ header h2 {
 /* Nav Rules */
 nav {
   background-color: var(--secondary-color);
+  max-width: 75rem;
 }
 nav ul {
   margin: 0;
@@ -60,20 +61,20 @@ nav li.active {
   background-color: #4d9bcc;
 }
 nav a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0.5rem 0;
-  font-size: 2.25rem;
-  text-decoration: none;
+  display: block;
+  padding: 0.8rem 0;
   color: var(--dark-color);
+  text-align: center;
+  text-decoration: none;
 }
 nav a:hover {
   background-color: var(--grey-color);
 }
 
 /* Main Rules */
+main {
+  max-width: 75rem;
+}
 main h1 {
   padding: 00.5rem 2%;
   /* font-size: 3.75rem; */
@@ -89,9 +90,14 @@ main p {
 main figure {
   margin: 0;
   padding: 00.5rem 2%;
+  width: 100%;
 }
 main figure img {
   width: 100%;
+}
+main figcaption {
+  text-align: center;
+  color: var(--main-color);
 }
 
 /* Footer Rules */
@@ -99,4 +105,6 @@ footer {
   margin: 0;
   background-color: var(--main-color);
   padding: 00.5rem 2%;
+  max-width: 75rem;
+  text-align: center;
 }
