@@ -36,6 +36,12 @@ header {
 }
 
 /* Main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card {
   display: flex;
   justify-content: center;
@@ -44,6 +50,8 @@ header {
   background-color: var(--light-dark);
   margin: 1rem;
   text-align: center;
+  border-radius: 15px;
+  max-width: 75%;
 }
 a {
   color: white;
@@ -76,6 +84,12 @@ main figure {
 footer {
   width: 100%;
   background-color: var(--mint);
-  padding: 0.1rem 2%;
+  padding: 0.05rem 2%;
   text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
