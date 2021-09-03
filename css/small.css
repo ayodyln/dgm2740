@@ -52,6 +52,7 @@ main {
   text-align: center;
   border-radius: 15px;
   max-width: 75%;
+  height: 25rem;
 }
 a {
   color: white;
@@ -72,6 +73,9 @@ a {
 /* Img */
 main figure img {
   width: 50%;
+}
+.content-img {
+  max-width: 368px;
 }
 main figure {
   display: flex;
