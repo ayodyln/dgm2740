@@ -26,6 +26,9 @@ function displayWork(assignment) {
     let a = document.createElement("a");
     a.className = "btn";
     ///////////////////////////////////////////////////
+    img.setAttribute("width", "368")
+    img.setAttribute("height", "368")
+    ///////////////////////////////////////////////////
 
     img.src = el.img;
     figcap.textContent = el.name;
