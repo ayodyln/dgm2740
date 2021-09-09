@@ -27,63 +27,45 @@ header {
   padding: 0.5rem 2%;
   display: flex;
   align-items: baseline;
-}
 
-header img {
-  width: 25%;
-  height: auto;
-}
-
-header .logo h2 {
-  align-items: baseline;
-  margin: 0;
+  img {
+    width: 25%;
+    height: auto;
+  }
+  .logo h2 {
+    align-items: baseline;
+    margin: 0;
+    color: white;
+  }
 }
 
 // Nav Rules -----
 nav {
   max-width: 100%;
-}
-nav ul {
-  max-width: 75rem;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-nav ul li a {
-  text-decoration: none;
-  height: 50px;
-  display: flex;
-  align-items: center;
-}
-nav li {
-  list-style: none;
-  height: 50px;
+  background-color: $secondaryColor;
 }
 
 // Main Rules ----
 main {
   max-width: 75rem;
-}
 
-main .hero-img img {
-  width: 100%;
-}
+  .hero-img img {
+    width: 100%;
+  }
 
-main .content {
-  padding: 0.5rem 2%;
-}
+  .content {
+    padding: 0.5rem 2%;
+  }
 
-main .content img {
-  width: 100%;
-  height: auto;
+  .content img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 // Footer Rules ----
 footer {
   width: 100%;
-
+  background-color: $secondaryColor;
   text-align: center;
 }
