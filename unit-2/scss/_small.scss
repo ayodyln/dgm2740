@@ -15,7 +15,7 @@ html {
 
 // Body Rules -----
 body {
-  font-family: sans-serif;
+  font-family: $font-family;
   width: 100%;
   overflow-x: hidden;
 }
@@ -35,7 +35,7 @@ header {
 
   .logo {
     margin-left: 1%;
-
+    letter-spacing: 2px;
     h2 {
       margin: 0;
       color: white;
@@ -101,6 +101,7 @@ main {
 
     h1 {
       margin: 0;
+      letter-spacing: 2px;
     }
 
     div.line {
