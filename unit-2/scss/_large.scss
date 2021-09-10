@@ -1,3 +1,23 @@
+header {
+    img {
+        width: 10%;
+    }
+}
+
+nav {
+    ul {
+        padding-left: 2%;
+
+        li {
+            width: auto;
+
+            a {
+                padding: 0.5rem 1rem;
+            }
+        }
+    }
+}
+
 main {
     .content {
         img {

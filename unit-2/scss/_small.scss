@@ -32,15 +32,20 @@ header {
     width: 25%;
     height: auto;
   }
-  .logo h2 {
-    margin: 0;
-    color: white;
-  }
 
-  h3 {
-    visibility: hidden;
-    margin: 0;
-    height: 0;
+  .logo {
+    margin-left: 1%;
+
+    h2 {
+      margin: 0;
+      color: white;
+    }
+
+    h3 {
+      visibility: hidden;
+      margin: 0;
+      height: 0;
+    }
   }
 }
 
