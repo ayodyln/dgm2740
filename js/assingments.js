@@ -4,13 +4,13 @@ export const assignments = [
         name: 'Dude Ranch',
         url: `unit-1/index.html`,
         img: 'img/1.png',
-        discription: 'This Assignment Was Good.'
+        discription: 'Dude Ranch Assignment'
     },
     {
         id: 2,
         name: 'Science Museum',
         url: `unit-2/index.html`,
-        img: 'img/stock.jpg',
-        discription: 'this is a test'
+        img: 'unit-2/img/science-muesum-logo-quick.png',
+        discription: 'Science Muesum Assignment'
     },
 ]
