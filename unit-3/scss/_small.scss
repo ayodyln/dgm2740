@@ -60,7 +60,7 @@ nav {
 
     li {
       list-style: none;
-      width: 24.5%;
+      width: 25%;
       height: 3rem;
       text-align: center;
       display: flex;
@@ -76,6 +76,10 @@ nav {
         height: 100%;
         width: 100%;
         cursor: pointer;
+      }
+      
+      a.last {
+        margin-right: 0;
       }
     }
 
