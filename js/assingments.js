@@ -13,4 +13,11 @@ export const assignments = [
         img: 'unit-2/img/science-muesum-logo-quick.png',
         discription: 'Science Muesum Assignment'
     },
+    {
+        id: 3,
+        name: 'Fruit Stand',
+        url: `unit-3/index.html`,
+        img: 'unit-3/img/fruit-stand-logo.png',
+        discription: 'Fruit Stand Assignment'
+    }
 ]

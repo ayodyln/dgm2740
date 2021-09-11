@@ -16,7 +16,7 @@ html {
 // Body Rules //
 body {
   font-family: sans-serif;
-  width: 100%;
+  max-width: 71.25rem;
   overflow-x: hidden; 
 }
 
@@ -46,12 +46,10 @@ header {
 }
 // Nav //
 nav {
-  max-width: 71.25rem;
+  width: 100%;
   ul {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     margin: 0;
     padding: 0;
     background-color: $primaryColor;
@@ -108,7 +106,7 @@ nav {
 // Main //
 main {
   padding: 0.5rem 2%;
-  max-width: 71.25rem;
+  width: 100%;
   margin: auto;
 
   h1 {
