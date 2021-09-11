@@ -15,9 +15,9 @@ html {
 
 // Body Rules //
 body {
-  font-family: sans-serif;
+  font-family: $fontFamily;
   max-width: 71.25rem;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 // Header Rules //
@@ -39,8 +39,12 @@ header {
     flex-direction: column;
 
     h1,
-    h4 {
+    h2 {
       margin: 0;
+    }
+
+    h2 {
+      font-size: 98%;
     }
   }
 }
@@ -73,8 +77,6 @@ nav {
         width: 100%;
         cursor: pointer;
       }
-      
-      
     }
 
     div.line {
@@ -117,7 +119,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
     figure {
       display: flex;
       justify-content: center;
@@ -125,7 +127,6 @@ main {
       flex-direction: column;
       margin: 0.5rem 2%;
       flex-basis: 46%;
-
 
       img.fruit-img {
         width: 100%;

@@ -16,6 +16,7 @@ function displayContent(gallery) {
     // width="1600" height="500"
     img.setAttribute("width", "1600");
     img.setAttribute("height", "500");
+    img.setAttribute("alt", el.alt);
     ////////////////////////////////////////////////
 
     img.src = el.imgURL;
