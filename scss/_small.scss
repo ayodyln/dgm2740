@@ -28,6 +28,7 @@ header {
   background-color: $mint;
   padding: 0.1rem 2%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  font-size: 75%;
 }
 
 //main
@@ -73,7 +74,7 @@ main.content {
   }
 
   div.surface:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
 }
 
@@ -83,12 +84,17 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  padding: 1% 2%;
+  padding: 0.1rem 2%;
   color: white;
   background-color: $mint;
 
-  a {
-    cursor: pointer;
-    color: white;
+  div.links {
+    margin: 10px;
+    a {
+      cursor: pointer;
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+    }
   }
 }
