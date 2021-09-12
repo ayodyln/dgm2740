@@ -28,8 +28,8 @@ function displayWork(assignment) {
     let btnDiv = document.createElement('div')
     btnDiv.className = 'btn-div'
     ///////////////////////////////////////////////////
-    img.setAttribute("width", "368")
-    img.setAttribute("height", "368")
+    img.setAttribute("width", "1600")
+    img.setAttribute("height", "500")
     ///////////////////////////////////////////////////
 
     img.src = el.img;
@@ -41,7 +41,7 @@ function displayWork(assignment) {
     figure.appendChild(figcap);
     btnDiv.appendChild(a)
     card.appendChild(figure);
-    card.appendChild(btnDiv);
+    figure.appendChild(btnDiv);
     main.appendChild(card);
   });
 }

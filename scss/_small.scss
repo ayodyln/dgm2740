@@ -33,9 +33,8 @@ header {
 
 //main
 main.content {
-  display: flex;
-  flex-wrap: wrap;
   padding: 0.1rem 2%;
+  margin-bottom: 20vh;
 
   div.card {
     display: none;
@@ -71,6 +70,11 @@ main.content {
       justify-content: center;
       align-items: center;
     }
+
+    a:hover {
+      background-color: $dark;
+      color: lighten($mint, 10%);
+    }
   }
 
   div.surface:hover {
@@ -87,6 +91,7 @@ footer {
   padding: 0.1rem 2%;
   color: white;
   background-color: $mint;
+  
 
   div.links {
     margin: 10px;
