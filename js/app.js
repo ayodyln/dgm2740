@@ -19,12 +19,14 @@ function displayWork(assignment) {
     figure.className = "fig";
     let img = document.createElement("img");
     img.className = "content-img";
-    let figcap = document.createElement("figure");
+    let figcap = document.createElement("figcaption");
     figcap.className = "figcap";
     let assignmentName = document.createElement("h2");
     assignmentName.className = "assignment-name";
     let a = document.createElement("a");
     a.className = "btn";
+    let btnDiv = document.createElement('div')
+    btnDiv.className = 'btn-div'
     ///////////////////////////////////////////////////
     img.setAttribute("width", "368")
     img.setAttribute("height", "368")
@@ -37,10 +39,37 @@ function displayWork(assignment) {
 
     figure.appendChild(img);
     figure.appendChild(figcap);
-    figure.appendChild(a);
+    btnDiv.appendChild(a)
     card.appendChild(figure);
+    card.appendChild(btnDiv);
     main.appendChild(card);
   });
 }
 
 displayWork(assignments);
+
+
+//displaying surfaces for small device
+
+function smallDevice(assignment) {
+  assignment.forEach((el, i, arr) => {
+    let surface = document.createElement('div')
+    surface.className = 'surface'
+    let h3  = document.createElement('h3')
+    let a = document.createElement('a')
+
+    ///////////////////////////////////////////////
+    //////////////////////////////////////////////
+
+    h3.textContent = el.name;
+    a.textContent = 'View'
+    a.href = el.url;
+
+    surface.appendChild(h3)
+    surface.appendChild(a)
+
+    main.appendChild(surface)
+  })
+}
+
+smallDevice(assignments)
