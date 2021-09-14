@@ -20,6 +20,8 @@ body {
   overflow-x: hidden;
   background-color: $dark;
   color: white;
+  max-width: 100%;
+  margin: auto;
 }
 
 // Header
