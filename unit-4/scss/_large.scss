@@ -17,9 +17,9 @@ div#headerWrapper {
 //nav
 div#navWrapper {
   background-color: $primaryColor;
+  padding: 0 auto;
   nav ul li {
     width: 15%;
-
     a {
       font-size: 110%;
     }
