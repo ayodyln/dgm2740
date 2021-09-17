@@ -19,13 +19,15 @@ body {
   // max-width: 100%;
   overflow-x: hidden;
   margin: auto;
+  background-color: whitesmoke;
 }
 
 //header
 div#headerWrapper {
-  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) ), url(../img/header-yellowstone-assets/header-small.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+    url(../img/header-yellowstone-assets/header-small.jpg);
   height: 140px;
-  
+
   header {
     padding: 0.5rem 2%;
     height: 100%;
@@ -34,7 +36,8 @@ div#headerWrapper {
     justify-content: flex-end;
     align-items: start-end;
     flex-direction: column;
-    h1, h2 {
+    h1,
+    h2 {
       margin: 0;
       color: white;
     }
@@ -77,16 +80,8 @@ div#navWrapper {
         }
       }
 
-      div.line {
-        width: 0.5%;
-        background-color: lighten($primaryColor, 10%);
-        height: 1.5rem;
-        margin: 0;
-        align-self: center;
-      }
-
       li.active {
-        background-color: darken($primaryColor, 10%);
+        background-color: darken($primaryColor, 5%);
 
         a.active {
           color: white;
@@ -107,16 +102,17 @@ div#navWrapper {
 //main
 main {
   padding: 0.5rem 2%;
+
   div.content {
     display: flex;
     flex-wrap: wrap;
 
     div.card {
       flex-basis: 100%;
-      border: solid 1px #999;
       border-radius: $cbr;
       margin: 0.5rem 0;
       text-align: center;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 
       section {
         background-color: $primaryColor;
@@ -129,9 +125,10 @@ main {
       }
 
       img {
-        width: 75%;
+        width: 70%;
         height: auto;
-        padding: 0 2%;
+        padding: 0 3%;
+        margin: 1rem 0;
       }
 
       p {
@@ -141,10 +138,47 @@ main {
       a {
         display: block;
         padding: 1rem 0;
-        background-color: lighten($primaryColor, 10%);
+        // border: solid 1px $primaryColor;
         color: white;
         margin: 0.5rem 2vw;
         border-radius: $cbr;
+        position: relative;
+        text-decoration: none;
+
+        transition: all 0.4s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $primaryColor;
+          border-radius: $cbr - 1;
+          z-index: -2;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0%;
+          height: 100%;
+          background-color: lighten($primaryColor, 15%);
+          transition: all 0.3s;
+          border-radius: $cbr - 1;
+          z-index: -1;
+        }
+        &:hover {
+          color: #fff;
+          &:before {
+            width: 100%;
+          }
+        }
       }
     }
   }

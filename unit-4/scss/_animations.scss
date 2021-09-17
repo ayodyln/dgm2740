@@ -1,0 +1,30 @@
+//main
+main {
+  background-color: whitesmoke;
+
+  div.content {
+    div.card:hover {
+      img {
+        animation: icon 3s infinite linear;
+      }
+    }
+  }
+}
+
+@keyframes icon {
+  0% {
+    transform: scaleX(1);
+  }
+  25% {
+    transform: scaleX(0.95);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  75% {
+    transform: scaleX(1.05);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
