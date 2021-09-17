@@ -119,7 +119,10 @@ main {
       text-align: center;
 
       section {
-        background-color: $sectionColor;
+        background-color: $primaryColor;
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
         padding: 0.5rem 0;
         border-top-left-radius: $cbr - 1;
         border-top-right-radius: $cbr - 1;
@@ -138,12 +141,15 @@ main {
       a {
         display: block;
         padding: 1rem 0;
-        background-color: crimson;
+        background-color: lighten($primaryColor, 10%);
         color: white;
         margin: 0.5rem 2vw;
         border-radius: $cbr;
       }
     }
+  }
+  div.cite {
+    margin: 2rem 0;
   }
 }
 
@@ -154,10 +160,7 @@ main {
   footer {
     text-align: center;
     padding: 0.5rem 2%;
-    
     color: white;
-    background-color: grey;
-
     a {
       cursor: pointer;
       color: white;
