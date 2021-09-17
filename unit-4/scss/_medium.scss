@@ -21,7 +21,9 @@ main {
     div.card {
       flex-basis: 48%;
       margin: 1% 1%;
-
+      img {
+        width: 50%;
+      }
       p {
         height: 175px;
       }
