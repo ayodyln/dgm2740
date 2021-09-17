@@ -1,0 +1,29 @@
+//header
+div#headerWrapper {
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) ), url(../img/header-yellowstone-assets/header-medium.jpg);
+  height: 240px;
+  
+}
+
+//nav
+div#navWrapper {
+  background-color: $primaryColor;
+  nav ul li {
+    width: 20%;
+  }
+}
+
+//main
+main {
+  margin: auto;
+  div.content {
+    div.card {
+      flex-basis: 48%;
+      margin: 1% 1%;
+
+      p {
+        height: 175px;
+      }
+    }
+  }
+}

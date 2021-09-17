@@ -1,0 +1,46 @@
+header,
+nav,
+main,
+footer {
+  max-width: 60rem;
+  margin: auto;
+}
+
+//header
+div#headerWrapper {
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) ), url(../img/header-yellowstone-assets/header-large.jpg);
+  background-size: cover;
+  height: 400px;
+
+}
+
+//nav
+div#navWrapper {
+  background-color: $primaryColor;
+  nav ul li {
+    width: 15%;
+
+    a {
+      font-size: 110%;
+    }
+  }
+}
+
+//main
+main {
+  div.content {
+    width: 100%;
+
+    div.card {
+      flex-basis: 31%;
+      margin: 1% 1%;
+
+      p {
+        margin-bottom: 3rem;
+        padding: 2% 2%;
+      }
+
+      
+    }
+  }
+}

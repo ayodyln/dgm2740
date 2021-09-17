@@ -13,28 +13,38 @@ html {
   box-sizing: border-box;
 }
 
+//body
+body {
+  font-family: $fontFamily;
+  // max-width: 100%;
+  overflow-x: hidden;
+  margin: auto;
+}
+
 //header
 div#headerWrapper {
-  background-image: url(../img/header-yellowstone-assets/header-small.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) ), url(../img/header-yellowstone-assets/header-small.jpg);
   height: 140px;
-  background-size: cover;
-  display: flex;
-  align-items: flex-end;
   
   header {
-    max-width: 60rem;
     padding: 0.5rem 2%;
-
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: start-end;
+    flex-direction: column;
     h1, h2 {
       margin: 0;
+      color: white;
     }
   }
 }
 //nav
 div#navWrapper {
   width: 100%;
+  background-color: $primaryColor;
   nav {
-    max-width: 60rem;
     ul {
       display: flex;
       flex-wrap: wrap;
@@ -120,6 +130,19 @@ main {
         height: auto;
         padding: 0 2%;
       }
+
+      p {
+        padding: 0 2vw;
+      }
+
+      a {
+        display: block;
+        padding: 1rem 0;
+        background-color: crimson;
+        color: white;
+        margin: 0.5rem 2vw;
+        border-radius: $cbr;
+      }
     }
   }
 }
@@ -127,12 +150,11 @@ main {
 // Footer
 #footerWrapper {
   width: 100%;
+  background-color: $primaryColor;
   footer {
-    width: 100%;
-    max-width: 60rem;
     text-align: center;
     padding: 0.5rem 2%;
-    margin-top: 2%;
+    
     color: white;
     background-color: grey;
 
