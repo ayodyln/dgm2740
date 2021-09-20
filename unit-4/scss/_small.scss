@@ -99,9 +99,10 @@ div#navWrapper {
 }
 
 //main
+
 main {
   padding: 0.5rem 2%;
-
+  background-color: whitesmoke;
   div.content {
     display: flex;
     flex-wrap: wrap;
@@ -181,6 +182,8 @@ main {
         }
       }
     }
+
+    
   }
   div.cite {
     margin: 2rem 0;
@@ -202,3 +205,4 @@ main {
   }
 }
 //animation
+
