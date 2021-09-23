@@ -1,0 +1,18 @@
+/* rules here will be applied to all sizes, medium and large will modify from that */
+
+/* Prevent adjustments of font size when orientation chagnes, iphones. */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: red;
+}
