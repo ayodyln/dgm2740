@@ -13,6 +13,26 @@ html {
   box-sizing: border-box;
 }
 
+// body
 body {
-  background-color: red;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  margin: auto;
+  background-color: whitesmoke;
+}
+
+//header
+
+
+//nav
+
+//main
+
+//footer
+
+// clear fix
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
