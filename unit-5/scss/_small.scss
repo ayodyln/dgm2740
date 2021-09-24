@@ -17,14 +17,94 @@ html {
 body {
   font-family: sans-serif;
   overflow-x: hidden;
-  margin: auto;
   background-color: whitesmoke;
 }
 
 //header
+div#headerWrapper {
+  background-color: white;
 
+  header {
+    padding: 0.5rem 2%;
+    height: 100%;
+
+    figure.logo {
+      float: left;
+      background-color: transparent;
+      height: 100px;
+      width: 100px;
+      margin: 0 1% 0 0;
+
+      img {
+        width: auto;
+        height: 100px;
+      }
+    }
+
+    .company-logo {
+      h1,
+      h2 {
+        margin: 0;
+        color: black;
+      }
+    }
+  }
+}
 
 //nav
+div#navWrapper {
+  width: 100%;
+  background-color: red;
+
+  nav {
+
+    ul.nav {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      background-color: red;
+
+      li {
+        list-style: none;
+        width: 25%;
+        height: 2.75rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          cursor: pointer;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+        }
+
+      }
+
+      li.active {
+        background-color: darken(red, 5%);
+
+        a.active {
+          color: white;
+        }
+      }
+
+      li:hover {
+        background-color: lighten(red, 15%);
+
+        a:hover {
+          color: darken(white, 10%);
+        }
+      }
+    }
+  }
+}
 
 //main
 

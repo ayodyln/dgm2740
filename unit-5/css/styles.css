@@ -452,12 +452,114 @@ html {
 body {
   font-family: sans-serif;
   overflow-x: hidden;
-  margin: auto;
   background-color: whitesmoke;
+}
+
+div#headerWrapper {
+  background-color: white;
+}
+
+div#headerWrapper header {
+  padding: 0.5rem 2%;
+  height: 100%;
+}
+
+div#headerWrapper header figure.logo {
+  float: left;
+  background-color: transparent;
+  height: 100px;
+  width: 100px;
+  margin: 0 1% 0 0;
+}
+
+div#headerWrapper header figure.logo img {
+  width: auto;
+  height: 100px;
+}
+
+div#headerWrapper header .company-logo h1,
+div#headerWrapper header .company-logo h2 {
+  margin: 0;
+  color: black;
+}
+
+div#navWrapper {
+  width: 100%;
+  background-color: red;
+}
+
+div#navWrapper nav ul.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  background-color: red;
+}
+
+div#navWrapper nav ul.nav li {
+  list-style: none;
+  width: 25%;
+  height: 2.75rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div#navWrapper nav ul.nav li a {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+div#navWrapper nav ul.nav li.active {
+  background-color: #e60000;
+}
+
+div#navWrapper nav ul.nav li.active a.active {
+  color: white;
+}
+
+div#navWrapper nav ul.nav li:hover {
+  background-color: #ff4d4d;
+}
+
+div#navWrapper nav ul.nav li:hover a:hover {
+  color: #e6e6e6;
 }
 
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
+}
+
+@media only screen and (min-width: 1028px) {
+  header,
+  nav,
+  main,
+  footer {
+    max-width: 75rem;
+    margin: auto;
+  }
 }

@@ -50,6 +50,7 @@ header {
   }
 }
 // Nav //
+
 nav {
   width: 100%;
   ul {
@@ -104,7 +105,7 @@ nav {
       background-color: lighten($primaryColor, 15%);
 
       a:hover {
-        color: darken($color: white, $amount: 10%);
+        color: darken(white, 10%);
       }
     }
   }
