@@ -30,6 +30,7 @@ export const assignments = [
     {
         id: 5,
         name: 'Restaurant',
+        url: `unit-5/index.html`,
         img: `unit-5/img/sushi-logo-original.png`,
         discription: 'Restaruant Responsive Image Assignment'
     },
