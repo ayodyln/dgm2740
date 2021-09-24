@@ -146,16 +146,20 @@ main {
   }
 }
 //footer
-footer {
+div#footerWrapper {
   background-color: $primaryColor;
-  color: white;
   width: 100%;
-  text-align: center;
-  padding: 1% 2%;
-
-  a {
-    cursor: pointer;
+  footer {
+    background-color: $primaryColor;
     color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1% 2%;
+  
+    a {
+      cursor: pointer;
+      color: white;
+    }
   }
 }
 
