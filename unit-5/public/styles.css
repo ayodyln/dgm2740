@@ -485,7 +485,7 @@ div#headerWrapper header .company-logo h2 {
 
 div#navWrapper {
   width: 100%;
-  background-color: red;
+  background-color: #D03A08;
 }
 
 div#navWrapper nav ul.nav {
@@ -496,7 +496,7 @@ div#navWrapper nav ul.nav {
       flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  background-color: red;
+  background-color: #D03A08;
 }
 
 div#navWrapper nav ul.nav li {
@@ -533,7 +533,7 @@ div#navWrapper nav ul.nav li a {
 }
 
 div#navWrapper nav ul.nav li.active {
-  background-color: #e60000;
+  background-color: #b73307;
 }
 
 div#navWrapper nav ul.nav li.active a.active {
@@ -541,11 +541,24 @@ div#navWrapper nav ul.nav li.active a.active {
 }
 
 div#navWrapper nav ul.nav li:hover {
-  background-color: #ff4d4d;
+  background-color: #f7602e;
 }
 
 div#navWrapper nav ul.nav li:hover a:hover {
   color: #e6e6e6;
+}
+
+footer {
+  background-color: #D03A08;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 1% 2%;
+}
+
+footer a {
+  cursor: pointer;
+  color: white;
 }
 
 .clearfix:after {

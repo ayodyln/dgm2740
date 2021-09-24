@@ -54,16 +54,15 @@ div#headerWrapper {
 //nav
 div#navWrapper {
   width: 100%;
-  background-color: red;
+  background-color: $primaryColor;
 
   nav {
-
     ul.nav {
       display: flex;
       flex-wrap: wrap;
       margin: 0;
       padding: 0;
-      background-color: red;
+      background-color: $primaryColor;
 
       li {
         list-style: none;
@@ -84,11 +83,10 @@ div#navWrapper {
           text-decoration: none;
           color: rgb(255, 255, 255);
         }
-
       }
 
       li.active {
-        background-color: darken(red, 5%);
+        background-color: darken($primaryColor, 5%);
 
         a.active {
           color: white;
@@ -96,7 +94,7 @@ div#navWrapper {
       }
 
       li:hover {
-        background-color: lighten(red, 15%);
+        background-color: lighten($primaryColor, 15%);
 
         a:hover {
           color: darken(white, 10%);
@@ -109,6 +107,18 @@ div#navWrapper {
 //main
 
 //footer
+footer {
+  background-color: $primaryColor;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 1% 2%;
+
+  a {
+    cursor: pointer;
+    color: white;
+  }
+}
 
 // clear fix
 .clearfix:after {
