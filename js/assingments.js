@@ -26,5 +26,11 @@ export const assignments = [
         url: `unit-4/index.html`,
         img: `unit-4/img/bison.png`,
         discription: 'National Forest Assignment '
-    }
+    },
+    {
+        id: 5,
+        name: 'Restaurant',
+        img: `unit-5/img/sushi-logo-original.png`,
+        discription: 'Restaruant Responsive Image Assignment'
+    },
 ]
