@@ -548,6 +548,12 @@ div#navWrapper nav ul.nav li:hover a:hover {
   color: #e6e6e6;
 }
 
+main figure.my-photo img {
+  float: right;
+  width: 50vw;
+  height: auto;
+}
+
 footer {
   background-color: #D03A08;
   color: white;

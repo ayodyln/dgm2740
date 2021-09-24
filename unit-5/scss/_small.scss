@@ -105,7 +105,13 @@ div#navWrapper {
 }
 
 //main
-
+main {
+  figure.my-photo img {
+    float: right;
+    width: 50vw;
+    height: auto;
+  }
+}
 //footer
 footer {
   background-color: $primaryColor;
