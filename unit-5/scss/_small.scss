@@ -18,23 +18,26 @@ body {
   font-family: sans-serif;
   overflow-x: hidden;
   background-color: whitesmoke;
-  
 }
 
 //header
 div#headerWrapper {
-  background-color: white;
+  background-color: whitesmoke;
 
   header {
     padding: 0.5rem 2%;
     height: 100%;
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: flex-end;
+    background-color: whitesmoke;
 
     figure.logo {
       float: left;
       background-color: transparent;
       height: 100px;
       width: 100px;
-      margin: 0 1% 0 0;
+      margin: 0% 1% 0% 0%;
 
       img {
         width: auto;
@@ -43,6 +46,12 @@ div#headerWrapper {
     }
 
     .company-logo {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      font-size: 90%;
+      height: 100%;
+      margin-left: 2%;
       h1,
       h2 {
         margin: 0;
@@ -107,11 +116,11 @@ div#navWrapper {
 
 //main
 main {
-  padding: 0 2%;
+  // padding: 0 2%;
   picture.my-picture {
     display: block;
-    width: 96%;
-    margin: 0 2%;
+    width: 100%;
+    // margin: 0 2%;
     img {
       width: 100%;
     }
@@ -129,6 +138,11 @@ main {
     figcaption {
       text-align: center;
     }
+  }
+
+  h1,
+  p {
+    padding: 0 2%;
   }
 }
 //footer

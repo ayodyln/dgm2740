@@ -456,12 +456,20 @@ body {
 }
 
 div#headerWrapper {
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 div#headerWrapper header {
   padding: 0.5rem 2%;
   height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px auto;
+      grid-template-columns: 100px auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: whitesmoke;
 }
 
 div#headerWrapper header figure.logo {
@@ -469,12 +477,28 @@ div#headerWrapper header figure.logo {
   background-color: transparent;
   height: 100px;
   width: 100px;
-  margin: 0 1% 0 0;
+  margin: 0% 1% 0% 0%;
 }
 
 div#headerWrapper header figure.logo img {
   width: auto;
   height: 100px;
+}
+
+div#headerWrapper header .company-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 90%;
+  height: 100%;
+  margin-left: 2%;
 }
 
 div#headerWrapper header .company-logo h1,
@@ -548,14 +572,9 @@ div#navWrapper nav ul.nav li:hover a:hover {
   color: #e6e6e6;
 }
 
-main {
-  padding: 0 2%;
-}
-
 main picture.my-picture {
   display: block;
-  width: 96%;
-  margin: 0 2%;
+  width: 100%;
 }
 
 main picture.my-picture img {
@@ -575,6 +594,11 @@ main picture.my-photo img {
 
 main picture.my-photo figcaption {
   text-align: center;
+}
+
+main h1,
+main p {
+  padding: 0 2%;
 }
 
 footer {
@@ -603,5 +627,8 @@ footer a {
   footer {
     max-width: 75rem;
     margin: auto;
+  }
+  div#navWrapper nav ul.nav li {
+    width: 15%;
   }
 }

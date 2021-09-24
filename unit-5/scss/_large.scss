@@ -5,3 +5,13 @@ footer {
   max-width: 75rem;
   margin: auto;
 }
+
+div#navWrapper {
+  nav {
+    ul.nav {
+      li {
+        width: 15%;
+      }
+    }
+  }
+}
