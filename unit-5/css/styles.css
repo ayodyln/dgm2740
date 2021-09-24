@@ -548,10 +548,33 @@ div#navWrapper nav ul.nav li:hover a:hover {
   color: #e6e6e6;
 }
 
-main figure.my-photo img {
+main {
+  padding: 0 2%;
+}
+
+main picture.my-picture {
+  display: block;
+  width: 96%;
+  margin: 0 2%;
+}
+
+main picture.my-picture img {
+  width: 100%;
+}
+
+main picture.my-photo {
+  display: block;
   float: right;
-  width: 50vw;
-  height: auto;
+  width: 46%;
+  margin: 0 2%;
+}
+
+main picture.my-photo img {
+  width: 100%;
+}
+
+main picture.my-photo figcaption {
+  text-align: center;
 }
 
 footer {

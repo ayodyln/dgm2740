@@ -18,6 +18,7 @@ body {
   font-family: sans-serif;
   overflow-x: hidden;
   background-color: whitesmoke;
+  
 }
 
 //header
@@ -106,10 +107,28 @@ div#navWrapper {
 
 //main
 main {
-  figure.my-photo img {
+  padding: 0 2%;
+  picture.my-picture {
+    display: block;
+    width: 96%;
+    margin: 0 2%;
+    img {
+      width: 100%;
+    }
+  }
+
+  picture.my-photo {
+    display: block;
     float: right;
-    width: 50vw;
-    height: auto;
+    width: 46%;
+    margin: 0 2%;
+
+    img {
+      width: 100%;
+    }
+    figcaption {
+      text-align: center;
+    }
   }
 }
 //footer
