@@ -137,8 +137,11 @@ main {
     }
     figcaption {
       text-align: center;
+      color: $primaryColor;
     }
   }
+
+  h1 {color: $primaryColor;}
 
   h1,
   p {

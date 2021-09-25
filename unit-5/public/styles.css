@@ -595,6 +595,11 @@ main picture.my-photo img {
 
 main picture.my-photo figcaption {
   text-align: center;
+  color: #D03A08;
+}
+
+main h1 {
+  color: #D03A08;
 }
 
 main h1,
