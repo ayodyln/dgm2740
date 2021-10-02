@@ -1,0 +1,82 @@
+// Body
+Body {
+  font-family: $fontFamily;
+}
+
+// Header Starts Here
+div#headerWrapper {
+  width: 100%;
+  background-color: rgb(192, 189, 189);
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2%;
+
+    h1,
+    h2 {
+      margin: 0;
+    }
+  }
+}
+
+// Nav Starts Here
+div#navWrapper {
+  width: 100%;
+  background-color: grey;
+  padding: 0.1% 0%;
+
+  nav {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        width: 25%;
+        height: 2.75rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          cursor: pointer;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+        }
+      }
+      li.active {
+        background-color: lighten(grey, 20%);
+        a {
+          color: black;
+        }
+      }
+      li:hover {
+        background-color: darken(grey, 10%);
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+
+// Main Starts Here
+
+
+//Footer Starts Here
+div#footerWrapper {
+    width: 100%;
+    background-color: grey;
+
+    footer {
+        text-align: center;
+        padding: 0.1% 0%;
+    }
+}
