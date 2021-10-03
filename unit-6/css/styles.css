@@ -454,7 +454,7 @@ div#headerWrapper header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 2%;
+  padding: 1% 2%;
 }
 
 div#headerWrapper header h1,
@@ -525,6 +525,53 @@ div#navWrapper nav ul li:hover {
 
 div#navWrapper nav ul li:hover a {
   color: white;
+}
+
+div#mainWrapper {
+  width: 100%;
+}
+
+div#mainWrapper main {
+  padding: 0 2%;
+}
+
+div#mainWrapper main div.band-members {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div#mainWrapper main div.band-members div.member figure img {
+  float: right;
+  width: 175px;
+  height: auto;
+  margin: 0.5rem;
+}
+
+div#mainWrapper main div.band-members div.member figure img.drummer {
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  shape-outside: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+div#mainWrapper main div.band-members div.member figure img.singer {
+  -webkit-clip-path: polygon(50% 0%, 100% 38%, 66% 73%, 28% 73%, 0% 38%);
+          clip-path: polygon(50% 0%, 100% 38%, 66% 73%, 28% 73%, 0% 38%);
+  shape-outside: polygon(50% 0%, 100% 38%, 66% 73%, 28% 73%, 0% 38%);
+}
+
+div#mainWrapper main div.band-members div.member figure img.guitarest {
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  shape-outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+div#mainWrapper main div.band-members div.member figure img.bassist {
+  -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+          clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  shape-outside: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
 
 div#footerWrapper {
