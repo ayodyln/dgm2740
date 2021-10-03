@@ -1,9 +1,7 @@
 // Body
 Body {
   font-family: $fontFamily;
-  // max-width: 100%;
   overflow-x: hidden;
-  margin: auto;
   background-color: whitesmoke;
 }
 
@@ -83,14 +81,15 @@ div#mainWrapper {
 
       div.member {
         flex-basis: 100%;
+        
 
         figure {
-          width: 100%;
+          
           img {
             float: right;
-            width: 100%;
+            width: 150px;
             height: auto;
-            margin: 0.5rem;
+            margin: 0.1rem;
             
           }
 

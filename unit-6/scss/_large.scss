@@ -6,16 +6,28 @@ footer {
   margin: auto;
 }
 
+//nav
+div#navWrapper {
+  background-color: grey;
+  padding: 0;
+  nav ul li {
+    width: 15%;
+    a {
+      font-size: 110%;
+    }
+  }
+}
+
 div#mainWrapper {
   main {
-    margin: auto;
     div.band-members {
       div.member {
         flex-basis: 5%;
         margin: auto;
 
         figure img {
-          width: 100px;
+          width: 150px;
+          
         }
       }
     }

@@ -1,11 +1,13 @@
 div#mainWrapper {
-    main {
-        margin: auto;
-        div.band-members {
-            div.member {
-                flex-basis: 40%;
-                margin: 1% 5%;
-            }
+  main {
+    div.band-members {
+      div.member {
+        flex-basis: 50%;
+
+        figure img {
+          width: 100px;
         }
+      }
     }
+  }
 }
