@@ -640,4 +640,15 @@ div#footerWrapper footer a:hover {
     max-width: 75rem;
     margin: auto;
   }
+  div#mainWrapper main {
+    margin: auto;
+  }
+  div#mainWrapper main div.band-members div.member {
+    -ms-flex-preferred-size: 5%;
+        flex-basis: 5%;
+    margin: auto;
+  }
+  div#mainWrapper main div.band-members div.member figure img {
+    width: 100px;
+  }
 }

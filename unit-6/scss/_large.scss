@@ -6,3 +6,18 @@ footer {
   margin: auto;
 }
 
+div#mainWrapper {
+  main {
+    margin: auto;
+    div.band-members {
+      div.member {
+        flex-basis: 5%;
+        margin: auto;
+
+        figure img {
+          width: 100px;
+        }
+      }
+    }
+  }
+}
