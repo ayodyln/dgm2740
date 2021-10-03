@@ -535,6 +535,17 @@ div#footerWrapper {
 div#footerWrapper footer {
   text-align: center;
   padding: 0.1% 0%;
+  color: white;
+}
+
+div#footerWrapper footer a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+div#footerWrapper footer a:hover {
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 1028px) {
