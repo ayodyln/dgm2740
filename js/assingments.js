@@ -34,4 +34,11 @@ export const assignments = [
         img: `unit-5/img/sushi-logo-original.png`,
         discription: 'Restaruant Responsive Image Assignment'
     },
+    {
+        id: 6,
+        name: 'Band',
+        url: `unit-6/index.html`,
+        img: `unit-6/img/gallery/concert01.jpg`,
+        discription: 'Band Lazy Loading Image Assignment'
+    }
 ]
