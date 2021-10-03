@@ -1,6 +1,10 @@
 // Body
 Body {
   font-family: $fontFamily;
+  // max-width: 100%;
+  overflow-x: hidden;
+  margin: auto;
+  background-color: whitesmoke;
 }
 
 // Header Starts Here
@@ -69,17 +73,22 @@ div#navWrapper {
 // Main Starts Here
 div#mainWrapper {
   width: 100%;
-  min-height: 10rem;
+  
   main {
     padding: 0 2%;
+
     div.band-members {
       display: flex;
       flex-wrap: wrap;
+
       div.member {
+        flex-basis: 100%;
+
         figure {
+          width: 100%;
           img {
             float: right;
-            width: 175px;
+            width: 100%;
             height: auto;
             margin: 0.5rem;
           }

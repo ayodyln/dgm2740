@@ -439,6 +439,9 @@ template {
 
 Body {
   font-family: "Fira Sans", sans-serif;
+  overflow-x: hidden;
+  margin: auto;
+  background-color: whitesmoke;
 }
 
 div#headerWrapper {
@@ -529,7 +532,6 @@ div#navWrapper nav ul li:hover a {
 
 div#mainWrapper {
   width: 100%;
-  min-height: 10rem;
 }
 
 div#mainWrapper main {
@@ -544,9 +546,18 @@ div#mainWrapper main div.band-members {
       flex-wrap: wrap;
 }
 
+div#mainWrapper main div.band-members div.member {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+div#mainWrapper main div.band-members div.member figure {
+  width: 100%;
+}
+
 div#mainWrapper main div.band-members div.member figure img {
   float: right;
-  width: 175px;
+  width: 100%;
   height: auto;
   margin: 0.5rem;
 }
@@ -608,6 +619,17 @@ div#footerWrapper footer a {
 
 div#footerWrapper footer a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (min-width: 560px) {
+  div#mainWrapper main {
+    margin: auto;
+  }
+  div#mainWrapper main div.band-members div.member {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    margin: 1% 5%;
+  }
 }
 
 @media only screen and (min-width: 1028px) {

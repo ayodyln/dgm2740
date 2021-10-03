@@ -1,1 +1,11 @@
-//nav
+div#mainWrapper {
+    main {
+        margin: auto;
+        div.band-members {
+            div.member {
+                flex-basis: 40%;
+                margin: 1% 5%;
+            }
+        }
+    }
+}
