@@ -40,6 +40,9 @@ main.content {
 
   div.card {
     display: none;
+    figure img {
+      
+    }
   }
 
   div.surface {
@@ -86,13 +89,13 @@ main.content {
 
 // footer
 footer {
-  position: absolute;
-  bottom: 0;
+  
   width: 100%;
   text-align: center;
   padding: 0.1rem 2%;
   color: white;
   background-color: $mint;
+  margin-top: 1rem;
   
 
   div.links {

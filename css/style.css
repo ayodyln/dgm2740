@@ -532,13 +532,12 @@ main.content div.surface:hover {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   text-align: center;
   padding: 0.1rem 2%;
   color: white;
   background-color: #3bba9c;
+  margin-top: 1rem;
 }
 
 footer div.links {

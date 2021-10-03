@@ -38,7 +38,7 @@ export const assignments = [
         id: 6,
         name: 'Band',
         url: `unit-6/index.html`,
-        img: `unit-6/img/guitar.jpg`,
+        img: `unit-6/img/guitar-assignment-page.jpg`,
         discription: 'Band Lazy Loading Image Assignment'
     }
 ]
