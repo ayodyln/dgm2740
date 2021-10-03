@@ -1,3 +1,9 @@
+var lazyLoadInstance = new LazyLoad({
+    // Your custom settings go here
+    elements_selector: '.lazy',
+    threshold: 0
+});
+
 const concertGallery = [
   {
     id: 1,
@@ -61,17 +67,11 @@ const concertGallery = [
   },
 ];
 
-var lazyLoadInstance = new LazyLoad({
-  // Your custom settings go here
-  elements_selector: ".lazy",
-  threshold: 0,
-});
-
 const galleryDiv = document.querySelector(".gallery");
 
 function displayGallery(gallery) {
   console.log(concertGallery);
-
+  
   gallery.forEach((el, i, arr) => {
     console.log(el);
 
@@ -92,4 +92,4 @@ function displayGallery(gallery) {
   });
 }
 
-displayGallery(concertGallery);
+// displayGallery(concertGallery);

@@ -529,6 +529,7 @@ div#navWrapper nav ul li:hover a {
 
 div#mainWrapper {
   width: 100%;
+  min-height: 10rem;
 }
 
 div#mainWrapper main {
