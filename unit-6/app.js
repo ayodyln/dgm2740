@@ -83,6 +83,7 @@ function displayGallery(gallery) {
     img.setAttribute("width", "1600");
     img.setAttribute("height", "500");
     img.setAttribute("alt", "concert");
+    img.setAttribute("loading", "lazy")
     img.setAttribute("data-src", `img/gallery/concert${el.id}.jpg`);
     /////////////////////////////////////
 
@@ -92,4 +93,4 @@ function displayGallery(gallery) {
   });
 }
 
-// displayGallery(concertGallery);
+displayGallery(concertGallery);
