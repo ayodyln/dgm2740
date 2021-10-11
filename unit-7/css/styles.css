@@ -537,6 +537,10 @@ div#navWrapper nav ul li:hover a {
   color: white;
 }
 
+div#mainWrapper main {
+  margin: 1rem;
+}
+
 div#footerWrapper {
   background-color: #99180D;
 }
