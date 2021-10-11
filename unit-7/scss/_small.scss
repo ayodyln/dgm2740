@@ -1,0 +1,110 @@
+// div.test {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+
+// @for $i from 1 through 12 {
+//     $w:($i/12) * 100%;
+//     .small-#{$i} {flex-basis: $w;}
+// }
+
+//Body
+body {
+  font-family: $fontFamily;
+}
+
+// Header style
+div#headerWrapper {
+  background-color: darken($secondaryColor, 0);
+
+  header {
+    border-top: 0.5rem solid $primaryColor;
+    div.slogan {
+      color: white;
+      h1,
+      h2 {
+        margin: 2%;
+      }
+      h2 {
+        font-size: 90%;
+      }
+    }
+
+    div.search-box {
+      margin-top: 1rem;
+      padding: 2% 2%;
+      display: flex;
+      justify-content: flex-end;
+      .searchBox {
+        border-radius: 5px;
+        padding: 1% 1%;
+      }
+    }
+  }
+}
+// end of Header style
+
+// Nav style
+div#navWrapper {
+  background-color: $secondaryLight;
+
+  nav {
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        padding: 0 2%;
+
+        a {
+          cursor: pointer;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+        }
+      }
+      li.active {
+        background-color: lighten(grey, 20%);
+        a {
+          color: black;
+        }
+      }
+      li:hover {
+        background-color: darken($secondaryColor, 10%);
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+// end of Nav style
+
+// Main Style
+
+// end of Main style
+
+// Footer style
+div#footerWrapper {
+  background-color: $primaryColor;
+  footer {
+    padding: 1% 2%;
+    text-align: center;
+    p {
+      color: white;
+      a {
+        color: white;
+      }
+    }
+  }
+}
+// end of Footer style
