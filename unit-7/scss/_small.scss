@@ -122,7 +122,7 @@ div.flexed {
 .column {
   padding: 0 $gutter;
 }
-@for $i from 1 through 12 {
+@for $i from 0 through 12 {
   //this is the for-of loop of scss, its a bit different, but the same principle.
   // for el from <range>
 

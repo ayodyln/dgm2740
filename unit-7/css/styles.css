@@ -570,6 +570,11 @@ div.flexed {
   padding: 0 2vw;
 }
 
+.small-0 {
+  -ms-flex-preferred-size: 0%;
+      flex-basis: 0%;
+}
+
 .small-1 {
   -ms-flex-preferred-size: 8.33333%;
       flex-basis: 8.33333%;
@@ -631,6 +636,10 @@ div.flexed {
 }
 
 @media only screen and (min-width: 560px) {
+  .medium-0 {
+    -ms-flex-preferred-size: 0%;
+        flex-basis: 0%;
+  }
   .medium-1 {
     -ms-flex-preferred-size: 8.33333%;
         flex-basis: 8.33333%;
@@ -688,6 +697,10 @@ div.flexed {
   footer {
     max-width: 75rem;
     margin: auto;
+  }
+  .large-0 {
+    -ms-flex-preferred-size: 0%;
+        flex-basis: 0%;
   }
   .large-1 {
     -ms-flex-preferred-size: 8.33333%;
