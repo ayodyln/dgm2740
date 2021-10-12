@@ -5,3 +5,8 @@ footer {
   max-width: 75rem;
   margin: auto;
 }
+
+@for $i from 1 through 12 {
+  $w:($i/12) * 100%;
+  .large-#{$i} {flex-basis: $w;}
+}

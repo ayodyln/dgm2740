@@ -60,7 +60,6 @@ div#navWrapper {
         height: 3rem;
         display: flex;
         align-items: center;
-        padding: 0 2%;
 
         a {
           cursor: pointer;
@@ -70,6 +69,7 @@ div#navWrapper {
           align-items: center;
           text-decoration: none;
           color: rgb(255, 255, 255);
+          padding: 0 2%;
         }
       }
       li.active {
@@ -112,3 +112,24 @@ div#footerWrapper {
   }
 }
 // end of Footer style
+
+// Columns style
+div.flexed {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  padding: 0 $gutter;
+}
+@for $i from 1 through 12 {
+  //this is the for-of loop of scss, its a bit different, but the same principle.
+  // for el from <range>
+
+  $w: ($i / 12) * 100%;
+  .small-#{$i} {
+    flex-basis: $w;
+  }
+}
+
+// end of column style
