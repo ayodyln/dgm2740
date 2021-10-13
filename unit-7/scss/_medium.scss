@@ -5,3 +5,10 @@
   }
 }
 
+div#navWrapper {
+  nav ul {
+    flex-direction: row;
+    width: 50%;
+    li a {justify-content: center;}
+  }
+}

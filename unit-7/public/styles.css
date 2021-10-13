@@ -744,6 +744,18 @@ div.flexed {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  div#navWrapper nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 50%;
+  }
+  div#navWrapper nav ul li a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media only screen and (min-width: 1028px) {
