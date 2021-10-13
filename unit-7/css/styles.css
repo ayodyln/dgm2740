@@ -538,11 +538,13 @@ div#navWrapper nav ul li:hover a {
   color: white;
 }
 
-div#mainWrapper div.lawyer-card {
-  max-width: 80vw;
+main div.lawyer-card {
+  background-color: grey;
+  margin: 1rem 0;
+  width: 80%;
 }
 
-div#mainWrapper div.lawyer-card img {
+main div.lawyer-card img {
   width: 100%;
   height: auto;
 }
