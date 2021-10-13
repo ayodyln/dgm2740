@@ -59,10 +59,13 @@ const tipOfTheDay = document.querySelector(".tipofday-div");
 
 // LawyersDisplay function
 (function lawyerDisplay() {
+  const lawyerSpacer = document.createElement("div");
+  lawyerSpacer.className = "small-0 medium-0 large-2";
   lawyersInfo.forEach((el, i, arr) => {
     // console.log(el);
     //creating elements
     const lawyerCard = document.createElement("div");
+
     const lawyerName = document.createElement("p");
     const lawyerFigure = document.createElement("figure");
     const lawyerImg = document.createElement("img");
@@ -70,9 +73,10 @@ const tipOfTheDay = document.querySelector(".tipofday-div");
 
     // giving element class names
     lawyerCard.className = "column small-6 medium-3 large-2 lawyer-card";
-    lawyerFigure.className = "lawyer-fig"
+    lawyerFigure.className = "lawyer-fig";
     lawyerName.className = "lawyer-name";
     lawyerImg.className = "lazy lawyer-img";
+
     //
 
     ///Setting Attributes///
@@ -84,7 +88,7 @@ const tipOfTheDay = document.querySelector(".tipofday-div");
     ///////////////////////
 
     lawyerName.textContent = el.name;
-    lawyerImg.src = el.imgURL
+    lawyerImg.src = el.imgURL;
     lawyerBtn.textContent = `Learn More`;
 
     lawyerCard.appendChild(lawyerName);
@@ -93,7 +97,7 @@ const tipOfTheDay = document.querySelector(".tipofday-div");
     lawyerCard.appendChild(lawyerBtn);
     lawyerDiv.appendChild(lawyerCard);
   });
-})();
+});
 
 //blog posts
 (function blogPostsDisplay() {
@@ -126,4 +130,4 @@ const tipOfTheDay = document.querySelector(".tipofday-div");
     blogPostCard.appendChild(readMoreBtn);
     blogPost.appendChild(blogPostCard);
   });
-})();
+});
