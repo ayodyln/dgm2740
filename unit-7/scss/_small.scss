@@ -11,6 +11,7 @@
 //Body
 body {
   font-family: $fontFamily;
+  overflow-x: hidden;
 }
 
 // Header style
@@ -91,8 +92,12 @@ div#navWrapper {
 
 // Main Style
 div#mainWrapper {
-  main {
-    margin: 1rem;
+  div.lawyer-card {
+    max-width: 80vw;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 // end of Main style
@@ -133,3 +138,47 @@ div.flexed {
 }
 
 // end of column style
+
+// clear fix
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// div#mainWrapper {
+//   // width: 100%;
+//   main {
+//     margin: 1% 1%;
+
+//     div.lawyers {
+//       div.lawyer-card {
+//         display: flex;
+//         justify-content: center;
+//         flex-direction: column;
+//         background-color: grey;
+//         margin: 1% 1%;
+//         padding: 0;
+//         max-width: 48%;
+
+//         .lawyer-name {
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//           background-color: grey;
+//           color: white;
+//           height: 1rem;
+//           text-align: center;
+//         }
+//         button {
+//           margin: 5% 5%;
+//         }
+//         img.lawyer-img {
+//           width: 100%;
+//           height: auto;
+//         }
+//       }
+//     }
+
+//   }
+// }

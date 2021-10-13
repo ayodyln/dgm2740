@@ -439,6 +439,7 @@ template {
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 div#headerWrapper {
@@ -537,8 +538,13 @@ div#navWrapper nav ul li:hover a {
   color: white;
 }
 
-div#mainWrapper main {
-  margin: 1rem;
+div#mainWrapper div.lawyer-card {
+  max-width: 80vw;
+}
+
+div#mainWrapper div.lawyer-card img {
+  width: 100%;
+  height: auto;
 }
 
 div#footerWrapper {
@@ -633,6 +639,12 @@ div.flexed {
 .small-12 {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 @media only screen and (min-width: 560px) {
