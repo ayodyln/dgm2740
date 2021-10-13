@@ -220,8 +220,20 @@ div#mainWrapper {
 div#footerWrapper {
   background-color: $primaryColor;
   footer {
-    padding: 1% 2%;
+    padding: 2% 2%;
     text-align: center;
+
+    .socials {
+      width: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+      .fab {
+        color: white;
+        width: 60px;
+        font-size: 2rem;
+      }
+    }
+
     p {
       color: white;
       a {

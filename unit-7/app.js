@@ -116,3 +116,5 @@ const tipOfTheDay = document.querySelector('.tipofday-div');
     blogPost.appendChild(blogPostCard);
   });
 })();
+
+
