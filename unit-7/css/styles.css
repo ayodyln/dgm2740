@@ -674,6 +674,37 @@ div#mainWrapper main .flexed div.cta-btn .cta:hover {
   cursor: pointer;
 }
 
+div#mainWrapper main .flexed div.blog-cards {
+  background-color: #6a1109;
+  margin: 2% 0;
+  padding: 0;
+}
+
+div#mainWrapper main .flexed div.blog-cards .blog-img {
+  width: 100%;
+  height: auto;
+}
+
+div#mainWrapper main .flexed div.blog-cards .blog-title,
+div#mainWrapper main .flexed div.blog-cards .blog-content {
+  color: white;
+  padding: 0 2%;
+}
+
+div#mainWrapper main .flexed div.blog-cards .read-more-btn {
+  width: 100%;
+  height: 3rem;
+  background-color: #99180D;
+  border-style: none;
+  cursor: pointer;
+  color: white;
+}
+
+div#mainWrapper main .flexed div.blog-cards .read-more-btn:hover {
+  background-color: #313131;
+  color: white;
+}
+
 div#footerWrapper {
   background-color: #99180D;
 }

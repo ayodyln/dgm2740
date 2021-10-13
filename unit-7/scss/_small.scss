@@ -95,6 +95,7 @@ div#mainWrapper {
     margin: 1% 1%;
 
     .flexed {
+      // Lawyer-card section
       div.lawyer-card {
         display: flex;
         justify-content: center;
@@ -124,10 +125,14 @@ div#mainWrapper {
         }
       }
 
+      // CTA btn section
       div.cta-btn {
         text-align: center;
 
-        a {text-decoration: none; color: white;}
+        a {
+          text-decoration: none;
+          color: white;
+        }
 
         @for $j from 0 through 3 {
           .cta-#{$j} {
@@ -145,6 +150,37 @@ div#mainWrapper {
         .cta:hover {
           background-color: $secondaryLight;
           cursor: pointer;
+        }
+      }
+
+      // blog post section
+      div.blog-cards {
+        background-color: darken($primaryColor, 10%);
+        margin: 2% 0;
+        padding: 0;
+
+        .blog-img {
+          width: 100%;
+          height: auto;
+        }
+
+        .blog-title,
+        .blog-content {
+          color: white;
+          padding: 0 2%;
+        }
+
+        .read-more-btn {
+          width: 100%;
+          height: 3rem;
+          background-color: $primaryColor;
+          border-style: none;
+          cursor: pointer;
+          color: white;
+        }
+        .read-more-btn:hover {
+          background-color: $secondaryColor;
+          color: white;
         }
       }
     }
