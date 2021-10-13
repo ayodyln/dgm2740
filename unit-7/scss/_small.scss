@@ -90,14 +90,63 @@ div#navWrapper {
 
 // Main Style
 
-main {
-  div.lawyer-card {
-    background-color: grey;
-    margin: 1rem 0;
-    width: 80%;
-    img {
-      width: 100%;
-      height: auto;
+div#mainWrapper {
+  main {
+    margin: 1% 1%;
+
+    .flexed {
+      div.lawyer-card {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        background-color: grey;
+        margin: 1% 1%;
+        padding: 0;
+        max-width: 48%;
+
+        .lawyer-name {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: grey;
+          color: white;
+          height: 1rem;
+          text-align: center;
+        }
+        img.lawyer-img {
+          width: 100%;
+          height: auto;
+        }
+
+        button {
+          margin: 5% 5%;
+        }
+      }
+
+      div.cta-btn {
+        text-align: center;
+
+        a {text-decoration: none; color: white;}
+
+        @for $j from 0 through 3 {
+          .cta-#{$j} {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 4% 0;
+            background-color: $secondaryColor;
+            color: white;
+            width: 100%;
+            height: 3rem;
+          }
+        }
+
+        .cta:hover {
+          background-color: $secondaryLight;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
@@ -147,40 +196,3 @@ div.flexed {
   display: table;
   clear: both;
 }
-
-// div#mainWrapper {
-//   // width: 100%;
-//   main {
-//     margin: 1% 1%;
-
-//     div.lawyers {
-//       div.lawyer-card {
-//         display: flex;
-//         justify-content: center;
-//         flex-direction: column;
-//         background-color: grey;
-//         margin: 1% 1%;
-//         padding: 0;
-//         max-width: 48%;
-
-//         .lawyer-name {
-//           display: flex;
-//           justify-content: center;
-//           align-items: center;
-//           background-color: grey;
-//           color: white;
-//           height: 1rem;
-//           text-align: center;
-//         }
-//         button {
-//           margin: 5% 5%;
-//         }
-//         img.lawyer-img {
-//           width: 100%;
-//           height: auto;
-//         }
-//       }
-//     }
-
-//   }
-// }

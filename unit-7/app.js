@@ -38,14 +38,13 @@ const blogInfo = [
 
 //Setting variables
 const lawyerDiv = document.querySelector(".lawyers"); //laywers div
-const ctaDiv = document.querySelector('.CTA');
+const ctaDiv = document.querySelector(".CTA");
 //Initializing function
 
 // LawyersDisplay function
 (function lawyerDisplay() {
-
   lawyersInfo.forEach((el, i, arr) => {
-    console.log(el);
+    // console.log(el);
     //creating elements
     const lawyerCard = document.createElement("div");
     const lawyerName = document.createElement("p");
@@ -77,3 +76,9 @@ const ctaDiv = document.querySelector('.CTA');
 })();
 
 
+//blog posts
+(function blogPostsDisplay() {
+  blogInfo.forEach((el, i , arr) => {
+    console.log(el)
+  })
+})();
