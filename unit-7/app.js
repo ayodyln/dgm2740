@@ -1,17 +1,27 @@
+var lazyLoadInstance = new LazyLoad({
+  // Your custom settings go here
+  elements_selector: ".lazy",
+  threshold: 0,
+});
+
 const lawyersInfo = [
   {
+    id: 1,
     name: `Jason Ellis`,
     imgURL: `img/img01.jpg`,
   },
   {
+    id: 2,
     name: `Alicia Florrick`,
     imgURL: `img/img02.jpg`,
   },
   {
+    id: 3,
     name: `Allis Jacobson`,
     imgURL: `img/img03.jpg`,
   },
   {
+    id: 4,
     name: `Allen Smith`,
     imgURL: `img/img04.jpg`,
   },
@@ -40,13 +50,11 @@ const blogInfo = [
   },
 ];
 
-
-
 //Setting variables
 const lawyerDiv = document.querySelector(".lawyers"); //laywers div
 const ctaDiv = document.querySelector(".CTA");
 const blogPost = document.querySelector(".blog-post");
-const tipOfTheDay = document.querySelector('.tipofday-div');
+const tipOfTheDay = document.querySelector(".tipofday-div");
 //Initializing function
 
 // LawyersDisplay function
@@ -56,28 +64,32 @@ const tipOfTheDay = document.querySelector('.tipofday-div');
     //creating elements
     const lawyerCard = document.createElement("div");
     const lawyerName = document.createElement("p");
+    const lawyerFigure = document.createElement("figure");
     const lawyerImg = document.createElement("img");
     const lawyerBtn = document.createElement("button");
 
     // giving element class names
     lawyerCard.className = "column small-6 medium-3 large-2 lawyer-card";
+    lawyerFigure.className = "lawyer-fig"
     lawyerName.className = "lawyer-name";
-    lawyerImg.className = "lawyer-img";
-
+    lawyerImg.className = "lazy lawyer-img";
     //
 
     ///Setting Attributes///
     lawyerImg.setAttribute("width", "1600");
     lawyerImg.setAttribute("height", "500");
+    lawyerImg.setAttribute("alt", "lawyer image");
+    lawyerImg.setAttribute("loading", "lazy");
+    lawyerImg.setAttribute("data-src", `img/img${el.id}.jpg`);
     ///////////////////////
 
     lawyerName.textContent = el.name;
-    lawyerImg.src = el.imgURL;
-
+    lawyerImg.src = el.imgURL
     lawyerBtn.textContent = `Learn More`;
 
     lawyerCard.appendChild(lawyerName);
-    lawyerCard.appendChild(lawyerImg);
+    lawyerFigure.appendChild(lawyerImg);
+    lawyerCard.appendChild(lawyerFigure);
     lawyerCard.appendChild(lawyerBtn);
     lawyerDiv.appendChild(lawyerCard);
   });
@@ -86,7 +98,6 @@ const tipOfTheDay = document.querySelector('.tipofday-div');
 //blog posts
 (function blogPostsDisplay() {
   blogInfo.forEach((el, i, arr) => {
-
     const blogPostCard = document.createElement("div");
     const blogImg = document.createElement("img");
     const blogTitle = document.createElement("h2");
@@ -116,5 +127,3 @@ const tipOfTheDay = document.querySelector('.tipofday-div');
     blogPost.appendChild(blogPostCard);
   });
 })();
-
-

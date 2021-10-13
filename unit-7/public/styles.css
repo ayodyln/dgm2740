@@ -583,7 +583,22 @@ div#mainWrapper main .flexed div.lawyer-card .lawyer-name {
   text-align: center;
 }
 
-div#mainWrapper main .flexed div.lawyer-card img.lawyer-img {
+div#mainWrapper main .flexed div.lawyer-card figure.lawyer-fig {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+div#mainWrapper main .flexed div.lawyer-card figure.lawyer-fig img.lawyer-img {
   width: 100%;
   height: auto;
 }
@@ -938,6 +953,111 @@ div.flexed {
   .medium-12 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  div#mainWrapper main .flexed div.lawyer-card {
+    max-width: 23%;
+  }
+  div#mainWrapper main .flexed div.cta-btn {
+    text-align: center;
+  }
+  div#mainWrapper main .flexed div.cta-btn a {
+    text-decoration: none;
+    color: white;
+  }
+  div#mainWrapper main .flexed div.cta-btn .cta-0 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 4% 0;
+    background-color: #313131;
+    color: white;
+    width: 100%;
+    height: 5rem;
+    font-size: 65%;
+    padding: 5%;
+  }
+  div#mainWrapper main .flexed div.cta-btn .cta-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 4% 0;
+    background-color: #313131;
+    color: white;
+    width: 100%;
+    height: 5rem;
+    font-size: 65%;
+    padding: 5%;
+  }
+  div#mainWrapper main .flexed div.cta-btn .cta-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 4% 0;
+    background-color: #313131;
+    color: white;
+    width: 100%;
+    height: 5rem;
+    font-size: 65%;
+    padding: 5%;
+  }
+  div#mainWrapper main .flexed div.cta-btn .cta-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 4% 0;
+    background-color: #313131;
+    color: white;
+    width: 100%;
+    height: 5rem;
+    font-size: 65%;
+    padding: 5%;
+  }
+  div#mainWrapper main .flexed div.blog-cards {
+    margin: 1% 2%;
+    max-width: 46%;
+  }
+  div#mainWrapper main .flexed div.tipofday-card {
+    margin: 2% 1%;
+  }
+  div#mainWrapper main .flexed .faq-0 {
+    margin: 2% 2%;
+    max-width: 29.2%;
+  }
+  div#mainWrapper main .flexed .faq-1 {
+    margin: 2% 2%;
+    max-width: 29.2%;
+  }
+  div#mainWrapper main .flexed .faq-2 {
+    margin: 2% 2%;
+    max-width: 29.2%;
+  }
+  div#mainWrapper main .flexed .faq-3 {
+    margin: 2% 2%;
+    max-width: 29.2%;
   }
 }
 

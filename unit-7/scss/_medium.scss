@@ -1,4 +1,59 @@
 @for $i from 0 through 12 {
-    $w:($i/12) * 100%;
-    .medium-#{$i} {flex-basis: $w;}
+  $w: ($i/12) * 100%;
+  .medium-#{$i} {
+    flex-basis: $w;
+  }
+}
+
+// lawyercards
+div#mainWrapper {
+  main {
+    .flexed {
+      div.lawyer-card {
+        max-width: 23%;
+      }
+
+      div.cta-btn {
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+
+        @for $j from 0 through 3 {
+          .cta-#{$j} {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 4% 0;
+            background-color: $secondaryColor;
+            color: white;
+            width: 100%;
+            height: 5rem;
+            font-size: 65%;
+            padding: 5%;
+          }
+        }
+      }
+
+      div.blog-cards {
+          margin: 1% 2%;
+          max-width: 46%;
+      }
+
+      div.tipofday-card {
+          margin: 2% 1%;
+      }
+
+      @for $x from 0 through 3 {
+          .faq-#{$x} {
+              margin: 2% 2%;
+              max-width: 29.2%;
+          }
+      }
+
+
+    }
+  }
 }
