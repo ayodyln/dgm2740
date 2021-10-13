@@ -40,10 +40,13 @@ const blogInfo = [
   },
 ];
 
+
+
 //Setting variables
 const lawyerDiv = document.querySelector(".lawyers"); //laywers div
 const ctaDiv = document.querySelector(".CTA");
 const blogPost = document.querySelector(".blog-post");
+const tipOfTheDay = document.querySelector('.tipofday-div');
 //Initializing function
 
 // LawyersDisplay function
@@ -71,7 +74,7 @@ const blogPost = document.querySelector(".blog-post");
     lawyerName.textContent = el.name;
     lawyerImg.src = el.imgURL;
 
-    lawyerBtn.textContent = `Read More`;
+    lawyerBtn.textContent = `Learn More`;
 
     lawyerCard.appendChild(lawyerName);
     lawyerCard.appendChild(lawyerImg);
@@ -83,7 +86,6 @@ const blogPost = document.querySelector(".blog-post");
 //blog posts
 (function blogPostsDisplay() {
   blogInfo.forEach((el, i, arr) => {
-    console.log(el);
 
     const blogPostCard = document.createElement("div");
     const blogImg = document.createElement("img");

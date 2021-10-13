@@ -183,6 +183,33 @@ div#mainWrapper {
           color: white;
         }
       }
+
+      // tip of day and FAQ
+      .tipofday-card {
+        background-color: $secondaryLight;
+        color: white;
+        padding: 2% 2%;
+        margin: 2% 0;
+        a {
+          color: white;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+
+      @for $x from 0 through 3 {
+        .faq-#{$x} {
+          background-color: $secondaryLight;
+          color: white;
+          padding: 2% 2%;
+          margin: 2% 0;
+          a {
+            color: white;
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 }

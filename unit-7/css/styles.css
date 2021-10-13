@@ -705,6 +705,71 @@ div#mainWrapper main .flexed div.blog-cards .read-more-btn:hover {
   color: white;
 }
 
+div#mainWrapper main .flexed .tipofday-card {
+  background-color: #393D42;
+  color: white;
+  padding: 2% 2%;
+  margin: 2% 0;
+}
+
+div#mainWrapper main .flexed .tipofday-card a {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+div#mainWrapper main .flexed .faq-0 {
+  background-color: #393D42;
+  color: white;
+  padding: 2% 2%;
+  margin: 2% 0;
+}
+
+div#mainWrapper main .flexed .faq-0 a {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+div#mainWrapper main .flexed .faq-1 {
+  background-color: #393D42;
+  color: white;
+  padding: 2% 2%;
+  margin: 2% 0;
+}
+
+div#mainWrapper main .flexed .faq-1 a {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+div#mainWrapper main .flexed .faq-2 {
+  background-color: #393D42;
+  color: white;
+  padding: 2% 2%;
+  margin: 2% 0;
+}
+
+div#mainWrapper main .flexed .faq-2 a {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+div#mainWrapper main .flexed .faq-3 {
+  background-color: #393D42;
+  color: white;
+  padding: 2% 2%;
+  margin: 2% 0;
+}
+
+div#mainWrapper main .flexed .faq-3 a {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 div#footerWrapper {
   background-color: #99180D;
 }
