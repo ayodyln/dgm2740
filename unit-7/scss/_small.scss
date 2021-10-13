@@ -1,13 +1,11 @@
-// div.test {
-//     display: flex;
-//     flex-wrap: wrap;
-// }
+/* rules here will be applied to all sizes, medium and large will modify from that */
 
-// @for $i from 1 through 12 {
-//     $w:($i/12) * 100%;
-//     .small-#{$i} {flex-basis: $w;}
-// }
-
+/* Apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 //Body
 body {
   font-family: $fontFamily;
