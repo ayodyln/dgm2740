@@ -502,6 +502,31 @@ div#navWrapper nav ul.hide {
   display: none;
 }
 
+div#mainWrapper main div.img-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+div#mainWrapper main div.img-grid div.lead-img {
+  text-align: center;
+}
+
+div#mainWrapper main div.img-grid div.lead-img img {
+  width: 100%;
+  height: auto;
+}
+
+div#mainWrapper main div.img-grid div.teaser-img {
+  text-align: center;
+}
+
+div#mainWrapper main div.img-grid div.teaser-img img {
+  width: 100%;
+  height: auto;
+}
+
 div#footerWrapper {
   background-color: grey;
   padding: 0.1% 0;

@@ -73,6 +73,29 @@ div#navWrapper {
 // End of Nav Style
 
 // Main Style
+div#mainWrapper {
+  main {
+    div.img-grid {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      div.lead-img {
+        text-align: center;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      div.teaser-img {
+        text-align: center;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
 
 // End of Main Style
 
@@ -85,7 +108,9 @@ div#footerWrapper {
     p {
       color: white;
       text-align: center;
-      a {color: white;}
+      a {
+        color: white;
+      }
     }
   }
 }
