@@ -40,5 +40,12 @@ export const assignments = [
         url: `unit-6/index.html`,
         img: `unit-6/img/guitar-assignment-page.jpg`,
         discription: 'Band Lazy Loading Image Assignment'
+    },
+    {
+        id: 7,
+        name: 'Law Firm',
+        url: 'unit-7/index.html',
+        img: `unit-7/img/blog04.jpg`,
+        discription: 'Created a custom frame work with SCSS, the site has a responsive 12 grid system.'
     }
 ]

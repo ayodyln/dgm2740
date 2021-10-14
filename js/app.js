@@ -39,9 +39,10 @@ function displayWork(assignment) {
 
     figure.appendChild(img);
     figure.appendChild(figcap);
+    figure.appendChild(btnDiv);
     btnDiv.appendChild(a)
     card.appendChild(figure);
-    figure.appendChild(btnDiv);
+    
     main.appendChild(card);
   });
 }
