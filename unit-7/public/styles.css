@@ -559,13 +559,13 @@ div#mainWrapper main div.flexed .lawyer-card {
           flex-direction: column;
 }
 
-div#mainWrapper main div.flexed .lawyer-card h2 {
-  font-size: 1.1rem;
+div#mainWrapper main div.flexed .lawyer-card p {
+  font-size: 100%;
   text-align: center;
   background-color: #99180D;
   color: white;
   margin: 0;
-  padding: 1rem 0;
+  padding: 2rem 1%;
   width: 100%;
 }
 
@@ -949,5 +949,8 @@ div.flexed {
   .large-12 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  div#mainWrapper main div.flexed div.lawyer-card p {
+    font-size: 90%;
   }
 }

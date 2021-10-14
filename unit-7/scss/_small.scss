@@ -99,13 +99,13 @@ div#mainWrapper {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        h2 {
-          font-size: 1.1rem;
+        p {
+          font-size: 100%;
           text-align: center;
           background-color: $primaryColor;
           color: white;
           margin: 0;
-          padding: 1rem 0;
+          padding: 2rem 1%;
           width: 100%;
         }
 

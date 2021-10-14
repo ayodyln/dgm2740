@@ -7,8 +7,19 @@ footer {
 }
 
 @for $i from 0 through 12 {
-  $w:($i/12) * 100%;
-  .large-#{$i} {flex-basis: $w;}
+  $w: ($i/12) * 100%;
+  .large-#{$i} {
+    flex-basis: $w;
+  }
 }
 
+div#mainWrapper {
+  main {
+    div.flexed {
+      div.lawyer-card {
+        p {font-size: 90%;}
+      }
 
+    }
+  }
+}
