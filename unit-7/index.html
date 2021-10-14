@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -42,22 +42,26 @@
                 <div class="small-0 medium-0 large-2"></div>
                 <div class="column small-6 medium-3 large-2 lawyer-card">
                     <h2>Jason Ellis</h2>
-                    <img src="img/img01.jpg" alt="lawyer-card" height="1600" width="500">
+                    <img src="img/img01.jpg" alt="lawyer-card" height="1600" width="500" class="lazy"
+                        data-src="img/img01.jpg">
                     <button>Learn More</button>
                 </div>
                 <div class="column small-6 medium-3 large-2 lawyer-card">
                     <h2>Alicia Florrick</h2>
-                    <img src="img/img02.jpg" alt="lawyer-card" height="1600" width="500">
+                    <img src="img/img02.jpg" alt="lawyer-card" height="1600" width="500" class="lazy"
+                        data-src="img/img02.jpg">
                     <button>Learn More</button>
                 </div>
                 <div class="column small-6 medium-3 large-2 lawyer-card">
                     <h2>Allis Jacobson</h2>
-                    <img src="img/img03.jpg" alt="lawyer-card" height="1600" width="500">
+                    <img src="img/img03.jpg" alt="lawyer-card" height="1600" width="500" class="lazy"
+                        data-src="img/img03.jpg">
                     <button>Learn More</button>
                 </div>
                 <div class="column small-6 medium-3 large-2 lawyer-card">
                     <h2>Allen Smith</h2>
-                    <img src="img/img04.jpg" alt="lawyer-card" height="1600" width="500">
+                    <img src="img/img04.jpg" alt="lawyer-card" height="1600" width="500" class="lazy"
+                        data-src="img/img04.jpg">
                     <button>Learn More</button>
                 </div>
             </div>
@@ -88,7 +92,8 @@
                 <div class="small-0 medium-0 large-0"></div>
 
                 <div class="column small-12 medium-6 large-3 blogpost-cards">
-                    <img src="img/blog01.jpg" alt="blog-img" width="1600" height="500">
+                    <img src="img/blog01.jpg" alt="blog-img" width="1600" height="500" class="lazy"
+                        data-src="img/blog01.jpg">
                     <div class="blog-text">
                         <h2>Blogpost #1</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta recusandae officia illum
@@ -100,7 +105,8 @@
                 </div>
 
                 <div class="column small-12 medium-6 large-3 blogpost-cards">
-                    <img src="img/blog02.jpg" alt="blog-img" width="1600" height="500">
+                    <img src="img/blog02.jpg" alt="blog-img" width="1600" height="500" class="lazy"
+                        data-src="img/blog02.jpg">
                     <div class="blog-text">
                         <h2>Blogpost #2</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta recusandae officia illum
@@ -112,7 +118,8 @@
                 </div>
 
                 <div class="column small-12 medium-6 large-3 blogpost-cards">
-                    <img src="img/blog03.jpg" alt="blog-img" width="1600" height="500">
+                    <img src="img/blog03.jpg" alt="blog-img" width="1600" height="500" class="lazy"
+                        data-src="img/blog03.jpg">
                     <div class="blog-text">
                         <h2>Blogpost #3</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta recusandae officia illum
@@ -124,7 +131,8 @@
                 </div>
 
                 <div class="column small-12 medium-6 large-3 blogpost-cards">
-                    <img src="img/blog04.jpg" alt="blog-img" width="1600" height="500">
+                    <img src="img/blog04.jpg" alt="blog-img" width="1600" height="500" class="lazy"
+                        data-src="img/blog04.jpg">
                     <div class="blog-text">
                         <h2>Blogpost #4</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta recusandae officia illum
@@ -159,10 +167,8 @@
                         <div class="inner-inner">
                             <h2>FAQ</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nam, laborum vitae, nisi
-                                veniam
-                                quam magnam error beatae est fugit ea velit doloribus expedita corrupti voluptas iure
-                                voluptatem
-                                repellat voluptate?</p>
+                             
+                                </p>
                         </div>
                         <button>Read more</button>
                     </div>
@@ -172,10 +178,8 @@
                         <div class="inner-inner">
                             <h2>FAQ</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nam, laborum vitae, nisi
-                                veniam
-                                quam magnam error beatae est fugit ea velit doloribus expedita corrupti voluptas iure
-                                voluptatem
-                                repellat voluptate?</p>
+                         
+                                </p>
                         </div>
                         <button>Read more</button>
                     </div>
@@ -185,10 +189,8 @@
                         <div class="inner-inner">
                             <h2>FAQ</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nam, laborum vitae, nisi
-                                veniam
-                                quam magnam error beatae est fugit ea velit doloribus expedita corrupti voluptas iure
-                                voluptatem
-                                repellat voluptate?</p>
+                               
+                                </p>
                         </div>
                         <button>Read more</button>
                     </div>
@@ -221,7 +223,13 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
-    <script src="app.js"></script>
+    <script>
+        var lazyLoadInstance = new LazyLoad({
+            // Your custom settings go here
+            elements_selector: ".lazy",
+            threshold: 0,
+        });
+    </script>
 </body>
 
 </html>

@@ -716,6 +716,11 @@ div#footerWrapper footer .socials .fab {
   font-size: 2rem;
 }
 
+div#footerWrapper footer .socials .fab:hover {
+  cursor: pointer;
+  color: #393D42;
+}
+
 div#footerWrapper footer p {
   color: white;
 }

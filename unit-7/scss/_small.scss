@@ -224,6 +224,10 @@ div#footerWrapper {
         width: 60px;
         font-size: 2rem;
       }
+      .fab:hover {
+        cursor: pointer;
+        color: $secondaryLight;
+      }
     }
 
     p {
@@ -264,133 +268,3 @@ div.flexed {
   clear: both;
 }
 
-// div#mainWrapper {
-//   main {
-//     margin: 1% 1%;
-
-//     .flexed {
-//       // Lawyer-card section
-//       div.lawyer-card {
-//         display: flex;
-//         justify-content: center;
-//         flex-direction: column;
-//         text-align: center;
-//         background-color: grey;
-//         margin: 1% 1%;
-//         padding: 0;
-//         max-width: 48%;
-
-//         .lawyer-name {
-//           display: flex;
-//           justify-content: center;
-//           align-items: center;
-//           background-color: grey;
-//           color: white;
-//           height: 1rem;
-//           text-align: center;
-//         }
-//         figure.lawyer-fig {
-//           display: flex;
-//           justify-content: center;
-//           align-items: center;
-//           width: 100%;
-//           position: relative;
-//           margin: 0;
-//           img.lawyer-img {
-//             width: 100%;
-//             height: auto;
-//           }
-//         }
-//         button {
-//           margin: 5% 5%;
-//         }
-//       }
-
-//       // CTA btn section
-//       div.cta-btn {
-//         text-align: center;
-
-//         a {
-//           text-decoration: none;
-//           color: white;
-//         }
-
-//         @for $j from 0 through 3 {
-//           .cta-#{$j} {
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//             margin: 4% 0;
-//             background-color: $secondaryColor;
-//             color: white;
-//             width: 100%;
-//             height: 3rem;
-//           }
-//         }
-
-//         .cta:hover {
-//           background-color: $secondaryLight;
-//           cursor: pointer;
-//         }
-//       }
-
-//       // blog post section
-//       div.blog-cards {
-//         background-color: darken($primaryColor, 10%);
-//         margin: 2% 0;
-//         padding: 0;
-
-//         .blog-img {
-//           width: 100%;
-//           height: auto;
-//         }
-
-//         .blog-title,
-//         .blog-content {
-//           color: white;
-//           padding: 0 2%;
-//         }
-
-//         .read-more-btn {
-//           width: 100%;
-//           height: 3rem;
-//           background-color: $primaryColor;
-//           border-style: none;
-//           cursor: pointer;
-//           color: white;
-//         }
-//         .read-more-btn:hover {
-//           background-color: $secondaryColor;
-//           color: white;
-//         }
-//       }
-
-//       // tip of day and FAQ
-//       .tipofday-card {
-//         background-color: $secondaryLight;
-//         color: white;
-//         padding: 2% 2%;
-//         margin: 2% 0;
-//         a {
-//           color: white;
-//           text-decoration: underline;
-//           cursor: pointer;
-//         }
-//       }
-
-//       @for $x from 0 through 3 {
-//         .faq-#{$x} {
-//           background-color: $secondaryLight;
-//           color: white;
-//           padding: 2% 2%;
-//           margin: 2% 0;
-//           a {
-//             color: white;
-//             text-decoration: underline;
-//             cursor: pointer;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
