@@ -451,9 +451,6 @@ body {
 
 div#headerWrapper {
   background-color: #313131;
-}
-
-div#headerWrapper header {
   border-top: 0.5rem solid #99180D;
 }
 
@@ -546,13 +543,29 @@ div#navWrapper nav ul li:hover a {
 }
 
 div#mainWrapper main div.flexed .lawyer-card {
-  max-width: 2% 0;
+  margin: 3% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 div#mainWrapper main div.flexed .lawyer-card h2 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: center;
-  padding: 1% 0;
+  background-color: #99180D;
+  color: white;
+  margin: 0;
+  padding: 1rem 0;
   width: 100%;
 }
 
@@ -562,17 +575,119 @@ div#mainWrapper main div.flexed .lawyer-card img {
 }
 
 div#mainWrapper main div.flexed .lawyer-card button {
+  border-style: none;
+  background-color: #313131;
+  color: white;
   width: 100%;
+  height: 2rem;
+}
+
+div#mainWrapper main div.flexed .lawyer-card button:hover {
+  background-color: #393D42;
+  cursor: pointer;
 }
 
 div#mainWrapper main div.flexed .cta button {
   width: 100%;
   height: 4rem;
+  margin: 2% 0;
+  border-style: none;
+  background-color: #99180D;
+  color: white;
+  font-size: 1.75rem;
 }
 
-div#mainWrapper main div.flexed .blogpost-cards img {
+div#mainWrapper main div.flexed .cta button:hover {
+  background-color: #81140b;
+  cursor: pointer;
+}
+
+div#mainWrapper main div.flexed div.blogpost-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2% 0;
+}
+
+div#mainWrapper main div.flexed div.blogpost-cards img {
   width: 100%;
   height: auto;
+}
+
+div#mainWrapper main div.flexed div.blogpost-cards div.blog-text {
+  background-color: #99180D;
+  color: white;
+  padding: 0 2%;
+}
+
+div#mainWrapper main div.flexed div.blogpost-cards button {
+  width: 100%;
+  height: 4rem;
+  border-style: none;
+  background-color: #313131;
+  color: white;
+}
+
+div#mainWrapper main div.flexed div.blogpost-cards button:hover {
+  cursor: pointer;
+  background-color: #393D42;
+}
+
+div#mainWrapper main div.flexed div.tip-of-day div.inner:nth-child(1),
+div#mainWrapper main div.flexed .faq div.inner:nth-child(1) {
+  margin-top: 0;
+}
+
+div#mainWrapper main div.flexed div.tip-of-day div.inner,
+div#mainWrapper main div.flexed .faq div.inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #393D42;
+  color: white;
+  margin: 2% 0;
+}
+
+div#mainWrapper main div.flexed div.tip-of-day div.inner div.inner-inner,
+div#mainWrapper main div.flexed .faq div.inner div.inner-inner {
+  padding: 1% 2%;
+  margin: 2% 0;
+}
+
+div#mainWrapper main div.flexed div.tip-of-day div.inner button,
+div#mainWrapper main div.flexed .faq div.inner button {
+  width: 100%;
+  background-color: #99180D;
+  color: white;
+  border-style: none;
+  height: 3rem;
+}
+
+div#mainWrapper main div.flexed div.tip-of-day div.inner button:hover,
+div#mainWrapper main div.flexed .faq div.inner button:hover {
+  cursor: pointer;
+  background-color: #c81f11;
+  color: #e6e6e6;
 }
 
 div#footerWrapper {
@@ -582,6 +697,7 @@ div#footerWrapper {
 div#footerWrapper footer {
   padding: 3% 2%;
   text-align: center;
+  margin-top: 1rem;
 }
 
 div#footerWrapper footer .socials {
@@ -743,6 +859,17 @@ div.flexed {
   .medium-12 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  div#headerWrapper header div.slogan h1,
+  div#headerWrapper header div.slogan h2 {
+    margin: 1%;
+  }
+  div#headerWrapper header div.slogan h2 {
+    font-size: unset;
+  }
+  div#headerWrapper header div.search-box {
+    margin-top: 0;
+    padding: 1% 2%;
   }
   div#navWrapper nav ul {
     -webkit-box-orient: horizontal;

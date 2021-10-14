@@ -5,10 +5,30 @@
   }
 }
 
+div#headerWrapper {
+  header {
+    div.slogan {
+      h1,
+      h2 {
+        margin: 1%;
+      }
+      h2 {
+        font-size: unset;
+      }
+    }
+    div.search-box {
+      margin-top: 0;
+      padding: 1% 2%;
+    }
+  }
+}
+
 div#navWrapper {
   nav ul {
     flex-direction: row;
     width: 50%;
-    li a {justify-content: center;}
+    li a {
+      justify-content: center;
+    }
   }
 }

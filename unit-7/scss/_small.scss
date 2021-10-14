@@ -15,9 +15,9 @@ body {
 // Header style
 div#headerWrapper {
   background-color: darken($secondaryColor, 0);
+  border-top: 0.5rem solid $primaryColor;
 
   header {
-    border-top: 0.5rem solid $primaryColor;
     div.slogan {
       color: white;
       h1,
@@ -94,34 +94,111 @@ div#mainWrapper {
   main {
     div.flexed {
       .lawyer-card {
-        max-width: 2% 0;
-
-        h2  {
-          font-size: 1rem;
+        margin: 3% 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2 {
+          font-size: 1.1rem;
           text-align: center;
-          padding: 1% 0;
+          background-color: $primaryColor;
+          color: white;
+          margin: 0;
+          padding: 1rem 0;
           width: 100%;
         }
+
         img {
           width: 100%;
           height: auto;
         }
 
         button {
+          border-style: none;
+          background-color: $secondaryColor;
+          color: white;
           width: 100%;
-        
+          height: 2rem;
+        }
+        button:hover {
+          background-color: $secondaryLight;
+          cursor: pointer;
         }
       }
 
       .cta button {
         width: 100%;
         height: 4rem;
+        margin: 2% 0;
+        border-style: none;
+        background-color: $primaryColor;
+        color: white;
+        font-size: 1.75rem;
+      }
+      .cta button:hover {
+        background-color: darken($primaryColor, 5%);
+        cursor: pointer;
       }
 
-      .blogpost-cards {
+      div.blogpost-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 2% 0;
         img {
           width: 100%;
           height: auto;
+        }
+        div.blog-text {
+          background-color: $primaryColor;
+          color: white;
+          padding: 0 2%;
+        }
+        button {
+          width: 100%;
+          height: 4rem;
+          border-style: none;
+          background-color: $secondaryColor;
+          color: white;
+        }
+        button:hover {
+          cursor: pointer;
+          background-color: $secondaryLight;
+        }
+      }
+
+      div.tip-of-day,
+      .faq {
+        div.inner:nth-child(1) {
+          margin-top: 0;
+        }
+        div.inner {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          background-color: $secondaryLight;
+          color: white;
+          margin: 2% 0;
+          div.inner-inner {
+            padding: 1% 2%;
+            margin: 2% 0;
+          }
+
+          button {
+            width: 100%;
+            background-color: $primaryColor;
+            color: white;
+            border-style: none;
+            height: 3rem;
+          }
+          button:hover {
+            cursor: pointer;
+            background-color: lighten($primaryColor, 10%);
+            color: darken(white, 10%);
+          }
         }
       }
     }
@@ -136,6 +213,7 @@ div#footerWrapper {
   footer {
     padding: 3% 2%;
     text-align: center;
+    margin-top: 1rem;
 
     .socials {
       width: 100%;
@@ -185,7 +263,6 @@ div.flexed {
   display: table;
   clear: both;
 }
-
 
 // div#mainWrapper {
 //   main {
