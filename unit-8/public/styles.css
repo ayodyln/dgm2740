@@ -450,16 +450,24 @@ body {
 }
 
 div#headerWrapper {
-  background-color: crimson;
+  background-color: grey;
   padding: 0.1% 0;
 }
 
+div#headerWrapper header {
+  width: 100%;
+}
+
 div#headerWrapper header div.logo {
-  background-color: cadetblue;
   height: 5rem;
   width: 5rem;
   border-radius: 10px;
   margin: 1% 1%;
+}
+
+div#headerWrapper header div.logo img {
+  width: 100%;
+  height: auto;
 }
 
 div#navWrapper {
@@ -519,6 +527,7 @@ div#mainWrapper main div.img-grid div.lead-img {
   -ms-grid-column-span: 2;
   grid-area: title;
   padding: 0.5rem 2vw;
+  cursor: pointer;
 }
 
 div#mainWrapper main div.img-grid div.lead-img img {
@@ -529,6 +538,7 @@ div#mainWrapper main div.img-grid div.lead-img img {
 div#mainWrapper main div.img-grid div.teaser-img {
   text-align: center;
   padding: 0.5rem 2vw;
+  cursor: pointer;
 }
 
 div#mainWrapper main div.img-grid div.teaser-img img {
@@ -536,8 +546,16 @@ div#mainWrapper main div.img-grid div.teaser-img img {
   height: auto;
 }
 
+div#mainWrapper main div.citation {
+  padding: 0 2vw;
+}
+
+div#mainWrapper main div.citation a {
+  color: black;
+}
+
 div#footerWrapper {
-  background-color: grey;
+  background-color: #4d4d4d;
   padding: 0.1% 0;
   margin-top: 2%;
 }
@@ -618,10 +636,7 @@ div#footerWrapper footer p a {
 }
 
 @media only screen and (min-width: 1028px) {
-  header,
-  nav,
-  main,
-  footer {
+  main {
     max-width: 80rem;
     margin: auto;
   }
