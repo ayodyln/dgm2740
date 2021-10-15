@@ -47,5 +47,12 @@ export const assignments = [
         url: 'unit-7/index.html',
         img: `unit-7/img/blog04.jpg`,
         discription: 'Created a custom frame work with SCSS, the site has a responsive 12 grid system.'
+    },
+    {
+        id: 8,
+        name: 'News Site',
+        url: 'unit-8/index.html',
+        img: `unit-8/img/newspaper.png`,
+        discription: `This site is a test site for building a grid using CSS. I'm now able to build a site quickly wiht just CSS Grid.` 
     }
 ]
