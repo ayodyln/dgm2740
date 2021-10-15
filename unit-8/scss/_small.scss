@@ -78,8 +78,16 @@ div#mainWrapper {
     div.img-grid {
       display: grid;
       grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      "title title"
+      "sub sub"
+      "bottom bottom";
+
       div.lead-img {
         text-align: center;
+        grid-area: title;
+        padding: .5rem 2vw;
         img {
           width: 100%;
           height: auto;
@@ -88,6 +96,7 @@ div#mainWrapper {
 
       div.teaser-img {
         text-align: center;
+        padding: .5rem 2vw;
         img {
           width: 100%;
           height: auto;
