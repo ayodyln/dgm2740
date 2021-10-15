@@ -21,3 +21,11 @@ div#mainWrapper {
     }
   }
 }
+
+div#footerWrapper {
+  footer {
+    div.footer-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}

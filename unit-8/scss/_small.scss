@@ -79,15 +79,15 @@ div#mainWrapper {
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: auto;
-      grid-template-areas: 
-      "title title"
-      "sub sub"
-      "bottom bottom";
+      grid-template-areas:
+        "title title"
+        "sub sub"
+        "bottom bottom";
 
       div.lead-img {
         text-align: center;
         grid-area: title;
-        padding: .5rem 2vw;
+        padding: 0.5rem 2vw;
         img {
           width: 100%;
           height: auto;
@@ -96,7 +96,7 @@ div#mainWrapper {
 
       div.teaser-img {
         text-align: center;
-        padding: .5rem 2vw;
+        padding: 0.5rem 2vw;
         img {
           width: 100%;
           height: auto;
@@ -114,6 +114,26 @@ div#footerWrapper {
   padding: 0.1% 0;
   margin-top: 2%;
   footer {
+    div.footer-grid {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr;
+
+      div.footer-divs {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 2vw;
+        color: white;
+        a {
+          color: white;
+          text-decoration: none;
+          cursor: pointer;
+          margin-bottom: 2%;
+        }
+      }
+    }
+
     p {
       color: white;
       text-align: center;
