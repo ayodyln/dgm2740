@@ -1,9 +1,21 @@
 footer {
-    position: absolute;
+  position: absolute;
 }
 
-main.content {
-    div.card {
-        max-width: 25rem;
+div#mainWrapper {
+    padding: 0 10%;
+  main.content {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+    div.class-card {
+      button {
+        display: none;
+      }
+      p {
+        display: initial;
+      }
+      div.upper-layer img {width: 100%;}
     }
+  }
 }

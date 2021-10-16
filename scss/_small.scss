@@ -1,11 +1,5 @@
 /* rules here will be applied to all sizes, medium and large will modify from that */
 
-/* Prevent adjustments of font size when orientation chagnes, iphones. */
-html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
 /* Apply a natural box layout model to all elements */
 * {
   -moz-box-sizing: border-box;
@@ -34,69 +28,125 @@ header {
 }
 
 //main
-main.content {
-  padding: 0.1rem 2%;
-  margin-bottom: 20vh;
+div#mainWrapper {
+  main.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 
-  div.card {
-    display: none;
-    figure img {
-      
-    }
-  }
-
-  div.surface {
-    width: 100%;
-    background-color: lighten($dark, 15%);
-    margin: 0.5rem 0;
-    border-radius: 1rem;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.1rem 2%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-
-    h3 {
-      color: white;
-    }
-
-    a {
-      color: white;
-      text-decoration: none;
-      cursor: pointer;
-
-      background-color: $mint;
-      border-radius: 2rem;
-      width: 5rem;
-      height: 2.5rem;
+    div.class-card {
       display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+      flex-direction: column;
+      background-color: darken($dark, 5%);
+      margin: 2%;
+      border-radius: 10px;
 
-    a:hover {
-      background-color: $dark;
-      color: lighten($mint, 10%);
+      p.assignment-info {
+        padding: 2%;
+      }
+      button {
+        border-style: none;
+        width: 100%;
+        background-color: lighten($dark, 10%);
+        border-radius: 0 0 10px 10px;
+        cursor: pointer;
+        color: $mint;
+      }
+      button:hover {
+        background-color: darken($dark, 10%);
+      }
+      div.upper-layer {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        padding: 0 2%;
+
+        img {display: none;}
+        
+        a.visit-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $mint;
+          text-decoration: none;
+          color: white;
+          margin: 10% 0;
+          border-radius: 5px;
+        }
+        a.visit-btn:hover {
+          background-color: darken($mint, 10%);
+        }
+      }
     }
   }
-
-  div.surface:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  .content:nth-child(1) {
+    margin-top: 1%;
   }
 }
 
+// main.content {
+//   padding: 0.1rem 2%;
+//   margin-bottom: 20vh;
+
+//   div.card {
+//     display: none;
+//     figure img {
+
+//     }
+//   }
+
+//   div.surface {
+//     width: 100%;
+//     background-color: lighten($dark, 15%);
+//     margin: 0.5rem 0;
+//     border-radius: 1rem;
+
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 0.1rem 2%;
+//     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+//     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+//     h3 {
+//       color: white;
+//     }
+
+//     a {
+//       color: white;
+//       text-decoration: none;
+//       cursor: pointer;
+
+//       background-color: $mint;
+//       border-radius: 2rem;
+//       width: 5rem;
+//       height: 2.5rem;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//     }
+
+//     a:hover {
+//       background-color: $dark;
+//       color: lighten($mint, 10%);
+//     }
+//   }
+
+//   div.surface:hover {
+//     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+//   }
+// }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // footer
 footer {
-  
   width: 100%;
   text-align: center;
   padding: 0.1rem 2%;
   color: white;
   background-color: $mint;
   margin-top: 1rem;
-  
 
   div.links {
     margin: 10px;
@@ -107,4 +157,11 @@ footer {
       text-decoration: none;
     }
   }
+}
+
+.hidden {
+  display: none;
+}
+.btn-open {
+  border-radius: 0px 0px 0px 0px;
 }
