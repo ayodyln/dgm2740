@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maxinum-scale=2.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
 
@@ -27,14 +30,40 @@
     </nav>
 
     <main>
-        <div class="hero-carosel">
-
+        <div class="slider">
+            <div>
+                <img src="img/web-imgs/skyline1-edit.jpg" alt="Slider">
+            </div>
+            <div>
+                <img src="img/web-imgs/skyline2-edit.jpg" alt="Slider">
+            </div>
+            <div>
+                <img src="img/web-imgs/skyline3-edit.jpg" alt="Slider">
+            </div>
+            <div>
+                <img src="img/web-imgs/skyline4-edit.jpg" alt="Slider">
+            </div>
         </div>
 
         <div class="plan-visit-div">
             <h1>Plan Your Visit</h1>
             <div class="cards">
-
+                <div class="card">
+                    <i class="fas fa-bed"></i>
+                    <h3>Places To Stay</h3>
+                </div>
+                <div class="card">
+                    <i class="fas fa-walking"></i>
+                    <h3>Walk The Red Line</h3>
+                </div>
+                <div class="card">
+                    <i class="fas fa-city"></i>
+                    <h3>Pass To The City</h3>
+                </div>
+                <div class="card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Find Dining</h3>
+                </div>
             </div>
         </div>
     </main>
@@ -48,7 +77,21 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 1000,
+                cssEase: 'ease-out',
+                autoplay: true,
+                autoplaySpeed: 30000
+
+            });
+        });
+    </script>
 </body>
 
 </html>
