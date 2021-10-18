@@ -1,0 +1,38 @@
+/* rules here will be applied to all sizes, medium and large will modify from that */
+
+/* Apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+//Body
+body {
+  font-family: $fontFamily;
+  overflow-x: hidden;
+}
+
+// Header Style
+
+// End of Header Style
+
+//  Nav Style
+
+
+// End of Nav Style
+
+// Main Style
+
+
+// End of Main Style
+
+// Footer Style
+
+// End of Footer Style
+
+// clear fix
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
