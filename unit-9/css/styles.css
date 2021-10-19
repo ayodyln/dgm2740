@@ -449,7 +449,14 @@ body {
   overflow-x: hidden;
 }
 
-header {
+div#headerWrapper {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 26, 35, 0.5)), to(rgba(12, 26, 35, 0.5))), url("../img/mobile-imgs/header-mobile.jpg");
+  background: linear-gradient(rgba(12, 26, 35, 0.5), rgba(12, 26, 35, 0.5)), url("../img/mobile-imgs/header-mobile.jpg");
+  width: 100%;
+  height: 90px;
+}
+
+div#headerWrapper header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,14 +467,14 @@ header {
   padding: 2% 2%;
 }
 
-header h1,
-header h2 {
-  color: #0c1a23;
+div#headerWrapper header h1,
+div#headerWrapper header h2 {
+  color: white;
   padding: 0;
   margin: 0;
 }
 
-header img {
+div#headerWrapper header img {
   position: absolute;
   left: 0;
   top: 0;
@@ -511,15 +518,202 @@ div#navWrapper nav ul.hide {
   display: none;
 }
 
+main div.single-item picture {
+  position: relative;
+}
+
 main div.single-item picture img {
   width: 100%;
   height: auto;
+}
+
+main div.single-item picture div {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+  padding: 2%;
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+
+main div.plan-visit-div div.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main div.plan-visit-div div.cards div.card-0 {
+  background-color: #0c1a23;
+  background-image: url("../img/mobile-imgs/card0.jpg");
+  background-repeat: no-repeat;
+  margin: 1%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+main div.plan-visit-div div.cards div.card-0 a {
+  display: block;
+  width: 100%;
+  height: 300px;
+  text-decoration: none;
+  color: white;
+  padding: 0 2%;
+}
+
+main div.plan-visit-div div.cards div.card-0 a:hover {
+  background: none;
+  text-shadow: 0 0 4px black;
+}
+
+main div.plan-visit-div div.cards div.card-1 {
+  background-color: #0c1a23;
+  background-image: url("../img/mobile-imgs/card1.jpg");
+  background-repeat: no-repeat;
+  margin: 1%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+main div.plan-visit-div div.cards div.card-1 a {
+  display: block;
+  width: 100%;
+  height: 300px;
+  text-decoration: none;
+  color: white;
+  padding: 0 2%;
+}
+
+main div.plan-visit-div div.cards div.card-1 a:hover {
+  background: none;
+  text-shadow: 0 0 4px black;
+}
+
+main div.plan-visit-div div.cards div.card-2 {
+  background-color: #0c1a23;
+  background-image: url("../img/mobile-imgs/card2.jpg");
+  background-repeat: no-repeat;
+  margin: 1%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+main div.plan-visit-div div.cards div.card-2 a {
+  display: block;
+  width: 100%;
+  height: 300px;
+  text-decoration: none;
+  color: white;
+  padding: 0 2%;
+}
+
+main div.plan-visit-div div.cards div.card-2 a:hover {
+  background: none;
+  text-shadow: 0 0 4px black;
+}
+
+main div.plan-visit-div div.cards div.card-3 {
+  background-color: #0c1a23;
+  background-image: url("../img/mobile-imgs/card3.jpg");
+  background-repeat: no-repeat;
+  margin: 1%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+main div.plan-visit-div div.cards div.card-3 a {
+  display: block;
+  width: 100%;
+  height: 300px;
+  text-decoration: none;
+  color: white;
+  padding: 0 2%;
+}
+
+main div.plan-visit-div div.cards div.card-3 a:hover {
+  background: none;
+  text-shadow: 0 0 4px black;
+}
+
+main div.plan-visit-div div.cards div.card-4 {
+  background-color: #0c1a23;
+  background-image: url("../img/mobile-imgs/card4.jpg");
+  background-repeat: no-repeat;
+  margin: 1%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+main div.plan-visit-div div.cards div.card-4 a {
+  display: block;
+  width: 100%;
+  height: 300px;
+  text-decoration: none;
+  color: white;
+  padding: 0 2%;
+}
+
+main div.plan-visit-div div.cards div.card-4 a:hover {
+  background: none;
+  text-shadow: 0 0 4px black;
+}
+
+main div.plan-visit-div div.cards div.card-1 a {
+  background-color: red;
+}
+
+main div.plan-visit-div div.cards div.card-2 a {
+  background-color: blue;
+}
+
+main div.plan-visit-div div.cards div.card-3 a {
+  background-color: grey;
+}
+
+main div.plan-visit-div div.cards div.card-4 a {
+  background-color: green;
+}
+
+div#footerWrapper {
+  margin-top: 2%;
+  background-color: #0c1a23;
+  padding: 2%;
+  text-align: center;
+  color: white;
+}
+
+div#footerWrapper a {
+  color: white;
 }
 
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
+}
+
+@media only screen and (min-width: 560px) {
+  main div.plan-visit-div div.cards div.card-0 {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  main div.plan-visit-div div.cards div.card-1 {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  main div.plan-visit-div div.cards div.card-2 {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  main div.plan-visit-div div.cards div.card-3 {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  main div.plan-visit-div div.cards div.card-4 {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
 }
 
 @media only screen and (min-width: 1028px) {
@@ -529,5 +723,25 @@ main div.single-item picture img {
   footer {
     max-width: 64rem;
     margin: auto;
+  }
+  main div.plan-visit-div div.cards div.card-0 {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+  }
+  main div.plan-visit-div div.cards div.card-1 {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+  }
+  main div.plan-visit-div div.cards div.card-2 {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+  }
+  main div.plan-visit-div div.cards div.card-3 {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+  }
+  main div.plan-visit-div div.cards div.card-4 {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
   }
 }

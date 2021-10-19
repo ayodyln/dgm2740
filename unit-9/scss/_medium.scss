@@ -1,0 +1,11 @@
+main {
+    div.plan-visit-div {
+        div.cards {
+            @for $e from 0 through 4 {
+                div.card-#{$e} {
+                    flex-basis: 48%;
+                }
+            }
+        }
+    }
+}

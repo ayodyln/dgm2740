@@ -13,24 +13,33 @@ body {
 }
 
 // Header Style
-header {
-  display: flex;
-  flex-direction: column;
-  padding: 2% 2%;
-  h1,
-  h2 {
-    color: $secondaryColor;
-    padding: 0;
-    margin: 0;
-  }
-  img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    opacity: 0.4;
-    z-index: -1;
+div#headerWrapper {
+  background: linear-gradient(
+      rgba($secondaryColor, 0.5),
+      rgba($secondaryColor, 0.5)
+    ),
+    url("../img/mobile-imgs/header-mobile.jpg");
+  width: 100%;
+  height: 90px;
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 2%;
+    h1,
+    h2 {
+      color: white;
+      padding: 0;
+      margin: 0;
+    }
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: auto;
+      opacity: 0.4;
+      z-index: -1;
+    }
   }
 }
 
@@ -76,9 +85,67 @@ div#navWrapper {
 // Main Style
 main {
   div.single-item {
-    picture img {
-      width: 100%;
-      height: auto;
+    picture {
+      position: relative;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      
+      div {
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.9)
+        );
+        padding: 2%;
+        position: absolute;
+        bottom: 0;
+        color: white;
+      }
+    }
+  }
+
+  div.plan-visit-div {
+    h1 {
+    }
+    div.cards {
+      display: flex;
+      flex-wrap: wrap;
+      @for $i from 0 through 4 {
+        div.card-#{$i} {
+          background-color: $secondaryColor;
+          background-image: url("../img/mobile-imgs/card#{$i}.jpg");
+          background-repeat: no-repeat;
+          margin: 1%;
+          flex-basis: 100%;
+          a {
+            display: block;
+            width: 100%;
+            height: 300px;
+            text-decoration: none;
+            color: white;
+            padding: 0 2%;
+          }
+          a:hover {
+            background: none;
+            text-shadow: 0 0 4px black;
+          }
+        }
+      }
+
+      div.card-1 a {
+        background-color: red;
+      }
+      div.card-2 a {
+        background-color: blue;
+      }
+      div.card-3 a {
+        background-color: grey;
+      }
+      div.card-4 a {
+        background-color: green;
+      }
     }
   }
 }
@@ -86,7 +153,16 @@ main {
 // End of Main Style
 
 // Footer Style
-
+div#footerWrapper {
+  margin-top: 2%;
+  background-color: $secondaryColor;
+  padding: 2%;
+  text-align: center;
+  color: white;
+  a {
+    color: white;
+  }
+}
 // End of Footer Style
 
 // clear fix

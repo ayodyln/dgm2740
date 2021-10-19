@@ -14,11 +14,12 @@
 </head>
 
 <body>
-    <header>
-        <h1>Boston City</h1>
-        <h2>Where History Comes Alive</h2>
-        <img src="img/header-img-original.jpg" alt="header img" height="1600" width="500">
-    </header>
+    <div id="headerWrapper">
+        <header>
+            <h1>Boston City</h1>
+            <h2>Where History Comes Alive</h2>
+        </header>
+    </div>
 
     <div id="navWrapper">
         <nav>
@@ -37,56 +38,74 @@
     <main>
         <div class="single-item">
             <picture>
-                <source media="(max-width: 320px)" srcset="img/mobile-imgs/skyline1-mobile.jpg">
-                <source media="(min-width: 321px)" srcset="img/web-imgs/skyline1-edit.jpg">
-                <img src="img/originals/skyline1.jpg" alt="Alt" class="lazy">
+                <source media="(max-width: 320px)" srcset="img/mobile-imgs/skyline1.jpg">
+                <source media="(max-width: 560px)" srcset="img/tablet-imgs/skyline1.jpg">
+                <source media="(min-width: 1024px)" srcset="img/desktop-imgs/skyline1.jpg">
+                <img src="img/originals/skyline1.jpg" alt="og example">
+                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque earum debitis facere dicta.</div>
             </picture>
             <picture>
-                <source media="(max-width: 320px)" srcset="img/mobile-imgs/skyline2-mobile.jpg">
-                <source media="(min-width: 321px)" srcset="img/web-imgs/skyline2-edit.jpg">
-                <img src="img/originals/skyline2.jpg" alt="Alt" class="lazy">
+                <source media="(max-width: 320px)" srcset="img/mobile-imgs/skyline2.jpg">
+                <source media="(max-width: 560px)" srcset="img/tablet-imgs/skyline2.jpg">
+                <source media="(min-width: 1024px)" srcset="img/desktop-imgs/skyline2.jpg">
+                <img src="img/originals/skyline2.jpg" alt="og example">
+                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque earum debitis facere dicta.</div>
             </picture>
             <picture>
-                <source media="(max-width: 320px)" srcset="img/mobile-imgs/skyline3-mobile.jpg">
-                <source media="(min-width: 321px)" srcset="img/web-imgs/skyline3-edit.jpg">
-                <img src="img/originals/skyline3.jpg" alt="Alt" class="lazy">
+                <source media="(max-width: 320px)" srcset="img/mobile-imgs/skyline3.jpg">
+                <source media="(max-width: 560px)" srcset="img/tablet-imgs/skyline3.jpg">
+                <source media="(min-width: 1024px)" srcset="img/desktop-imgs/skyline3.jpg">
+                <img src="img/originals/skyline3.jpg" alt="og example">
+                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque earum debitis facere dicta.</div>
             </picture>
             <picture>
-                <source media="(max-width: 320px)" srcset="img/mobile-imgs/skyline4-mobile.jpg">
-                <source media="(min-width: 321px)" srcset="img/web-imgs/skyline4-edit.jpg">
-                <img src="img/originals/skyline4.jpg" alt="Alt" class="lazy">
+                <source media="(max-width: 320px)" srcset="img/mobile-imgs/skyline4.jpg">
+                <source media="(max-width: 560px)" srcset="img/tablet-imgs/skyline4.jpg">
+                <source media="(min-width: 1024px)" srcset="img/desktop-imgs/skyline4.jpg">
+                <img src="img/originals/skyline4.jpg" alt="og example">
+                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque earum debitis facere dicta.</div>
             </picture>
         </div>
 
         <div class="plan-visit-div">
             <h1>Plan Your Visit</h1>
             <div class="cards">
-                <div class="card">
-                    <i class="fas fa-bed"></i>
-                    <h3>Places To Stay</h3>
+                <div class="card-1" >
+                    <a href="#">
+                        <i class="fas fa-bed"></i>
+                        <h3>Places To Stay</h3>
+                    </a>
                 </div>
-                <div class="card">
-                    <i class="fas fa-walking"></i>
-                    <h3>Walk The Red Line</h3>
+                <div class="card-2">
+                    <a href="#">
+                        <i class="fas fa-walking"></i>
+                        <h3>Walk The Red Line</h3>
+                    </a>
                 </div>
-                <div class="card">
-                    <i class="fas fa-city"></i>
-                    <h3>Pass To The City</h3>
+                <div class="card-3">
+                    <a href="#">
+                        <i class="fas fa-city"></i>
+                        <h3>Pass To The City</h3>
+                    </a>
                 </div>
-                <div class="card">
-                    <i class="fas fa-utensils"></i>
-                    <h3>Find Dining</h3>
+                <div class="card-4">
+                    <a href="#">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Find Dining</h3>
+                    </a>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer>
-        <p>
-            &copy; 2021 &bullet; Dylan Smith &bull; Login &bull;
-            <a href="../index.html">Assignment Page</a>
-        </p>
-    </footer>
+    <div id="footerWrapper">
+        <footer>
+            <p>
+                &copy; 2021 &bullet; Dylan Smith &bull; Login &bull;
+                <a href="../index.html">Assignment Page</a>
+            </p>
+        </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>

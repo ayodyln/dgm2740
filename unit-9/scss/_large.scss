@@ -5,3 +5,15 @@ footer {
   max-width: 64rem;
   margin: auto;
 }
+
+main {
+  div.plan-visit-div {
+    div.cards {
+      @for $z from 0 through 4 {
+        div.card-#{$z} {
+          flex-basis: 23%;
+        }
+      }
+    }
+  }
+}
