@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
     <title>Document</title>
 </head>
 
@@ -30,7 +31,7 @@
     </nav>
 
     <main>
-        <div class="slider">
+        <div class="single-item">
             <div>
                 <img src="img/web-imgs/skyline1-edit.jpg" alt="Slider">
             </div>
@@ -74,23 +75,17 @@
             <a href="../index.html">Assignment Page</a>
         </p>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    </script>
     <script>
         $(document).ready(function () {
-            $('.slider').slick({
+            $('.single-item').slick({
                 dots: true,
-                arrows: false,
-                infinite: true,
-                speed: 1000,
-                cssEase: 'ease-out',
-                autoplay: true,
-                autoplaySpeed: 30000
-
+                arrows: false
             });
-        });
+        })
     </script>
 </body>
 

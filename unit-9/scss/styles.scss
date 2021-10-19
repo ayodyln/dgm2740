@@ -2,8 +2,9 @@
 @import "variables";
 @import "small";
 
-@import "../slick/slick-theme";
+// imports not working? only header css links.
 @import "../slick/slick";
+@import "../slick/slick-theme";
 
 @media only screen and (min-width: 560px) {
   @import "medium";
