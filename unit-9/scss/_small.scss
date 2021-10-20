@@ -151,7 +151,9 @@ main {
           a:hover {
             background: none;
             text-shadow: 0 0 4px black;
+            scroll-behavior: none;
           }
+          
         }
       }
 
