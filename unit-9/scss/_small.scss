@@ -24,7 +24,9 @@ div#headerWrapper {
   header {
     display: flex;
     flex-direction: column;
-    padding: 2% 2%;
+    justify-content: center;
+    height: 100%;
+    padding: 0 2%;
     h1,
     h2 {
       color: white;
@@ -69,6 +71,7 @@ div#navWrapper {
         text-decoration: none;
         color: white;
         border-top: solid 1px rgba(0, 0, 0, 0.2);
+        
       }
       li a.top {
         border-top: none;
@@ -80,9 +83,6 @@ div#navWrapper {
       li:hover {
         background-color: lighten($primaryColor, 10%);
       }
-    }
-    ul.hide {
-      display: none;
     }
   }
 }
@@ -115,6 +115,7 @@ main {
 
   div.plan-visit-div {
     h1 {
+      padding: 2%;
     }
     div.cards {
       display: flex;
@@ -124,6 +125,7 @@ main {
           background-color: $secondaryColor;
           background-image: url("../img/mobile-imgs/card#{$i}.jpg");
           background-repeat: no-repeat;
+          background-position: center;
           margin: 1%;
           flex-basis: 100%;
           a {
@@ -142,6 +144,7 @@ main {
               flex-direction: column;
               height: 100%;
               font-size: 2rem;
+              width: 100%;
             }
           }
           a:hover {
@@ -187,4 +190,7 @@ div#footerWrapper {
   content: "";
   display: table;
   clear: both;
+}
+.hide {
+  display: none;
 }
