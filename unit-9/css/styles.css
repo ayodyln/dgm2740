@@ -514,6 +514,14 @@ div#navWrapper nav ul li a.top {
   border-top: none;
 }
 
+div#navWrapper nav ul li.active {
+  background-color: #d32c16;
+}
+
+div#navWrapper nav ul li:hover {
+  background-color: #ef7160;
+}
+
 div#navWrapper nav ul.hide {
   display: none;
 }
@@ -560,6 +568,25 @@ main div.plan-visit-div div.cards div.card-0 a {
   text-decoration: none;
   color: white;
   padding: 0 2%;
+  text-align: center;
+}
+
+main div.plan-visit-div div.cards div.card-0 a div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  font-size: 2rem;
 }
 
 main div.plan-visit-div div.cards div.card-0 a:hover {
@@ -583,6 +610,25 @@ main div.plan-visit-div div.cards div.card-1 a {
   text-decoration: none;
   color: white;
   padding: 0 2%;
+  text-align: center;
+}
+
+main div.plan-visit-div div.cards div.card-1 a div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  font-size: 2rem;
 }
 
 main div.plan-visit-div div.cards div.card-1 a:hover {
@@ -606,6 +652,25 @@ main div.plan-visit-div div.cards div.card-2 a {
   text-decoration: none;
   color: white;
   padding: 0 2%;
+  text-align: center;
+}
+
+main div.plan-visit-div div.cards div.card-2 a div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  font-size: 2rem;
 }
 
 main div.plan-visit-div div.cards div.card-2 a:hover {
@@ -629,6 +694,25 @@ main div.plan-visit-div div.cards div.card-3 a {
   text-decoration: none;
   color: white;
   padding: 0 2%;
+  text-align: center;
+}
+
+main div.plan-visit-div div.cards div.card-3 a div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  font-size: 2rem;
 }
 
 main div.plan-visit-div div.cards div.card-3 a:hover {
@@ -652,6 +736,25 @@ main div.plan-visit-div div.cards div.card-4 a {
   text-decoration: none;
   color: white;
   padding: 0 2%;
+  text-align: center;
+}
+
+main div.plan-visit-div div.cards div.card-4 a div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  font-size: 2rem;
 }
 
 main div.plan-visit-div div.cards div.card-4 a:hover {

@@ -73,6 +73,13 @@ div#navWrapper {
       li a.top {
         border-top: none;
       }
+
+      li.active {
+        background-color: darken($primaryColor, 10%);
+      }
+      li:hover {
+        background-color: lighten($primaryColor, 10%);
+      }
     }
     ul.hide {
       display: none;
@@ -91,7 +98,7 @@ main {
         width: 100%;
         height: auto;
       }
-      
+
       div {
         background: linear-gradient(
           180deg,
@@ -126,6 +133,16 @@ main {
             text-decoration: none;
             color: white;
             padding: 0 2%;
+            text-align: center;
+
+            div {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              height: 100%;
+              font-size: 2rem;
+            }
           }
           a:hover {
             background: none;
