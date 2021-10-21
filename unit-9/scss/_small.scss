@@ -71,7 +71,6 @@ div#navWrapper {
         text-decoration: none;
         color: white;
         border-top: solid 1px rgba(0, 0, 0, 0.2);
-        
       }
       li a.top {
         border-top: none;
@@ -92,24 +91,26 @@ div#navWrapper {
 // Main Style
 main {
   div.single-item {
-    picture {
-      position: relative;
-      img {
-        width: 100%;
-        height: auto;
-      }
+    div {
+      picture {
+        position: relative;
+        img {
+          width: 100%;
+          height: auto;
+        }
 
-      div {
-        background: linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0.9)
-        );
-        padding: 2%;
-        position: absolute;
-        bottom: 0;
-        color: white;
-        width: 100%;
+        div {
+          background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.9)
+          );
+          padding: 2%;
+          position: absolute;
+          bottom: 0;
+          color: white;
+          width: 100%;
+        }
       }
     }
   }
@@ -151,9 +152,8 @@ main {
           a:hover {
             background: none;
             text-shadow: 0 0 4px black;
-            scroll-behavior: none;
+            
           }
-          
         }
       }
 

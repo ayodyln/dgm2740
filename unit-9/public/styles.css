@@ -526,16 +526,16 @@ div#navWrapper nav ul li:hover {
   background-color: #ef7160;
 }
 
-main div.single-item picture {
+main div.single-item div picture {
   position: relative;
 }
 
-main div.single-item picture img {
+main div.single-item div picture img {
   width: 100%;
   height: auto;
 }
 
-main div.single-item picture div {
+main div.single-item div picture div {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.9)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
   padding: 2%;
@@ -599,7 +599,6 @@ main div.plan-visit-div div.cards div.card-0 a div {
 main div.plan-visit-div div.cards div.card-0 a:hover {
   background: none;
   text-shadow: 0 0 4px black;
-  scroll-behavior: none;
 }
 
 main div.plan-visit-div div.cards div.card-1 {
@@ -644,7 +643,6 @@ main div.plan-visit-div div.cards div.card-1 a div {
 main div.plan-visit-div div.cards div.card-1 a:hover {
   background: none;
   text-shadow: 0 0 4px black;
-  scroll-behavior: none;
 }
 
 main div.plan-visit-div div.cards div.card-2 {
@@ -689,7 +687,6 @@ main div.plan-visit-div div.cards div.card-2 a div {
 main div.plan-visit-div div.cards div.card-2 a:hover {
   background: none;
   text-shadow: 0 0 4px black;
-  scroll-behavior: none;
 }
 
 main div.plan-visit-div div.cards div.card-3 {
@@ -734,7 +731,6 @@ main div.plan-visit-div div.cards div.card-3 a div {
 main div.plan-visit-div div.cards div.card-3 a:hover {
   background: none;
   text-shadow: 0 0 4px black;
-  scroll-behavior: none;
 }
 
 main div.plan-visit-div div.cards div.card-4 {
@@ -779,7 +775,6 @@ main div.plan-visit-div div.cards div.card-4 a div {
 main div.plan-visit-div div.cards div.card-4 a:hover {
   background: none;
   text-shadow: 0 0 4px black;
-  scroll-behavior: none;
 }
 
 main div.plan-visit-div div.cards div.card-1 a {
