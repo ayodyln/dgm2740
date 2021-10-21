@@ -55,4 +55,11 @@ export const assignments = [
     img: `unit-8/img/newspaper.png`,
     discription: `This site is a test site for building a grid using CSS. I'm now able to build a site quickly wiht just CSS Grid.`,
   },
+  {
+    id: 9,
+    name: 'Boston City',
+    url: "unit-9/index.html",
+    img: `unit-9/img/tablet-imgs/skyline1.jpg`,
+    discription: `This assignment was about introducing us into using Jquery on websites. Having no knowledge of Jquery made this a bit confusing, but after some research I now have the basics down for Jquery. Even with little on this site as an example.`
+  }
 ];
