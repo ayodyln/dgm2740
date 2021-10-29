@@ -9,13 +9,9 @@ btn.addEventListener("click", () => {
   document.querySelector(".ul-nav").classList.toggle("hidden");
 });
 
-(function mouseHover() {
-  if (document.querySelector(".sub-ul").classList.contains("hidden")) {
-    subNav.addEventListener("mouseover", () => {
-      document.querySelector(".sub-ul").classList.toggle("hidden");
-    });
-    subNav.addEventListener("mouseleave", () => {
-      document.querySelector(".sub-ul").classList.add("hidden");
-    });
-  }
-})();
+subNav.addEventListener("mouseover", () => {
+  document.querySelector(".sub-ul").classList.remove("hidden");
+});
+subNav.addEventListener("mouseleave", () => {
+  document.querySelector(".sub-ul").classList.add("hidden");
+});
