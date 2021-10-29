@@ -87,7 +87,7 @@ div#navWrapper {
           padding: 0;
           margin: 0;
           padding: 2%;
-          
+
           li {
             border-bottom: none;
             border-top: solid 1px rgba(0, 0, 0, 0.2);
@@ -111,6 +111,23 @@ div#mainWrapper {
   color: rgba(0, 0, 0, 0.9);
   main {
     padding: 0 2%;
+
+    div.thanks {
+      width: 100%;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .lottie {
+        width: 100%;
+        height: auto;
+      }
+
+      p {
+        
+      }
+    }
 
     form {
       fieldset {
@@ -185,10 +202,9 @@ div#mainWrapper {
 //* Footer
 div#footerWrapper {
   width: 100%;
-
+  background-color: #27aae1;
   footer {
     text-align: center;
-    background-color: #27aae1;
     padding: 1% 0;
     color: whitesmoke;
     margin-top: 5%;
