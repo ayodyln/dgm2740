@@ -57,9 +57,16 @@ export const assignments = [
   },
   {
     id: 9,
-    name: 'Boston City',
+    name: "Boston City",
     url: "unit-9/index.html",
     img: `unit-9/img/tablet-imgs/skyline1.jpg`,
-    discription: `This assignment was about introducing us into using Jquery on websites. Having no knowledge of Jquery made this a bit confusing, but after some research I now have the basics down for Jquery. Even with little on this site as an example.`
-  }
+    discription: `This assignment was about introducing us into using Jquery on websites. Having no knowledge of Jquery made this a bit confusing, but after some research I now have the basics down for Jquery. Even with little on this site as an example.`,
+  },
+  {
+    id: 10,
+    name: `Swag Shop`,
+    url: "unit-10/index.html",
+    img: `unit-7/img/blog04.jpg`,
+    discription: `This assignment was about proper form practices.`,
+  },
 ];
