@@ -569,6 +569,7 @@ div#mainWrapper main {
 }
 
 div#mainWrapper main div.thanks {
+  margin: 5rem 0;
   width: 100%;
   height: 60vh;
   display: -webkit-box;
