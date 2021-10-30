@@ -1,12 +1,16 @@
 const btn = document.getElementById("hamburgerBtn");
+const ulNav = document.querySelector(".ul-nav");
 const subNav = document.querySelector(".sub-nav");
 
-btn.addEventListener("click", () => {
-  console.log("Nav toggled!");
 
-  document.querySelector(".ui-span1").classList.toggle("hidden");
-  document.querySelector(".ui-span2").classList.toggle("hidden");
-  document.querySelector(".ul-nav").classList.toggle("hidden");
+btn.addEventListener("click", () => {
+  console.log("Mobile nav toggled: ✔️");
+
+  btn.classList.toggle("open");
+  ulNav.classList.toggle("hidden");
+
+  document.querySelector('.openText').classList.toggle('hidden')
+  document.querySelector('.closeText').classList.toggle('hidden')
 });
 
 subNav.addEventListener("mouseover", () => {

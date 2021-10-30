@@ -20,17 +20,16 @@
     <div id="navWrapper">
         <nav class="clearFix">
             <button id="hamburgerBtn">
-                <span class="ui-span1">
-                    <div><span class="ui-el">&equiv;</span> Open</div>
-                </span>
-                <span class="ui-span2 hidden">
-                    <div><span class="ui-el">&#10006;</span> Close</div>
-                </span>
+                <span class="line top"></span>
+                <span class="line middle"></span>
+                <span class="line bottom"></span>
+                <h3 class="text openText">Open</h3>
+                <h3 class="text closeText hidden">Close</h3>
             </button>
 
             <ul class="ul-nav hidden">
                 <li><a href="#">Home</a></li>
-                <li class="sub-nav"><a href="#">Products <span class="sub-navSpan">&#9660;</span></a>
+                <li class="sub-nav"><a href="#">Products  <span class="sub-navSpan">&#9660;</span></a>
                     <ul class="sub-ul hidden">
                         <li><a href="#">Water Bottles</a></li>
                         <li><a href="#">Hats</a></li>
@@ -62,8 +61,7 @@
                     <legend>Swag Information</legend>
                     <label class="top">Date Needed<i>*</i> <input type="date" name="date" required></label>
                     <label class="top">Buisness Name<i>*</i> <input type="text" name="buisness" required></label>
-                    <label class="top">Buisness URL <input type="url" name="url" placeholder="https://"
-                            ></label>
+                    <label class="top">Buisness URL <input type="url" name="url" placeholder="https://"></label>
                     <label class="top color-picker">Color<i>*</i>
                         <select name="color">
                             <option value="">Please Selecct Color</option>
