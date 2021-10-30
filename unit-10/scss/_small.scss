@@ -232,10 +232,10 @@ div#mainWrapper {
           0 6px 6px rgba(0, 0, 0, 0.23);
       }
 
-      label.top input:required {
+      label.top input:required, .selectColor:required {
         border-left: rgb(218, 42, 42) solid 6px;
       }
-      label.top input:required:valid {
+      label.top input:required:valid, .selectColor:required:valid {
         border-left: #27aae1 solid 6px;
       }
     }

@@ -705,11 +705,11 @@ div#mainWrapper main form input.submitBtn:hover {
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-div#mainWrapper main form label.top input:required {
+div#mainWrapper main form label.top input:required, div#mainWrapper main form .selectColor:required {
   border-left: #da2a2a solid 6px;
 }
 
-div#mainWrapper main form label.top input:required:valid {
+div#mainWrapper main form label.top input:required:valid, div#mainWrapper main form .selectColor:required:valid {
   border-left: #27aae1 solid 6px;
 }
 
