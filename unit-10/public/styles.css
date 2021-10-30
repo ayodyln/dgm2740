@@ -529,7 +529,7 @@ div#navWrapper nav button .bottom {
   top: 67%;
 }
 
-div#navWrapper nav button h3.text {
+div#navWrapper nav button span.text {
   margin: 0;
   color: white;
   position: relative;
