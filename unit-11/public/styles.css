@@ -624,11 +624,52 @@ div#hamburger a.myjump {
 }
 
 @media only screen and (min-width: 1028px) {
-  header,
-  nav,
-  main,
-  footer {
+  #pageWrapper {
     max-width: 64rem;
     margin: auto;
+        grid-template-areas: "header" "nav" "main" "footer";
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+  }
+  nav {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: nav;
+    width: 100%;
+  }
+  nav ul {
+    -ms-flex-wrap: unset;
+        flex-wrap: unset;
+  }
+  nav ul li {
+    -ms-flex-preferred-size: unset;
+        flex-basis: unset;
+    margin-right: 5px;
+  }
+  nav ul li a {
+    text-align: left;
+    padding: 0.75rem 0.5rem;
+    font-size: 1.1rem;
+  }
+  nav a.myjump {
+    display: none;
+  }
+  main {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: main;
+  }
+  main div img {
+    width: 33%;
+  }
+  footer {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: footer;
   }
 }
