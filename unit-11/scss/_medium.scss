@@ -1,6 +1,56 @@
 #pageWrapper {
-    grid-template-areas: 
+  grid-template-areas:
     "header header"
     "nav content"
     "footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+  height: auto;
+  width: 25vw;
+
+  ul {
+    li {
+      a {
+        text-align: left;
+        padding: 0.75rem 0.5rem;
+      }
+    }
+  }
+  a.myjump {
+    display: none;
+  }
+}
+
+main {
+  grid-area: content;
+
+  div.div1 img {
+    float: right;
+    width: 35%;
+  }
+
+  div.div2 img {
+    float: left;
+    width: 35%;
+  }
+
+  div.div3 img {
+    float: right;
+    width: 35%;
+  }
+}
+
+footer {
+  grid-area: footer;
+  margin: 0;
+}
+
+#hamburger {
+  display: none;
 }
