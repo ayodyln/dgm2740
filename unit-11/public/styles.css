@@ -452,9 +452,89 @@ body {
 #pageWrapper {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "hamburger" "header" "content" "footer" "nav";
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
+      grid-template-areas: "hamburger" "header" "main" "footer" "nav";
+}
+
+header div.img {
+  width: 44px;
+  height: 44px;
+  background-color: blue;
+}
+
+nav {
+  background-color: grey;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  height: 100vh;
+}
+
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+nav ul li a {
+  display: block;
+  background-color: honeydew;
+  color: black;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #000;
+}
+
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+main div.div img {
+  width: 100%;
+  height: auto;
+}
+
+div#hamburger {
+  background-color: #feff98;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hamburger;
+}
+
+div#hamburger a.myjump {
+  display: block;
+  width: 60px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.7rem;
+  padding: 0.4rem;
+  text-decoration: none;
+  padding-left: 2%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden {
+  display: none;
 }
 
 @media only screen and (min-width: 560px) {
