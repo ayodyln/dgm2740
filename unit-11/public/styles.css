@@ -455,18 +455,36 @@ body {
       grid-template-areas: "hamburger" "header" "main" "footer" "nav";
 }
 
+header {
+  background-color: #d9d9d9;
+}
+
 header div.img {
-  width: 44px;
-  height: 44px;
-  background-color: blue;
+  font-size: 36px;
+  margin: 0 0.5rem;
+  margin-top: 0.5rem;
+}
+
+header div.img img {
+  width: 5rem;
 }
 
 nav {
-  background-color: grey;
+  background-color: #262262;
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: nav;
   height: 100vh;
+}
+
+nav a.myjump {
+  display: block;
+  width: 60px;
+  color: white;
+  font-size: 1.7rem;
+  padding: 0.4rem;
+  text-decoration: none;
+  padding-left: 2%;
 }
 
 nav ul {
@@ -487,8 +505,7 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  background-color: honeydew;
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 0.9rem;
   text-align: center;
@@ -497,7 +514,7 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.4);
-  color: #000;
+  color: whitesmoke;
 }
 
 nav ul li.active a {
@@ -505,13 +522,29 @@ nav ul li.active a {
   color: #fff;
 }
 
+main {
+  padding: 0 0.5rem;
+}
+
 main div.div img {
   width: 100%;
   height: auto;
 }
 
+footer {
+  text-align: center;
+  padding: 1% 0;
+  color: white;
+  margin-top: 5%;
+  background-color: #17153c;
+}
+
+footer a {
+  color: whitesmoke;
+}
+
 div#hamburger {
-  background-color: #feff98;
+  background-color: #262262;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: hamburger;
@@ -520,7 +553,7 @@ div#hamburger {
 div#hamburger a.myjump {
   display: block;
   width: 60px;
-  color: rgba(0, 0, 0, 0.7);
+  color: white;
   font-size: 1.7rem;
   padding: 0.4rem;
   text-decoration: none;
