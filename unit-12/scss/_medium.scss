@@ -1,0 +1,11 @@
+main {
+  margin-bottom: 85px;
+  div#cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+
+    div {
+      margin: 0;
+    }
+  }
+}

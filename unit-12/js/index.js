@@ -33,8 +33,8 @@ function cardImg(data) {
   let cardImgFigcap = document.createElement("figcaption");
   let cardFigure = document.createElement("figure");
 
-  cardImg.setAttribute("width", "1600")
-  cardImg.setAttribute("height", "500")
+  cardImg.setAttribute("width", "1600");
+  cardImg.setAttribute("height", "500");
 
   cardImg.src = data.photo;
   cardImgFigcap.textContent = data.name;
@@ -48,7 +48,8 @@ function cardInfo(data) {
   //*Card Address Info
   let addressStreet = document.createElement("p");
   let addressStateZip = document.createElement("p");
-  let addressIcon = document.createElement("p");
+  let addressInfoContainer = document.createElement("div");
+  let addressIcon = document.createElement("i");
 
   addressIcon.className = "icon ion-md-compass";
 
@@ -64,15 +65,19 @@ function cardInfo(data) {
 
   contactNum.textContent = data.phone;
 
-  //?Appending el
+  //?Creating Parent containers and giving classname
   let addressDiv = document.createElement("div");
+  addressDiv.className = "addressDiv";
   let contactDiv = document.createElement("div");
+  contactDiv.className = "contactDiv";
   let cardInfoSection = document.createElement("section");
 
   //!Appending El
+  addressInfoContainer.appendChild(addressStreet);
+  addressInfoContainer.appendChild(addressStateZip);
+
   addressDiv.appendChild(addressIcon);
-  addressDiv.appendChild(addressStreet);
-  addressDiv.appendChild(addressStateZip);
+  addressDiv.appendChild(addressInfoContainer);
 
   contactDiv.appendChild(contactIcon);
   contactDiv.appendChild(contactNum);

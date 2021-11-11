@@ -16,9 +16,9 @@ body {
 header {
   background-color: $Blue;
   padding: 0.5rem 0.5rem;
-
   h1 {
     font-size: 24px;
+    margin: 0;
   }
 }
 
@@ -64,13 +64,70 @@ main {
   padding: 0 0.5rem;
   margin-bottom: 64.5px;
   div#cards {
+    display: grid;
+    grid-template-columns: 1fr;
     div {
+      background-color: $Dark;
+      color: white;
+      margin-bottom: 0.75rem;
+      border-radius: 10px;
       figure {
         padding: 0;
         margin: 0;
+        position: relative;
+
         img {
           width: 100%;
           height: auto;
+          border-radius: 10px 10px 0 0;
+        }
+
+        figcaption {
+          position: absolute;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.8);
+          width: 100%;
+          color: white;
+          padding: 0.25rem 0.5rem;
+          margin-bottom: 3px;
+        }
+      }
+      section {
+        display: grid;
+        grid-template-areas: "location contact";
+        padding: 0.5rem;
+        gap: 0.5rem;
+        div.addressDiv {
+          display: flex;
+          align-items: center;
+          margin: 0;
+          font-size: 14px;
+          i {
+            font-size: 36px;
+          }
+
+          div {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            p {
+              margin: 0;
+              margin-left: 5px;
+            }
+          }
+        }
+        div.contactDiv {
+          display: flex;
+          margin: 0;
+          align-items: center;
+          font-size: 14px;
+          i {
+            font-size: 36px;
+          }
+          p {
+            margin: 0;
+            margin-left: 5px;
+          }
         }
       }
     }
