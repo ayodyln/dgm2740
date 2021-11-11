@@ -35,6 +35,7 @@ function cardImg(data) {
 
   cardImg.setAttribute("width", "1600");
   cardImg.setAttribute("height", "500");
+  cardImg.setAttribute("alt", `Hotel ${data.id}`)
 
   cardImg.src = data.photo;
   cardImgFigcap.textContent = data.name;
