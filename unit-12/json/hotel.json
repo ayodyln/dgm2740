@@ -1,26 +1,30 @@
 [
   {
-    "name": "Southern Serenade",
+    "id": 1,
+    "name": "Hotel California",
     "photo": "img/serenade.jpg",
-    "address": ["1555 North Canyon Dr.", "Lexington, VA 88765"],
-    "phone": "1-307-886-1234"
+    "address": ["1981 Canyon Dr.", "Lexington, VA 88765"],
+    "phone": "+1 656-589-561"
   },
   {
-    "name": "The Grand America Hotel",
+    "id": 2,
+    "name": "Tipton Hotel",
     "photo": "img/serenade.jpg",
     "address": ["555 Main St.", "Salt Lake City UT, 84111"],
-    "phone": "1-307-886-1234"
+    "phone": "+1 365-456-4201"
   },
   {
+    "id": 3,
     "name": "Four Seasons",
     "photo": "img/serenade.jpg",
-    "address": ["2019 Pennsylvania Ave", "Washington, DC 20125"],
-    "phone": "1-303-389-2000"
+    "address": ["2019 Center St.", "Washington, DC 20125"],
+    "phone": "+1 688-453-5603"
   },
   {
-    "name": "Hyatt Place Washington",
+    "id": 4,
+    "name": "Some Haunted Hotel",
     "photo": "img/serenade.jpg",
-    "address": ["1555 North Canyon Dr.", "Lexington VA 88765"],
-    "phone": "1-202-828-2500"
+    "address": ["1555 Desert Rd.", "Las Vegas NV 65745"],
+    "phone": "+1 654-235-4560"
   }
 ]
