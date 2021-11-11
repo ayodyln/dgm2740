@@ -15,7 +15,7 @@ body {
 // Header
 header {
   background-color: $Blue;
-  padding: .5rem 0.5rem;
+  padding: 0.5rem 0.5rem;
 
   h1 {
     font-size: 24px;
@@ -24,7 +24,11 @@ header {
 
 // Nav
 nav {
-  padding: .5rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: $Blue;
   ul {
     list-style-type: none;
     padding: 0;
@@ -32,20 +36,35 @@ nav {
     display: flex;
 
     li {
-      text-align: center;
       flex-basis: 33.33%;
+
+      a {
+        padding: 0.5rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        i {
+          font-size: 26px;
+        }
+      }
+    }
+
+    li.active {
+      background-color: darken($Blue, 10%);
     }
   }
-
 }
 
 // Main
 main {
-
+  padding: 0 0.5rem;
+  margin-bottom: 64.5px;
   div#cards {
-    
     div {
-
       figure {
         padding: 0;
         margin: 0;
@@ -56,7 +75,6 @@ main {
       }
     }
   }
-
 }
 
 //! clear fix

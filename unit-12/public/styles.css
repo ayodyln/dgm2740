@@ -451,7 +451,7 @@ body {
 
 header {
   background-color: #1dcdfe;
-  padding: .5rem 0.5rem;
+  padding: 0.5rem 0.5rem;
 }
 
 header h1 {
@@ -459,7 +459,11 @@ header h1 {
 }
 
 nav {
-  padding: .5rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #1dcdfe;
 }
 
 nav ul {
@@ -472,9 +476,41 @@ nav ul {
 }
 
 nav ul li {
-  text-align: center;
   -ms-flex-preferred-size: 33.33%;
       flex-basis: 33.33%;
+}
+
+nav ul li a {
+  padding: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+nav ul li a i {
+  font-size: 26px;
+}
+
+nav ul li.active {
+  background-color: #01b5e7;
+}
+
+main {
+  padding: 0 0.5rem;
+  margin-bottom: 64.5px;
 }
 
 main div#cards div figure {
