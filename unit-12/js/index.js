@@ -33,8 +33,12 @@ function cardImg(data) {
   let cardImgFigcap = document.createElement("figcaption");
   let cardFigure = document.createElement("figure");
 
+  cardImg.setAttribute("width", "1600")
+  cardImg.setAttribute("height", "500")
+
   cardImg.src = data.photo;
   cardImgFigcap.textContent = data.name;
+
   cardFigure.appendChild(cardImg);
   cardFigure.appendChild(cardImgFigcap);
   return cardFigure;
