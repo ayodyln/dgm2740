@@ -451,6 +451,13 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#2c5364), color-stop(#203a43), to(#0f2027));
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
   color: white;
+}
+
+header {
+  margin: 0 0.5rem;
+}
+
+main {
   margin: 0 0.5rem;
 }
 
@@ -611,6 +618,23 @@ main div#fiveDayForcast div.card div.weatherSubDiv div.tempMaxMin div i {
 
 main div#fiveDayForcast div.card div.weatherSubDiv div.tempMaxMin div p {
   margin: 0;
+}
+
+footer {
+  width: 100%;
+  margin-top: 0.75rem;
+  -webkit-backdrop-filter: saturate(180%);
+          backdrop-filter: saturate(180%);
+  background-color: rgba(17, 25, 40, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+footer p {
+  text-align: center;
+}
+
+footer p a {
+  color: white;
 }
 
 .clearfix:after {

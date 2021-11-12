@@ -12,13 +12,14 @@ body {
   overflow-x: hidden;
   background: $backgroundColor;
   color: white;
-  margin: 0 0.5rem;
 }
 
 header {
+  margin: 0 0.5rem;
 }
 
 main {
+  margin: 0 0.5rem;
   div.getWeather {
     display: flex;
     input {
@@ -53,7 +54,6 @@ main {
 
   div#townName {
     div {
-      
     }
   }
 
@@ -138,6 +138,21 @@ main {
           }
         }
       }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  margin-top: 0.75rem;
+  backdrop-filter: saturate(180%);
+  background-color: rgba(17, 25, 40, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+
+  p {
+    text-align: center;
+    a {
+      color: white;
     }
   }
 }
