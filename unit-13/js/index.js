@@ -1,7 +1,6 @@
 //*Consts
 const fiveDayForcastDiv = document.getElementById("fiveDayForcast");
 const townName = document.getElementById("townName");
-let zipCode = 84663;
 
 const zipcodeUserInput = document.getElementById("inputZipcode");
 const loadWeatherBtn = document.getElementById("loadPageBtn");
@@ -28,31 +27,33 @@ let currMin = myDate.getMinutes();
 let currSecond = myDate.getSeconds();
 // console.log(`Current Time: ${currHour}:${currMin}:${currSecond}`);
 
-console.log(Intl.DateTimeFormat().resolvedOptions().timeZone)
+// console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
 
 //TODO: Add this somehow
-function clock() {
-  const today = new Date();
+// function clock() {
+//   const today = new Date();
 
-  let hour = today.getHours();
-  let minute = today.getMinutes();
-  let seconds = today.getSeconds();
+//   let hour = today.getHours();
+//   let minute = today.getMinutes();
+//   let seconds = today.getSeconds();
 
-  minute = checkTime(minute);
-  seconds = checkTime(seconds);
+//   minute = checkTime(minute);
+//   seconds = checkTime(seconds);
 
-  let time = `${hour}:${minute}:${seconds}`;
+//   let time = `${hour}:${minute}:${seconds}`;
 
-  document.getElementById("clock").textContent = `Current Time: ${time}`;
-  setTimeout(clock, 1000);
-}
-function checkTime(i) {
-  if (i < 10) {
-    i = `0` + i;
-  }
-  return i;
-}
-clock();
+//   document.getElementById(
+//     "clock"
+//   ).textContent = `Your Local Current Time: ${time}`;
+//   setTimeout(clock, 1000);
+// }
+// function checkTime(i) {
+//   if (i < 10) {
+//     i = `0` + i;
+//   }
+//   return i;
+// }
+// clock();
 
 function removeChildren(container) {
   while (container.firstChild) {
@@ -60,9 +61,7 @@ function removeChildren(container) {
   }
 }
 
-
 //!API CALL
-const urlAPI = `//api.openweathermap.org/data/2.5/forecast?zip=${zipCode}&appid=4b64502c5d4b776a5ff49a9a960fbe1c&units=imperial`;
 // insert before appID to get by zipcond zip=84664
 //make modulur to flex!
 function getAPIData(zipcode) {
@@ -77,7 +76,7 @@ function getAPIData(zipcode) {
 }
 
 function populateDOM(data) {
-  // console.log(data);
+  console.log(data);
 
   //*Town Component
   let townCoordComponent = weatherLocation(data);
@@ -109,13 +108,15 @@ function weatherLocation(data) {
   let townNameHeader = document.createElement("h2");
   let townCoord = document.createElement("p");
   let townCoordDiv = document.createElement("div");
+  let timeZoneLatLon = document.createElement("p");
+  timeZoneLatLon.className = "localTimeZoneP";
 
   townNameHeader.textContent = data.city.name;
   townCoord.textContent = `Latitude: ${data.city.coord.lat}, Longitude: ${data.city.coord.lon}`;
 
   townCoordDiv.appendChild(townNameHeader);
   townCoordDiv.appendChild(townCoord);
-
+  townCoordDiv.appendChild(timeZoneLatLon);
   return townCoordDiv;
 }
 
@@ -198,4 +199,5 @@ loadWeatherBtn.addEventListener("click", () => {
   getAPIData(userZipcode);
 });
 
+getAPIData(84663);
 // getAPIData(urlAPI);
