@@ -634,3 +634,23 @@ main div#fiveDayForcast div.card div.weatherSubDiv div.tempMaxMin div p {
 .hidden {
   display: none;
 }
+
+@media only screen and (min-width: 560px) {
+  main div#fiveDayForcast {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (min-width: 1028px) {
+  header, main {
+    margin: auto;
+    max-width: 50rem;
+  }
+  main div#fiveDayForcast {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    overflow-x: hidden;
+  }
+}

@@ -1,0 +1,6 @@
+main {
+  div#fiveDayForcast {
+    grid-template-columns: repeat(2, 1fr);
+    overflow-x: hidden;
+  }
+}

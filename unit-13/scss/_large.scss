@@ -1,0 +1,11 @@
+header, main {
+    margin: auto;
+    max-width: 50rem;
+}
+
+main {
+  div#fiveDayForcast {
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: hidden;
+  }
+}
