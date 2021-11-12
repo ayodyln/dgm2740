@@ -19,6 +19,46 @@ header {
 }
 
 main {
+  div.getWeather {
+    display: flex;
+    input {
+      margin-right: 5px;
+      padding: 0.5rem;
+      width: 60%;
+      color: white;
+      //! GlassMorphism Start//
+      background-color: rgba(17, 25, 40, 0.5);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      //! GlassMorphism End //
+    }
+    button {
+      //! GlassMorphism Start//
+      background-color: rgba(17, 25, 40, 0.5);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      //! GlassMorphism End //
+      color: white;
+    }
+    button:hover {
+      background-color: lighten(rgba(17, 25, 40, 0.5), 50%);
+      cursor: pointer;
+    }
+  }
+
+  div#clock {
+    font-size: 18px;
+    margin: 1rem 0;
+  }
+
+  div#townName {
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
   div#fiveDayForcast {
     display: grid;
     grid-template-columns: 1fr;
@@ -27,8 +67,7 @@ main {
 
     div.card {
       //! GlassMorphism Start//
-      backdrop-filter: blur(16px) saturate(180%);
-      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      backdrop-filter: saturate(180%);
       background-color: rgba(17, 25, 40, 0.5);
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.125);

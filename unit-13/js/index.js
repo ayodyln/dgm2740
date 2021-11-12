@@ -2,6 +2,10 @@
 const fiveDayForcastDiv = document.getElementById("fiveDayForcast");
 const townName = document.getElementById("townName");
 let zipCode = 84663;
+
+const zipcodeUserInput = document.getElementById("inputZipcode");
+const loadWeatherBtn = document.getElementById("loadPageBtn");
+
 // weekday array
 const weekday = {
   0: "Sunday",
@@ -15,7 +19,6 @@ const weekday = {
 
 // figuring what date it is CURRENTLY
 const myDate = new Date();
-// console.log(myDate);
 
 let currDay = myDate.getDay();
 // console.log(currDay);
@@ -24,6 +27,8 @@ let currHour = myDate.getHours();
 let currMin = myDate.getMinutes();
 let currSecond = myDate.getSeconds();
 // console.log(`Current Time: ${currHour}:${currMin}:${currSecond}`);
+
+console.log(Intl.DateTimeFormat().resolvedOptions().timeZone)
 
 //TODO: Add this somehow
 function clock() {
@@ -49,26 +54,37 @@ function checkTime(i) {
 }
 clock();
 
+function removeChildren(container) {
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+}
+
+
 //!API CALL
 const urlAPI = `//api.openweathermap.org/data/2.5/forecast?zip=${zipCode}&appid=4b64502c5d4b776a5ff49a9a960fbe1c&units=imperial`;
 // insert before appID to get by zipcond zip=84664
 //make modulur to flex!
-function getAPIData(url) {
-  fetch(url)
+function getAPIData(zipcode) {
+  removeChildren(fiveDayForcastDiv);
+  removeChildren(townName);
+  fetch(
+    `//api.openweathermap.org/data/2.5/forecast?zip=${zipcode}&appid=4b64502c5d4b776a5ff49a9a960fbe1c&units=imperial`
+  )
     .then((data) => data.json())
     .then((data) => populateDOM(data))
     .catch((error) => console.log(error));
 }
 
 function populateDOM(data) {
-  console.log(data);
+  // console.log(data);
 
   //*Town Component
   let townCoordComponent = weatherLocation(data);
   townName.appendChild(townCoordComponent);
 
   const weatherList = data.list;
-  console.log(weatherList[0]);
+  // console.log(weatherList[0]);
 
   let forcastDayNum = currDay;
 
@@ -95,7 +111,7 @@ function weatherLocation(data) {
   let townCoordDiv = document.createElement("div");
 
   townNameHeader.textContent = data.city.name;
-  townCoord.textContent = `Geo Coordinates: latitude: ${data.city.coord.lat}, longitude: ${data.city.coord.lon}`;
+  townCoord.textContent = `Latitude: ${data.city.coord.lat}, Longitude: ${data.city.coord.lon}`;
 
   townCoordDiv.appendChild(townNameHeader);
   townCoordDiv.appendChild(townCoord);
@@ -176,4 +192,10 @@ function weatherCard(data, i, forcastDayNum) {
 }
 
 //*Calling Functions
-getAPIData(urlAPI);
+
+loadWeatherBtn.addEventListener("click", () => {
+  let userZipcode = zipcodeUserInput.value;
+  getAPIData(userZipcode);
+});
+
+// getAPIData(urlAPI);

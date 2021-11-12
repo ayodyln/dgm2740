@@ -454,6 +454,51 @@ body {
   margin: 0 0.5rem;
 }
 
+main div.getWeather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main div.getWeather input {
+  margin-right: 5px;
+  padding: 0.5rem;
+  width: 60%;
+  color: white;
+  background-color: rgba(17, 25, 40, 0.5);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+main div.getWeather button {
+  background-color: rgba(17, 25, 40, 0.5);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: white;
+}
+
+main div.getWeather button:hover {
+  background-color: rgba(116, 144, 196, 0.5);
+  cursor: pointer;
+}
+
+main div#clock {
+  font-size: 18px;
+  margin: 1rem 0;
+}
+
+main div#townName div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 main div#fiveDayForcast {
   display: -ms-grid;
   display: grid;
@@ -465,8 +510,8 @@ main div#fiveDayForcast {
 }
 
 main div#fiveDayForcast div.card {
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: saturate(180%);
+          backdrop-filter: saturate(180%);
   background-color: rgba(17, 25, 40, 0.5);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
