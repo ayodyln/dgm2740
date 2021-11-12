@@ -1,0 +1,116 @@
+/* rules here will be applied to all sizes, medium and large will modify from that */
+
+/* Apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+//? Body
+body {
+  font-family: $fontFamily;
+  overflow-x: hidden;
+  background: $backgroundColor;
+  color: white;
+  margin: 0 0.5rem;
+}
+
+header {
+}
+
+main {
+  div#fiveDayForcast {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+
+    div.card {
+      //! GlassMorphism Start//
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(17, 25, 40, 0.5);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      //! GlassMorphism End //
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      h2 {
+        // text-align: center;
+        margin-top: 0;
+      }
+      h1 {
+        // text-align: center;
+        margin-top: 0;
+      }
+      img {
+        width: 35%;
+        height: auto;
+        margin-top: 0;
+      }
+
+      div.weatherSubDiv {
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+          "windSpeed vision"
+          "maxmin maxmin";
+
+        section.windSection {
+          grid-area: windSpeed;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          i {
+            margin-right: 10px;
+            font-size: 32px;
+          }
+        }
+
+        section.visionSection {
+          grid-area: vision;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          i {
+            margin-right: 10px;
+            font-size: 32px;
+          }
+        }
+
+        div.tempMaxMin {
+          grid-area: maxmin;
+          display: flex;
+
+          div {
+            flex-basis: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+              margin-right: 10px;
+              font-size: 32px;
+            }
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//! clear fix
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.hidden {
+  display: none;
+}
