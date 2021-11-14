@@ -1,9 +1,22 @@
-//*Consts
+//* Primary Declarations
 const fiveDayForcastDiv = document.getElementById("fiveDayForcast");
 const townName = document.getElementById("townName");
 
 const zipcodeUserInput = document.getElementById("inputZipcode");
 const loadWeatherBtn = document.getElementById("loadPageBtn");
+
+// figuring what date it is CURRENTLY
+const myDate = new Date();
+
+const currTimeStamp = Math.floor(Date.now() / 1000);
+
+let currDay = myDate.getDay();
+// console.log(currDay);
+
+let currHour = myDate.getHours();
+let currMin = myDate.getMinutes();
+let currSecond = myDate.getSeconds();
+// console.log(`Current Time: ${currHour}:${currMin}:${currSecond}`);
 
 // weekday array
 const weekday = {
@@ -16,73 +29,15 @@ const weekday = {
   6: "Saturday",
 };
 
-// figuring what date it is CURRENTLY
-const myDate = new Date();
-
-let currDay = myDate.getDay();
-// console.log(currDay);
-
-let currHour = myDate.getHours();
-let currMin = myDate.getMinutes();
-let currSecond = myDate.getSeconds();
-// console.log(`Current Time: ${currHour}:${currMin}:${currSecond}`);
-
-// console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
-
-//TODO: Add this somehow
-// function clock() {
-//   const today = new Date();
-
-//   let hour = today.getHours();
-//   let minute = today.getMinutes();
-//   let seconds = today.getSeconds();
-
-//   minute = checkTime(minute);
-//   seconds = checkTime(seconds);
-
-//   let time = `${hour}:${minute}:${seconds}`;
-
-//   document.getElementById(
-//     "clock"
-//   ).textContent = `Your Local Current Time: ${time}`;
-//   setTimeout(clock, 1000);
-// }
-// function checkTime(i) {
-//   if (i < 10) {
-//     i = `0` + i;
-//   }
-//   return i;
-// }
-// clock();
-
-function removeChildren(container) {
-  while (container.firstChild) {
-    container.removeChild(container.firstChild);
-  }
-}
-
-//!API CALL
-// insert before appID to get by zipcond zip=84664
-//make modulur to flex!
-function getAPIData(zipcode) {
-  removeChildren(fiveDayForcastDiv);
-  removeChildren(townName);
-  fetch(
-    `//api.openweathermap.org/data/2.5/forecast?zip=${zipcode}&appid=4b64502c5d4b776a5ff49a9a960fbe1c&units=imperial`
-  )
-    .then((data) => data.json())
-    .then((data) => populateDOM(data))
-    .catch((error) => console.log(error));
-}
-
-function populateDOM(data) {
-  console.log(data);
+//? POPULATING DOM
+function populateDOM(weatherData) {
+  console.log(weatherData);
 
   //*Town Component
-  let townCoordComponent = weatherLocation(data);
+  let townCoordComponent = weatherLocation(weatherData);
   townName.appendChild(townCoordComponent);
 
-  const weatherList = data.list;
+  const weatherList = weatherData.list;
   // console.log(weatherList[0]);
 
   let forcastDayNum = currDay;
@@ -103,16 +58,32 @@ function populateDOM(data) {
   });
 }
 
+//!API CALL
+// insert before appID to get by zipcond zip=84664
+//make modulur to flex!
+function getAPIData(zipcode) {
+  removeChildren(fiveDayForcastDiv);
+  removeChildren(townName);
+
+  fetch(
+    `//api.openweathermap.org/data/2.5/forecast?zip=${zipcode}&appid=4b64502c5d4b776a5ff49a9a960fbe1c&units=imperial`
+  )
+    .then((data) => data.json())
+    .then((data) => populateDOM(data))
+    .catch((error) => console.log(error));
+}
+
 //TODO: COMPONENTS
-function weatherLocation(data) {
+function weatherLocation(weatherData, timeData) {
   let townNameHeader = document.createElement("h2");
   let townCoord = document.createElement("p");
   let townCoordDiv = document.createElement("div");
+
   let timeZoneLatLon = document.createElement("p");
   timeZoneLatLon.className = "localTimeZoneP";
 
-  townNameHeader.textContent = data.city.name;
-  townCoord.textContent = `Latitude: ${data.city.coord.lat}, Longitude: ${data.city.coord.lon}`;
+  townNameHeader.textContent = weatherData.city.name;
+  townCoord.textContent = `Latitude: ${weatherData.city.coord.lat}, Longitude: ${weatherData.city.coord.lon}`;
 
   townCoordDiv.appendChild(townNameHeader);
   townCoordDiv.appendChild(townCoord);
@@ -193,11 +164,104 @@ function weatherCard(data, i, forcastDayNum) {
 }
 
 //*Calling Functions
+getAPIData(84664);
 
+//?BTNS
 loadWeatherBtn.addEventListener("click", () => {
   let userZipcode = zipcodeUserInput.value;
   getAPIData(userZipcode);
 });
 
-getAPIData(84663);
-// getAPIData(urlAPI);
+//! Utility Funcions ///////////
+function removeChildren(container) {
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+}
+
+//!geoLocation
+// Excerpt from https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
+(function geoFindMe() {
+  if (!navigator.geolocation) {
+    console.log("Geolocation is not supported by your browser, Sorry!");
+    return;
+  }
+  function success(position) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    yourGeoLocation(longitude, latitude);
+  }
+  function error() {
+    console.log("Unable to retrieve your location");
+  }
+  return navigator.geolocation.getCurrentPosition(success, error);
+})();
+
+function getTimeZone(
+  lat = 39.603481,
+  lon = -119.682251,
+  timeStamp = 1331766000
+) {
+  fetch(`https://maps.googleapis.com/maps/api/timezone/json
+?location=${lat}%2C${lon}
+&timestamp=${timeStamp}
+&key=MYAPIKEY`)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+      //logging in the currTime Func
+      // currTime(data.timeZoneId);
+      currTime();
+    })
+    .catch((error) => console.log(error));
+}
+
+//? GET TIME
+const currTime = function (timeZone = "America/New_York") {
+  let options = {
+    timeZone: `${timeZone}`,
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric",
+  };
+
+  let formatter = new Intl.DateTimeFormat([], options);
+  // console.log(formatter.format(new Date()));
+
+  let theTime = formatter.format(new Date());
+
+  setTimeout(currTime, 1000);
+  return theTime;
+  // console.log(newDate);
+};
+
+//TODO: Add this somehow
+function clock() {
+  const today = new Date();
+
+  let hour = today.getHours();
+  let minute = today.getMinutes();
+  let seconds = today.getSeconds();
+
+  minute = checkTime(minute);
+  seconds = checkTime(seconds);
+
+  let time = `${hour}:${minute}:${seconds}`;
+
+  document.getElementById(
+    "clock"
+  ).textContent = `Your Local Current Time: ${time}`;
+  setTimeout(clock, 1000);
+}
+function checkTime(i) {
+  if (i < 10) {
+    i = `0` + i;
+  }
+  return i;
+}
+// clock();
+
+function yourGeoLocation(lon, lat) {
+  getTimeZone(lat, lon, currTimeStamp);
+  // console.log(lon, lat);
+}
