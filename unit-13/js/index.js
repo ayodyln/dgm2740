@@ -179,45 +179,8 @@ function removeChildren(container) {
   }
 }
 
-//!geoLocation
-// Excerpt from https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
-(function geoFindMe() {
-  if (!navigator.geolocation) {
-    console.log("Geolocation is not supported by your browser, Sorry!");
-    return;
-  }
-  function success(position) {
-    var latitude = position.coords.latitude;
-    var longitude = position.coords.longitude;
-    yourGeoLocation(longitude, latitude);
-  }
-  function error() {
-    console.log("Unable to retrieve your location");
-  }
-  return navigator.geolocation.getCurrentPosition(success, error);
-})();
-
-function getTimeZone(
-  lat = 39.603481,
-  lon = -119.682251,
-  timeStamp = 1331766000
-) {
-  fetch(`https://maps.googleapis.com/maps/api/timezone/json
-?location=${lat}%2C${lon}
-&timestamp=${timeStamp}
-&key=MYAPIKEY`)
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
-      //logging in the currTime Func
-      // currTime(data.timeZoneId);
-      currTime();
-    })
-    .catch((error) => console.log(error));
-}
-
 //? GET TIME
-const currTime = function (timeZone = "America/New_York") {
+const currTime = function (timeZone) {
   let options = {
     timeZone: `${timeZone}`,
     hour: "numeric",
@@ -226,42 +189,7 @@ const currTime = function (timeZone = "America/New_York") {
   };
 
   let formatter = new Intl.DateTimeFormat([], options);
-  // console.log(formatter.format(new Date()));
-
-  let theTime = formatter.format(new Date());
+  console.log(formatter.format(new Date()));
 
   setTimeout(currTime, 1000);
-  return theTime;
-  // console.log(newDate);
 };
-
-//TODO: Add this somehow
-function clock() {
-  const today = new Date();
-
-  let hour = today.getHours();
-  let minute = today.getMinutes();
-  let seconds = today.getSeconds();
-
-  minute = checkTime(minute);
-  seconds = checkTime(seconds);
-
-  let time = `${hour}:${minute}:${seconds}`;
-
-  document.getElementById(
-    "clock"
-  ).textContent = `Your Local Current Time: ${time}`;
-  setTimeout(clock, 1000);
-}
-function checkTime(i) {
-  if (i < 10) {
-    i = `0` + i;
-  }
-  return i;
-}
-// clock();
-
-function yourGeoLocation(lon, lat) {
-  getTimeZone(lat, lon, currTimeStamp);
-  // console.log(lon, lat);
-}
