@@ -443,6 +443,12 @@ template {
   box-sizing: border-box;
 }
 
-body {
-  background-color: red;
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden {
+  display: none;
 }
