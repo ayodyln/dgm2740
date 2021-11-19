@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -441,6 +442,258 @@ template {
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "M PLUS 1", sans-serif;
+  overflow-x: hidden;
+}
+
+div#headerWrapper {
+  padding-top: 0.5rem;
+}
+
+div#headerWrapper header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div#headerWrapper header div.wordmark {
+  width: 100%;
+}
+
+div#headerWrapper header div.wordmark h1,
+div#headerWrapper header div.wordmark h2 {
+  margin: 0;
+}
+
+div#headerWrapper header div.wordmark h1 {
+  color: #0480b1;
+}
+
+div#headerWrapper header div.wordmark h2 {
+  color: #a8a8b2;
+  letter-spacing: 10px;
+  font-weight: 300;
+}
+
+div#navWrapper {
+  margin-top: 2px;
+}
+
+div#navWrapper nav {
+  background: #0480b1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0480b1), color-stop(84%, #014267));
+  background: linear-gradient(180deg, #0480b1 0%, #014267 84%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div#navWrapper nav div.hamBtn button#hamburgerBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 36px;
+}
+
+div#navWrapper nav div.ul ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+div#navWrapper nav div.ul ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+div#mainWrapper {
+  width: 100%;
+}
+
+div#mainWrapper main div.hero img {
+  width: 100%;
+  height: auto;
+}
+
+div#mainWrapper main div.mission-div {
+  background-color: #111118;
+  color: white;
+  width: 100%;
+}
+
+div#mainWrapper main div.mission-div h2,
+div#mainWrapper main div.mission-div h1 {
+  color: #fcd831;
+}
+
+div#mainWrapper main div.mission-div section {
+  padding: 0.25rem;
+}
+
+div#mainWrapper main div.content div.header {
+  border-bottom: solid 1px #a8a8b2;
+  margin: 0.5rem 0.5rem;
+}
+
+div#mainWrapper main div.content div.header h1 {
+  margin: 0;
+  color: #0480b1;
+  font-weight: 400;
+}
+
+div#mainWrapper main div.content div.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+div#mainWrapper main div.content div.grid div.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 0.5rem;
+  margin: 1rem 0;
+}
+
+div#mainWrapper main div.content div.grid div.card div.figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+div#mainWrapper main div.content div.grid div.card div.figure img {
+  width: 100%;
+  height: auto;
+}
+
+div#mainWrapper main div.content div.grid div.card h2 {
+  color: #0480b1;
+  margin: 0;
+}
+
+div#mainWrapper main div.content div.grid div.card p {
+  width: 100%;
+  margin: 0;
+}
+
+div#mainWrapper main div.content div.grid div.bigCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 0.5rem;
+  margin: 1rem 0;
+}
+
+div#mainWrapper main div.content div.grid div.bigCard div.figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+div#mainWrapper main div.content div.grid div.bigCard h2 {
+  color: #0480b1;
+  margin: 0;
+}
+
+div#mainWrapper main div.content div.grid div.bigCard p {
+  margin: 0;
+}
+
+div#mainWrapper main div.content div.grid div.graphCard {
+  position: relative;
+}
+
+div#mainWrapper main div.content div.grid div.graphCard button {
+  position: absolute;
+}
+
+div#mainWrapper main div.partners {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 10px;
+}
+
+div#mainWrapper main div.partners div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div#mainWrapper main div.partners div img {
+  width: 75%;
+  height: auto;
+}
+
+div#footerWrapper {
+  background: #0480b1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0480b1), color-stop(84%, #014267));
+  background: linear-gradient(180deg, #0480b1 0%, #014267 84%);
+}
+
+div#footerWrapper footer {
+  margin-top: 1rem;
+  color: white;
+  padding: 0.5rem 0.5rem;
+}
+
+div#footerWrapper footer p {
+  margin: 0;
+}
+
+div#footerWrapper footer p a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+div#footerWrapper footer p a:hover {
+  text-decoration: initial;
 }
 
 .clearfix:after {
