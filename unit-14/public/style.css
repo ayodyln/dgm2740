@@ -539,10 +539,7 @@ div#navWrapper nav div.ul ul {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
-
-div#navWrapper nav div.ul ul :nth-child(1) {
-  margin-top: 5px;
+  padding-top: 5px;
 }
 
 div#navWrapper nav div.ul ul li {
@@ -787,11 +784,10 @@ div#footerWrapper footer p a:hover {
     border-bottom: solid 1px #a8a8b2;
   }
   div#navWrapper {
-    padding: 0;
+    margin-bottom: 0.5rem;
   }
   div#navWrapper nav {
     background: initial;
-    padding: 0;
   }
   div#navWrapper nav div.hamBtn {
     display: none;
@@ -809,22 +805,134 @@ div#footerWrapper footer p a:hover {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    padding-right: 0.5rem;
   }
   div#navWrapper nav div.ul ul li {
     margin: 0;
-    padding: 0;
+    margin-left: 25px;
+    height: 32px;
   }
   div#navWrapper nav div.ul ul li a {
     color: #a8a8b2;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+  }
+  div#navWrapper nav div.ul ul li a:hover {
+    color: #737381;
+  }
+  div#mainWrapper main div.mission-div {
+    padding: 0.5rem;
+  }
+  div#mainWrapper main div.mission-div section {
+    padding: 0;
+  }
+  div#mainWrapper main div.content div.grid section.one div.card {
+    display: initial;
+  }
+  div#mainWrapper main div.content div.grid section.one div.card div.figure {
+    float: left;
+  }
+  div#mainWrapper main div.content div.grid section.two div.graphCard div.figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 @media only screen and (min-width: 1028px) {
   header,
   nav,
-  main,
-  footer {
+  footer,
+  div#missionSectionWrapper,
+  div.hero,
+  div.content,
+  div.partners {
     margin: auto;
     max-width: 58.8125rem;
+  }
+  div#mainWrapper main div.mission-div div#missionSectionWrapper {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "a a b";
+  }
+  div#mainWrapper main div.mission-div div#missionSectionWrapper section.left-column {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a;
+    margin-right: 10px;
+  }
+  div#mainWrapper main div.mission-div div#missionSectionWrapper section.right-column {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: b;
+    text-align: right;
+  }
+  div#mainWrapper main div.content div.grid {
+    display: unset;
+  }
+  div#mainWrapper main div.content div.grid section.one {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  div#mainWrapper main div.content div.grid section.one div.card div.figure img {
+    width: 100%;
+  }
+  div#mainWrapper main div.content div.grid section.one div.card h2 {
+    margin-bottom: 10px;
+  }
+  div#mainWrapper main div.content div.grid section.two {
+    margin: 1.5rem 0;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "a b c" "d d c";
+  }
+  div#mainWrapper main div.content div.grid section.two div.bigCard h2 {
+    margin-bottom: 10px;
+  }
+  div#mainWrapper main div.content div.grid section.two .a {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a;
+    margin: 0;
+  }
+  div#mainWrapper main div.content div.grid section.two .b {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: b;
+    margin: 0;
+  }
+  div#mainWrapper main div.content div.grid section.two .c {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: c;
+    margin: 0;
+  }
+  div#mainWrapper main div.content div.grid section.two .d {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: d;
+    margin: 0;
+  }
+  div#mainWrapper main div.content div.grid section.two div.graphCard div.info {
+    bottom: 3rem;
+  }
+  div#mainWrapper main div.content div.grid section.two div.techSupport p {
+    margin: 0;
+  }
+  div#mainWrapper main div.partners {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
   }
 }

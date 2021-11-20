@@ -1,7 +1,92 @@
 header,
 nav,
-main,
-footer {
+footer,
+div#missionSectionWrapper,
+div.hero,
+div.content,
+div.partners {
   margin: auto;
   max-width: 58.8125rem;
+}
+
+div#mainWrapper {
+  main {
+    div.mission-div {
+      div#missionSectionWrapper {
+        display: grid;
+        grid-template-areas: "a a b";
+
+        section.left-column {
+          grid-area: a;
+          margin-right: 10px;
+        }
+        section.right-column {
+          grid-area: b;
+          text-align: right;
+        }
+      }
+    }
+
+    div.content {
+      div.grid {
+        display: unset;
+        section.one {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          div.card {
+            div.figure img {
+              width: 100%;
+            }
+            h2 {
+              margin-bottom: 10px;
+            }
+          }
+        }
+        section.two {
+          margin: 1.5rem 0;
+          display: grid;
+          grid-template-areas:
+            "a b c"
+            "d d c";
+          div.bigCard {
+            h2 {
+              margin-bottom: 10px;
+            }
+          }
+          .a {
+            grid-area: a;
+            margin: 0;
+          }
+          .b {
+            grid-area: b;
+            margin: 0;
+          }
+          .c {
+            grid-area: c;
+            margin: 0;
+          }
+          .d {
+            grid-area: d;
+            margin: 0;
+          }
+
+          div.graphCard {
+            div.info {
+              bottom: 3rem;
+            }
+          }
+          div.techSupport {
+            
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    div.partners {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
 }
