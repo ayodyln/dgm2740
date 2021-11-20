@@ -574,12 +574,13 @@ div#mainWrapper main div.mission-div h1 {
 }
 
 div#mainWrapper main div.mission-div section {
-  padding: 0.25rem;
+  padding: 0.5rem;
 }
 
 div#mainWrapper main div.content div.header {
   border-bottom: solid 1px #a8a8b2;
-  margin: 0.5rem 0.5rem;
+  margin: 0 0.5rem;
+  margin-top: 1rem;
 }
 
 div#mainWrapper main div.content div.header h1 {
@@ -822,17 +823,27 @@ div#footerWrapper footer p a:hover {
   div#navWrapper nav div.ul ul li a:hover {
     color: #737381;
   }
+  div#mainWrapper main {
+    padding: 0 0.5rem;
+  }
   div#mainWrapper main div.mission-div {
     padding: 0.5rem;
   }
   div#mainWrapper main div.mission-div section {
     padding: 0;
   }
+  div#mainWrapper main div.content div.grid {
+    margin: 0.5rem;
+  }
   div#mainWrapper main div.content div.grid section.one div.card {
     display: initial;
   }
   div#mainWrapper main div.content div.grid section.one div.card div.figure {
     float: left;
+  }
+  div#mainWrapper main div.content div.grid section.one div.card div.figure img {
+    width: auto;
+    height: 150px;
   }
   div#mainWrapper main div.content div.grid section.two div.graphCard div.figure {
     display: -webkit-box;

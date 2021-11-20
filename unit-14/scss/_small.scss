@@ -76,10 +76,10 @@ div#navWrapper {
         flex-direction: column;
         align-items: flex-end;
         padding-top: 5px;
-      
+
         li {
           margin: 15px 0;
-  
+
           a {
             text-decoration: none;
             color: white;
@@ -109,14 +109,16 @@ div#mainWrapper {
         color: $yellow;
       }
       section {
-        padding: 0.25rem;
+        padding: 0.5rem;
       }
     }
 
     div.content {
       div.header {
         border-bottom: solid 1px $grey;
-        margin: 0.5rem 0.5rem;
+        // margin: 0.5rem 0.5rem;
+        margin: 0 0.5rem;
+        margin-top: 1rem;
 
         h1 {
           margin: 0;

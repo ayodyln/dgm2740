@@ -46,6 +46,7 @@ div#navWrapper {
 
 div#mainWrapper {
   main {
+    padding: 0 0.5rem;
     div.mission-div {
       padding: 0.5rem;
       section {
@@ -54,12 +55,20 @@ div#mainWrapper {
     }
 
     div.content {
+      div.header {
+        
+      }
       div.grid {
+        margin: 0.5rem;
         section.one {
           div.card {
             display: initial;
             div.figure {
               float: left;
+              img {
+                width: auto;
+                height: 150px;
+              }
             }
           }
         }
