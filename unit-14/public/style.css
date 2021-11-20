@@ -514,6 +514,8 @@ div#navWrapper nav div.hamBtn button#hamburgerBtn {
   border: none;
   color: white;
   font-size: 36px;
+  padding: 0;
+  margin: 0;
 }
 
 div#navWrapper nav div.ul {
