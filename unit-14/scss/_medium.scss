@@ -1,0 +1,41 @@
+div#headerWrapper {
+  header {
+    div.wordmark {
+      border-bottom: solid 1px $grey;
+    }
+  }
+}
+
+div#navWrapper {
+  padding: 0;
+  nav {
+    background: initial;
+    padding: 0;
+    div.hamBtn {
+      display: none;
+      padding: 0;
+    }
+
+    div.ul {
+      display: initial;
+      padding: 0;
+      ul {
+        flex-direction: row;
+        justify-content: flex-end;
+
+        li {
+          margin: 0;
+          padding: 0;
+          a {
+            color: $grey;
+          }
+        }
+      }
+    }
+  }
+}
+
+div#mainWrapper {
+  main {
+  }
+}

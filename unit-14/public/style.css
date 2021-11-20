@@ -782,6 +782,43 @@ div#footerWrapper footer p a:hover {
   display: none;
 }
 
+@media only screen and (min-width: 560px) {
+  div#headerWrapper header div.wordmark {
+    border-bottom: solid 1px #a8a8b2;
+  }
+  div#navWrapper {
+    padding: 0;
+  }
+  div#navWrapper nav {
+    background: initial;
+    padding: 0;
+  }
+  div#navWrapper nav div.hamBtn {
+    display: none;
+    padding: 0;
+  }
+  div#navWrapper nav div.ul {
+    display: initial;
+    padding: 0;
+  }
+  div#navWrapper nav div.ul ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  div#navWrapper nav div.ul ul li {
+    margin: 0;
+    padding: 0;
+  }
+  div#navWrapper nav div.ul ul li a {
+    color: #a8a8b2;
+  }
+}
+
 @media only screen and (min-width: 1028px) {
   header,
   nav,
