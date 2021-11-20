@@ -505,6 +505,10 @@ div#navWrapper nav {
           justify-content: center;
 }
 
+div#navWrapper nav div.hamBtn {
+  padding: 2%;
+}
+
 div#navWrapper nav div.hamBtn button#hamburgerBtn {
   background: none;
   border: none;
