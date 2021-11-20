@@ -826,6 +826,9 @@ div#footerWrapper footer p a:hover {
     float: left;
     margin-right: 1rem;
   }
+  div#mainWrapper main div.content div.grid section.two {
+    border-top: solid 1px #a8a8b2;
+  }
   div#mainWrapper main div.content div.grid section.two div.bigCard {
     margin: 1rem 0;
     padding: 0;
@@ -924,7 +927,6 @@ div#footerWrapper footer p a:hover {
     display: grid;
         grid-template-areas: "inf tech stock" "sup sup stock";
     gap: 0 2vw;
-    border-top: solid 1px #a8a8b2;
     padding-top: 1rem;
   }
   div#mainWrapper main div.content div.grid section.two div.bigCard {

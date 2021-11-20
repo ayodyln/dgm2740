@@ -75,6 +75,8 @@ div#mainWrapper {
         }
 
         section.two {
+          border-top: solid 1px $grey;
+          
           div.bigCard {
             margin: 1rem 0;
             padding: 0;
