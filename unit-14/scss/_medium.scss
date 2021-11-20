@@ -37,6 +37,9 @@ div#navWrapper {
             color: $grey;
             display: initial;
           }
+          a:hover {
+            color: darken($grey, 15%);
+          }
         }
       }
     }

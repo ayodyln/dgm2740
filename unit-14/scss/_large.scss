@@ -4,9 +4,26 @@ div#missionSectionWrapper,
 div.hero,
 div.content,
 div.partners,
-nav {
+div#navWrapper {
   margin: auto;
   max-width: 58.8125rem;
+}
+
+div#headerWrapper {
+  header {
+    padding: 0;
+  }
+}
+
+// Nav
+div#navWrapper {
+  nav {
+    div.ul {
+      ul {
+        padding: 1rem 0;
+      }
+    }
+  }
 }
 
 div#mainWrapper {
@@ -28,14 +45,21 @@ div#mainWrapper {
     }
 
     div.content {
+      padding: 0;
+      div.header {
+        margin: 0;
+        margin-top: 1rem;
+      }
       div.grid {
         display: unset;
         section.one {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap: 2vw;
           div.card {
-            div.figure img {
+            img {
               width: 100%;
+              float: none;
             }
             h2 {
               margin-bottom: 10px;
@@ -43,43 +67,49 @@ div#mainWrapper {
           }
         }
         section.two {
-          margin: 1.5rem 0;
           display: grid;
           grid-template-areas:
-            "a b c"
-            "d d c";
+            "inf tech stock"
+            "sup sup stock";
+          gap: 0 2vw;
+          border-top: solid 1px $grey;
+          padding-top: 1rem;
+
           div.bigCard {
-            h2 {
-              margin-bottom: 10px;
+            margin: 0;
+            padding: 0;
+            img {
+              width: 100%;
+              float: none;
+              margin-right: 0;
+              height: 204px;
+            }
+            div.cardText {
+              h2 {
+                margin: 1rem 0;
+              }
             }
           }
+
           .a {
-            grid-area: a;
-            margin: 0;
+            grid-area: inf;
           }
           .b {
-            grid-area: b;
-            margin: 0;
+            grid-area: tech;
           }
           .c {
-            grid-area: c;
-            margin: 0;
+            grid-area: stock;
           }
           .d {
-            grid-area: d;
-            margin: 0;
+            grid-area: sup;
           }
 
           div.graphCard {
-            div.info {
-              bottom: 3rem;
-            }
+
           }
+
           div.techSupport {
-            
-            p {
-              margin: 0;
-            }
+            padding: 0;
           }
         }
       }
