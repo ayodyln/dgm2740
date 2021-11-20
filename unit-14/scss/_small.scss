@@ -66,25 +66,28 @@ div#navWrapper {
     div.ul {
       width: 100%;
       padding: 0 0.5rem;
-      padding-bottom: 1rem;
+      padding-bottom: 0.5rem;
       ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
         padding-top: 5px;
 
         li {
-          margin: 15px 0;
-
+          // margin: 15px 0;
+          width: 100%;
+          border-top: 1px solid lighten($blue, 10%);
           a {
             text-decoration: none;
             color: white;
             display: block;
             font-size: 18px;
+            width: 100%;
+            height: 44px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
           }
         }
       }
@@ -128,92 +131,89 @@ div#mainWrapper {
       }
 
       div.grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        section.one {
+          div.card {
+            padding: 0 0.5rem;
+            margin: 1rem 0;
 
-        div.card {
-          display: flex;
-          flex-direction: column;
-          padding: 0 0.5rem;
-          margin: 1rem 0;
-          div.figure {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
             img {
-              width: 70%;
+              width: 100%;
               height: auto;
             }
-          }
-          h2 {
-            color: $blue;
-            margin: 0;
-          }
-          p {
-            width: 100%;
-            margin: 0;
-          }
-        }
 
-        div.bigCard {
-          display: flex;
-          flex-direction: column;
-          padding: 0 0.5rem;
-          margin: 1rem 0;
-          div.figure {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-          }
-          h2 {
-            color: $blue;
-            margin: 0;
-          }
-          p {
-            margin: 0;
-          }
-        }
-
-        div.graphCard {
-          position: relative;
-
-          div.figure {
-            position: relative;
-          }
-
-          div.info {
-            position: absolute;
-            bottom: 0.75rem;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            button {
-              width: 15rem;
-              height: 44px;
-              background-color: $blue;
-              border: none;
-              border-radius: 10px;
-              color: white;
-              font-size: 24px;
-              cursor: pointer;
-            }
-            button:hover {
-              background-color: darken($blue, 5%);
+            h2 {
+              color: $blue;
+              margin: 0.5rem 0;
+              font-weight: 400;
             }
             p {
-              margin: 0.5rem 0;
+              width: 100%;
+              margin: 0;
             }
           }
         }
 
-        div.techSupport {
-          padding: 0 0.5rem;
-          h2 {
-            color: $blue;
+        section.two {
+          div.bigCard {
+            padding: 0 0.5rem;
+            margin: 1rem 0;
+            img {
+              width: 100%;
+              height: auto;
+            }
+            div.cardText {
+              h2 {
+                color: $blue;
+                margin: 0;
+                font-weight: 400;
+              }
+              p {
+                margin: 0;
+              }
+            }
           }
-          P {
+
+          div.graphCard {
+            position: relative;
+
+            img {
+              position: relative;
+            }
+
+            div.info {
+              position: absolute;
+              bottom: 0.75rem;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              button {
+                width: 15rem;
+                height: 44px;
+                background-color: $blue;
+                border: none;
+                border-radius: 10px;
+                color: white;
+                font-size: 24px;
+                cursor: pointer;
+              }
+              button:hover {
+                background-color: darken($blue, 5%);
+              }
+              p {
+                margin: 0.5rem 0;
+              }
+            }
+          }
+
+          div.techSupport {
+            padding: 0 0.5rem;
+            h2 {
+              color: $blue;
+              font-weight: 400;
+            }
+            P {
+            }
           }
         }
       }

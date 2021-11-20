@@ -521,7 +521,7 @@ div#navWrapper nav div.hamBtn button#hamburgerBtn {
 div#navWrapper nav div.ul {
   width: 100%;
   padding: 0 0.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 div#navWrapper nav div.ul ul {
@@ -529,21 +529,12 @@ div#navWrapper nav div.ul ul {
   margin: 0;
   padding: 0;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   padding-top: 5px;
 }
 
 div#navWrapper nav div.ul ul li {
-  margin: 15px 0;
+  width: 100%;
+  border-top: 1px solid #05a4e3;
 }
 
 div#navWrapper nav div.ul ul li a {
@@ -551,6 +542,17 @@ div#navWrapper nav div.ul ul li a {
   color: white;
   display: block;
   font-size: 18px;
+  width: 100%;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 div#mainWrapper {
@@ -589,92 +591,56 @@ div#mainWrapper main div.content div.header h1 {
   font-weight: 400;
 }
 
-div#mainWrapper main div.content div.grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-}
-
-div#mainWrapper main div.content div.grid div.card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+div#mainWrapper main div.content div.grid section.one div.card {
   padding: 0 0.5rem;
   margin: 1rem 0;
 }
 
-div#mainWrapper main div.content div.grid div.card div.figure {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 20px;
-}
-
-div#mainWrapper main div.content div.grid div.card div.figure img {
-  width: 70%;
+div#mainWrapper main div.content div.grid section.one div.card img {
+  width: 100%;
   height: auto;
 }
 
-div#mainWrapper main div.content div.grid div.card h2 {
+div#mainWrapper main div.content div.grid section.one div.card h2 {
   color: #0480b1;
-  margin: 0;
+  margin: 0.5rem 0;
+  font-weight: 400;
 }
 
-div#mainWrapper main div.content div.grid div.card p {
+div#mainWrapper main div.content div.grid section.one div.card p {
   width: 100%;
   margin: 0;
 }
 
-div#mainWrapper main div.content div.grid div.bigCard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+div#mainWrapper main div.content div.grid section.two div.bigCard {
   padding: 0 0.5rem;
   margin: 1rem 0;
 }
 
-div#mainWrapper main div.content div.grid div.bigCard div.figure {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 20px;
+div#mainWrapper main div.content div.grid section.two div.bigCard img {
+  width: 100%;
+  height: auto;
 }
 
-div#mainWrapper main div.content div.grid div.bigCard h2 {
+div#mainWrapper main div.content div.grid section.two div.bigCard div.cardText h2 {
   color: #0480b1;
   margin: 0;
+  font-weight: 400;
 }
 
-div#mainWrapper main div.content div.grid div.bigCard p {
+div#mainWrapper main div.content div.grid section.two div.bigCard div.cardText p {
   margin: 0;
 }
 
-div#mainWrapper main div.content div.grid div.graphCard {
+div#mainWrapper main div.content div.grid section.two div.graphCard {
   position: relative;
 }
 
-div#mainWrapper main div.content div.grid div.graphCard div.figure {
+div#mainWrapper main div.content div.grid section.two div.graphCard img {
   position: relative;
 }
 
-div#mainWrapper main div.content div.grid div.graphCard div.info {
+div#mainWrapper main div.content div.grid section.two div.graphCard div.info {
   position: absolute;
   bottom: 0.75rem;
   width: 100%;
@@ -690,7 +656,7 @@ div#mainWrapper main div.content div.grid div.graphCard div.info {
           flex-direction: column;
 }
 
-div#mainWrapper main div.content div.grid div.graphCard div.info button {
+div#mainWrapper main div.content div.grid section.two div.graphCard div.info button {
   width: 15rem;
   height: 44px;
   background-color: #0480b1;
@@ -701,20 +667,21 @@ div#mainWrapper main div.content div.grid div.graphCard div.info button {
   cursor: pointer;
 }
 
-div#mainWrapper main div.content div.grid div.graphCard div.info button:hover {
+div#mainWrapper main div.content div.grid section.two div.graphCard div.info button:hover {
   background-color: #036e98;
 }
 
-div#mainWrapper main div.content div.grid div.graphCard div.info p {
+div#mainWrapper main div.content div.grid section.two div.graphCard div.info p {
   margin: 0.5rem 0;
 }
 
-div#mainWrapper main div.content div.grid div.techSupport {
+div#mainWrapper main div.content div.grid section.two div.techSupport {
   padding: 0 0.5rem;
 }
 
-div#mainWrapper main div.content div.grid div.techSupport h2 {
+div#mainWrapper main div.content div.grid section.two div.techSupport h2 {
   color: #0480b1;
+  font-weight: 400;
 }
 
 div#mainWrapper div.partners {
@@ -781,71 +748,90 @@ div#footerWrapper footer p a:hover {
 }
 
 @media only screen and (min-width: 560px) {
+  div#headerWrapper header {
+    padding: 0 0.5rem;
+  }
   div#headerWrapper header div.wordmark {
     border-bottom: solid 1px #a8a8b2;
   }
   div#navWrapper {
-    margin-bottom: 0.5rem;
+    margin-top: 2px;
   }
   div#navWrapper nav {
-    background: initial;
+    background: white;
+    display: unset;
   }
   div#navWrapper nav div.hamBtn {
     display: none;
-    padding: 0;
   }
   div#navWrapper nav div.ul {
     display: initial;
     padding: 0;
+    margin: 0;
   }
   div#navWrapper nav div.ul ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    padding-right: 0.5rem;
   }
   div#navWrapper nav div.ul ul li {
+    border: none;
     margin: 0;
+    padding: 0;
+    width: unset;
     margin-left: 25px;
-    height: 32px;
   }
   div#navWrapper nav div.ul ul li a {
+    text-decoration: none;
     color: #a8a8b2;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-  }
-  div#navWrapper nav div.ul ul li a:hover {
-    color: #737381;
-  }
-  div#mainWrapper main {
-    padding: 0 0.5rem;
-  }
-  div#mainWrapper main div.mission-div {
-    padding: 0.5rem;
-  }
-  div#mainWrapper main div.mission-div section {
-    padding: 0;
-  }
-  div#mainWrapper main div.content div.grid {
-    margin: 0.5rem;
-  }
-  div#mainWrapper main div.content div.grid section.one div.card {
     display: initial;
   }
-  div#mainWrapper main div.content div.grid section.one div.card div.figure {
+  div#mainWrapper main div.content div.header {
+    border-bottom: solid 1px #a8a8b2;
+    margin: 0 0.5rem;
+    margin-top: 1rem;
+  }
+  div#mainWrapper main div.content div.header h1 {
+    margin: 0;
+    color: #0480b1;
+    font-weight: 400;
+  }
+  div#mainWrapper main div.content div.grid {
+    padding: 0 0.5rem;
+  }
+  div#mainWrapper main div.content div.grid section.one div.card {
+    margin: 1rem 0;
+    padding: 0;
+  }
+  div#mainWrapper main div.content div.grid section.one div.card img {
+    width: 35%;
     float: left;
+    margin-right: 1rem;
   }
-  div#mainWrapper main div.content div.grid section.one div.card div.figure img {
-    width: auto;
-    height: 150px;
+  div#mainWrapper main div.content div.grid section.two div.bigCard {
+    margin: 1rem 0;
+    padding: 0;
   }
-  div#mainWrapper main div.content div.grid section.two div.graphCard div.figure {
+  div#mainWrapper main div.content div.grid section.two div.bigCard img {
+    width: 50%;
+    float: left;
+    margin-right: 1rem;
+  }
+  div#mainWrapper main div.content div.grid section.two div.bigCard div.cardText {
+    margin: 0;
+    padding: 0;
+  }
+  div#mainWrapper main div.content div.grid section.two div.bigCard div.cardText h2,
+  div#mainWrapper main div.content div.grid section.two div.bigCard div.cardText p {
+    margin: 0;
+  }
+  div#mainWrapper main div.content div.grid section.two div.graphCard {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -856,16 +842,20 @@ div#footerWrapper footer p a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  div#mainWrapper main div.partners {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media only screen and (min-width: 1028px) {
   header,
-  nav,
   footer,
   div#missionSectionWrapper,
   div.hero,
   div.content,
-  div.partners {
+  div.partners,
+  nav {
     margin: auto;
     max-width: 58.8125rem;
   }

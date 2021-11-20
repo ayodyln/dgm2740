@@ -1,5 +1,6 @@
 div#headerWrapper {
   header {
+    padding: 0 0.5rem;
     div.wordmark {
       border-bottom: solid 1px $grey;
     }
@@ -7,81 +8,99 @@ div#headerWrapper {
 }
 
 div#navWrapper {
+  margin-top: 2px;
   nav {
-    background: initial;
-
+    background: white;
+    display: unset;
     div.hamBtn {
       display: none;
-      padding: 0;
     }
 
     div.ul {
       display: initial;
       padding: 0;
+      margin: 0;
       ul {
-        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0.5rem;
+        display: flex;
         justify-content: flex-end;
-        padding-right: 0.5rem;
         li {
+          border: none;
           margin: 0;
+          padding: 0;
+          width: unset;
           margin-left: 25px;
-          height: 32px;
-
           a {
+            text-decoration: none;
             color: $grey;
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            font-size: 20px;
-          }
-          a:hover {
-            color: darken($grey, 20%);
+            display: initial;
           }
         }
       }
     }
   }
-  margin-bottom: 0.5rem;
 }
 
 div#mainWrapper {
   main {
-    padding: 0 0.5rem;
-    div.mission-div {
-      padding: 0.5rem;
-      section {
-        padding: 0;
-      }
-    }
-
     div.content {
       div.header {
-        
+        border-bottom: solid 1px $grey;
+        margin: 0 0.5rem;
+        margin-top: 1rem;
+        h1 {
+          margin: 0;
+          color: $blue;
+          font-weight: 400;
+        }
       }
+
       div.grid {
-        margin: 0.5rem;
+        padding: 0 0.5rem;
         section.one {
           div.card {
-            display: initial;
-            div.figure {
+            margin: 1rem 0;
+            padding: 0;
+            img {
+              width: 35%;
               float: left;
-              img {
-                width: auto;
-                height: 150px;
+              margin-right: 1rem;
+            }
+          }
+        }
+
+        section.two {
+          div.bigCard {
+            margin: 1rem 0;
+            padding: 0;
+            img {
+              width: 50%;
+              float: left;
+              margin-right: 1rem;
+            }
+            div.cardText {
+              margin: 0;
+              padding: 0;
+              h2,
+              p {
+                margin: 0;
               }
             }
           }
-        }
-        section.two {
+
           div.graphCard {
-            div.figure {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
         }
       }
+    }
+
+    div.partners {
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
 }
