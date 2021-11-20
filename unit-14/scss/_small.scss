@@ -175,9 +175,12 @@ div#mainWrapper {
 
           div.graphCard {
             position: relative;
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
             img {
               position: relative;
+              
             }
 
             div.info {
