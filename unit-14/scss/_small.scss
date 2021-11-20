@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 html {
-  overflow-x: ;
+  overflow-x: hidden;
 }
 
 body {
@@ -61,15 +61,30 @@ div#navWrapper {
     }
 
     div.ul {
+      width: 100%;
+      padding: 0 0.5rem;
+      padding-bottom: 1rem;
       ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        :nth-child(1) {
+          margin-top: 5px;
+        }
 
         li {
+          margin: 15px 0;
+  
           a {
             text-decoration: none;
             color: white;
+            display: block;
+            font-size: 18px;
           }
         }
       }
@@ -114,6 +129,7 @@ div#mainWrapper {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+
         div.card {
           display: flex;
           flex-direction: column;
@@ -159,26 +175,61 @@ div#mainWrapper {
 
         div.graphCard {
           position: relative;
-          button {
+
+          div.figure {
+            position: relative;
+          }
+
+          div.info {
             position: absolute;
+            bottom: 0.75rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            button {
+              width: 15rem;
+              height: 44px;
+              background-color: $blue;
+              border: none;
+              border-radius: 10px;
+              color: white;
+              font-size: 24px;
+              cursor: pointer;
+            }
+            button:hover {
+              background-color: darken($blue, 5%);
+            }
+            p {
+              margin: 0.5rem 0;
+            }
+          }
+        }
+
+        div.techSupport {
+          padding: 0 0.5rem;
+          h2 {
+            color: $blue;
+          }
+          P {
           }
         }
       }
     }
+  }
 
-    div.partners {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      gap: 10px;
-      div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-          width: 75%;
-          height: auto;
-        }
+  div.partners {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 75%;
+        height: auto;
       }
     }
   }

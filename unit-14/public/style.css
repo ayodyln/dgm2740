@@ -512,15 +512,42 @@ div#navWrapper nav div.hamBtn button#hamburgerBtn {
   font-size: 36px;
 }
 
+div#navWrapper nav div.ul {
+  width: 100%;
+  padding: 0 0.5rem;
+  padding-bottom: 1rem;
+}
+
 div#navWrapper nav div.ul ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+div#navWrapper nav div.ul ul :nth-child(1) {
+  margin-top: 5px;
+}
+
+div#navWrapper nav div.ul ul li {
+  margin: 15px 0;
 }
 
 div#navWrapper nav div.ul ul li a {
   text-decoration: none;
   color: white;
+  display: block;
+  font-size: 18px;
 }
 
 div#mainWrapper {
@@ -639,11 +666,54 @@ div#mainWrapper main div.content div.grid div.graphCard {
   position: relative;
 }
 
-div#mainWrapper main div.content div.grid div.graphCard button {
-  position: absolute;
+div#mainWrapper main div.content div.grid div.graphCard div.figure {
+  position: relative;
 }
 
-div#mainWrapper main div.partners {
+div#mainWrapper main div.content div.grid div.graphCard div.info {
+  position: absolute;
+  bottom: 0.75rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div#mainWrapper main div.content div.grid div.graphCard div.info button {
+  width: 15rem;
+  height: 44px;
+  background-color: #0480b1;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+div#mainWrapper main div.content div.grid div.graphCard div.info button:hover {
+  background-color: #036e98;
+}
+
+div#mainWrapper main div.content div.grid div.graphCard div.info p {
+  margin: 0.5rem 0;
+}
+
+div#mainWrapper main div.content div.grid div.techSupport {
+  padding: 0 0.5rem;
+}
+
+div#mainWrapper main div.content div.grid div.techSupport h2 {
+  color: #0480b1;
+}
+
+div#mainWrapper div.partners {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -653,7 +723,7 @@ div#mainWrapper main div.partners {
   gap: 10px;
 }
 
-div#mainWrapper main div.partners div {
+div#mainWrapper div.partners div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -665,7 +735,7 @@ div#mainWrapper main div.partners div {
           align-items: center;
 }
 
-div#mainWrapper main div.partners div img {
+div#mainWrapper div.partners div img {
   width: 75%;
   height: auto;
 }
