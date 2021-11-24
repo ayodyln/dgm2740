@@ -1,0 +1,19 @@
+@import "normalize";
+@import "variable";
+@import "small";
+
+@media only screen and (min-width: 560px) {
+  @import "medium";
+}
+
+@media only screen and (min-width: 1028px) {
+  @import "large";
+}
+
+// @media only screen and (min-width: 1800px) {
+//     @import "myLaptop";
+// }
+
+// @media only screen and (min-width: 1920px) {
+//     @import "myDesktop";
+// }
