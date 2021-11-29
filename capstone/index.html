@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Dragons Keep</title>
 </head>
 
@@ -13,23 +13,33 @@
     <div id="header-nav-Wrapper">
         <nav>
             <div class="logoMark">
-                <img src="img/Untitled-1.png" alt="logoMark">
+                <figure>
+                    <img src="img/logo/logo.png" alt="Logo" width="1600" height="500"
+                        srcset="img/logo/logo-assets/logo1.png 1x, img/logo/logo-assets/logo2.png 2x, img/logo/logo-assets/logo3.png 3x">
+                </figure>
                 <div class="text">
-                    <h1>The Dragon's Keep</h1>
+                    <h1>Dragon's Keep</h1>
                 </div>
             </div>
+
+            <div class="navBtnDiv">
+                <button id="navBtn">
+                    <span class="open">&#9776;</span>
+                    <span class="close hidden">&#10006;</span>
+                </button>
+            </div>
+
             <div class="ul-nav">
-                <ul>
+                <ul class="mainUL hidden">
                     <li><a href="#">Blog</a></li>
-                    <li>
-                        <a href="#">Stores
-                            <ul class="subNav">
-                                <li><a href="#">Provo</a></li>
-                                <li><a href="#">Orem</a></li>
-                                <li><a href="#">Spanish Fork</a></li>
-                                <li><a href="#">Lehi</a></li>
-                            </ul>
-                        </a>
+                    <li class="subNavLi">
+                        <a href="#">Stores &#9660;</a>
+                        <ul class="subNav hidden">
+                            <li><a href="#">Provo</a></li>
+                            <li><a href="#">Orem</a></li>
+                            <li><a href="#">Spanish Fork</a></li>
+                            <li><a href="#">Lehi</a></li>
+                        </ul>
                     </li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
@@ -40,7 +50,9 @@
     <div id="mainWrapper">
         <main>
             <div class="HeroContainer">
-
+                <!-- This is placeholder -->
+                <img class="heroImg" src="img/content/hero-imgs/tablet-desktop/hero1.jpg" alt="test" width="1600"
+                    height="500">
             </div>
 
             <div class="introContainer">
@@ -140,6 +152,8 @@
             <p>© Dragons Keep 2021</p>
         </footer>
     </div>
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>

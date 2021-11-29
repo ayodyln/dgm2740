@@ -10,6 +10,80 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  // background-color: red;
+}
+img.heroImg {
+  width: 100%;
+  height: auto;
+}
+
+div#header-nav-Wrapper {
+  background-color: grey;
+
+  nav {
+    padding: 0.5rem 0.5rem;
+
+    div.logoMark {
+      display: flex;
+      align-items: flex-end;
+      figure {
+        padding: 0;
+        margin: 0;
+        margin-right: 12px;
+        width: 7rem;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      div.text {
+        width: 100%;
+        h1 {
+          margin: 0;
+          padding: 0;
+          font-size: 28px;
+        }
+      }
+    }
+
+    div.navBtnDiv {
+      display: flex;
+      justify-content: flex-end;
+      margin: 12px 0;
+      margin-bottom: 0;
+
+      button {
+        position: relative;
+        background: none;
+        border: none;
+        padding: 0;
+      }
+    }
+
+    div.ul-nav {
+      background-color: cadetblue;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 0;
+      ul.mainUL {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: right;
+        li {
+          a {
+            text-decoration: none;
+          }
+          ul.subNav {
+            list-style: none;
+          }
+        }
+      }
+    }
+  }
+}
 
 //! clear fix
 .clearfix:after {
