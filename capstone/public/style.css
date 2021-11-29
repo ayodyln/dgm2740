@@ -437,8 +437,6 @@ template {
   display: none;
 }
 
-/* rules here will be applied to all sizes, medium and large will modify from that */
-/* Apply a natural box layout model to all elements */
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -448,17 +446,17 @@ html {
   overflow-x: hidden;
 }
 
-img.heroImg {
-  width: 100%;
-  height: auto;
-}
-
-div#header-nav-Wrapper {
-  background-color: grey;
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 div#header-nav-Wrapper nav {
-  padding: 0.5rem 0.5rem;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  background-color: #eaeaea;
+  width: 100%;
 }
 
 div#header-nav-Wrapper nav div.logoMark {
@@ -468,16 +466,22 @@ div#header-nav-Wrapper nav div.logoMark {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
 }
 
-div#header-nav-Wrapper nav div.logoMark figure {
+div#header-nav-Wrapper nav div.logoMark a.homeAnchor {
+  width: 7rem;
+  margin: 0;
+}
+
+div#header-nav-Wrapper nav div.logoMark a.homeAnchor figure {
   padding: 0;
   margin: 0;
   margin-right: 12px;
-  width: 7rem;
 }
 
-div#header-nav-Wrapper nav div.logoMark figure img {
+div#header-nav-Wrapper nav div.logoMark a.homeAnchor figure img {
   width: 100%;
   height: auto;
 }
@@ -499,8 +503,7 @@ div#header-nav-Wrapper nav div.navBtnDiv {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 12px 0;
-  margin-bottom: 0;
+  background-color: #a71d31;
 }
 
 div#header-nav-Wrapper nav div.navBtnDiv button {
@@ -508,10 +511,13 @@ div#header-nav-Wrapper nav div.navBtnDiv button {
   background: none;
   border: none;
   padding: 0;
+  color: white;
+  font-size: 32px;
+  padding: 0.5rem;
 }
 
 div#header-nav-Wrapper nav div.ul-nav {
-  background-color: cadetblue;
+  background-color: #a71d31;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -530,14 +536,208 @@ div#header-nav-Wrapper nav div.ul-nav ul.mainUL {
   margin: 0;
   list-style: none;
   text-align: right;
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+}
+
+div#header-nav-Wrapper nav div.ul-nav ul.mainUL li {
+  margin-bottom: 24px;
 }
 
 div#header-nav-Wrapper nav div.ul-nav ul.mainUL li a {
   text-decoration: none;
+  color: white;
+  font-size: 20px;
 }
 
 div#header-nav-Wrapper nav div.ul-nav ul.mainUL li ul.subNav {
   list-style: none;
+  border-top: solid 1px #91192b;
+}
+
+div#header-nav-Wrapper nav div.ul-nav ul.mainUL li ul.subNav li {
+  margin: 16px 1rem;
+}
+
+span.downArrow {
+  font-size: 16px;
+}
+
+div#mainWrapper {
+  margin-top: 123.33px;
+}
+
+div#mainWrapper main div.HeroContainer picture.my-picture img.heroImg {
+  width: 100%;
+  height: auto;
+}
+
+div#mainWrapper main div.introContainer {
+  background-color: #eaeaea;
+  padding: 0.5rem;
+}
+
+div#mainWrapper main div.introContainer h1 {
+  margin: 0;
+}
+
+div#mainWrapper main div.serviceCards {
+  padding: 0 0.5rem;
+  margin: 0.5rem 0;
+}
+
+div#mainWrapper main div.serviceCards .card0 {
+  border-bottom: solid 1px #a71d31;
+  margin-bottom: 1rem;
+}
+
+div#mainWrapper main div.serviceCards .card5 {
+  border-bottom: none;
+}
+
+div#mainWrapper main div.serviceCards .card1 {
+  border-bottom: solid 1px #a71d31;
+  margin-bottom: 1rem;
+}
+
+div#mainWrapper main div.serviceCards .card5 {
+  border-bottom: none;
+}
+
+div#mainWrapper main div.serviceCards .card2 {
+  border-bottom: solid 1px #a71d31;
+  margin-bottom: 1rem;
+}
+
+div#mainWrapper main div.serviceCards .card5 {
+  border-bottom: none;
+}
+
+div#mainWrapper main div.serviceCards .card3 {
+  border-bottom: solid 1px #a71d31;
+  margin-bottom: 1rem;
+}
+
+div#mainWrapper main div.serviceCards .card5 {
+  border-bottom: none;
+}
+
+div#mainWrapper main div.serviceCards .card4 {
+  border-bottom: solid 1px #a71d31;
+  margin-bottom: 1rem;
+}
+
+div#mainWrapper main div.serviceCards .card5 {
+  border-bottom: none;
+}
+
+div#mainWrapper main div.serviceCards .card5 {
+  border-bottom: solid 1px #a71d31;
+  margin-bottom: 1rem;
+}
+
+div#mainWrapper main div.serviceCards .card5 {
+  border-bottom: none;
+}
+
+div#mainWrapper main div.serviceCards div.card div.figure {
+  position: relative;
+  margin: 0;
+}
+
+div#mainWrapper main div.serviceCards div.card div.figure picture {
+  padding: 0;
+  margin: 0;
+}
+
+div#mainWrapper main div.serviceCards div.card div.figure picture img.cardImg {
+  width: 100%;
+  height: auto;
+}
+
+div#mainWrapper main div.serviceCards div.card div.figure div {
+  position: absolute;
+  bottom: 0.25rem;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  width: 100%;
+}
+
+div#mainWrapper main div.serviceCards div.card div.figure div h3 {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+div#mainWrapper main div.serviceCards div.card p {
+  margin: 0.5rem 0;
+}
+
+div#mainWrapper main div.newLetterContainer {
+  background-color: #eaeaea;
+  padding: 1rem 0.5rem;
+}
+
+div#mainWrapper main div.newLetterContainer div.formText {
+  text-align: center;
+}
+
+div#mainWrapper main div.newLetterContainer div.formText h2 {
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+div#mainWrapper main div.newLetterContainer div.formText p {
+  margin: 0;
+}
+
+div#mainWrapper main div.newLetterContainer form.formSection {
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div#mainWrapper main div.newLetterContainer form.formSection :nth-child(1) {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+div#mainWrapper main div.newLetterContainer form.formSection :nth-child(2) {
+  width: 75%;
+  padding: 0.5rem;
+  background-color: #a71d31;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+}
+
+div#mainWrapper main div.newLetterContainer form.formSection :nth-child(2):hover {
+  background-color: #91192b;
+}
+
+div#footerWrapper {
+  background-color: #a71d31;
+}
+
+div#footerWrapper footer {
+  text-align: center;
+  color: white;
+  padding: 0.5rem;
 }
 
 .clearfix:after {
@@ -548,4 +748,62 @@ div#header-nav-Wrapper nav div.ul-nav ul.mainUL li ul.subNav {
 
 .hidden {
   display: none;
+}
+
+@media only screen and (min-width: 560px) {
+  div#header-nav-Wrapper nav {
+    position: initial;
+  }
+  div#header-nav-Wrapper nav div.navBtnDiv {
+    display: none;
+  }
+  div#header-nav-Wrapper nav div.ul-nav ul.mainUL {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  div#header-nav-Wrapper nav div.ul-nav ul.mainUL li {
+    margin: 0;
+    margin-left: 1rem;
+  }
+  div#header-nav-Wrapper nav div.ul-nav ul.mainUL li.subNavLi {
+    position: relative;
+  }
+  div#header-nav-Wrapper nav div.ul-nav ul.mainUL li.subNavLi ul.subNav {
+    width: 9rem;
+    position: absolute;
+    right: -8px;
+    top: 1.75rem;
+    background-color: #a71d31;
+    margin: 0;
+    padding: 0;
+  }
+  div#header-nav-Wrapper nav div.ul-nav ul.mainUL li.subNavLi ul.subNav li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-bottom: solid 1px #bd2137;
+  }
+  div#header-nav-Wrapper nav div.ul-nav ul.mainUL li.subNavLi ul.subNav li a {
+    display: block;
+    padding: 0.5rem;
+  }
+  div#header-nav-Wrapper nav div.ul-nav ul.mainUL li.subNavLi ul.subNav li a:hover {
+    background-color: #bd2137;
+  }
+  div#header-nav-Wrapper nav div.ul-nav ul.mainUL li.subNavLi ul.subNav :nth-last-child(1) {
+    border-bottom: none;
+  }
+  div#mainWrapper {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1028px) {
+  div#mainWrapper {
+    margin-top: 123.33px;
+  }
 }

@@ -13,10 +13,12 @@
     <div id="header-nav-Wrapper">
         <nav>
             <div class="logoMark">
-                <figure>
-                    <img src="img/logo/logo.png" alt="Logo" width="1600" height="500"
-                        srcset="img/logo/logo-assets/logo1.png 1x, img/logo/logo-assets/logo2.png 2x, img/logo/logo-assets/logo3.png 3x">
-                </figure>
+                <a href="index.html" class="homeAnchor">
+                    <figure>
+                        <img src="img/logo/logo.png" alt="Logo" width="1600" height="500"
+                            srcset="img/logo/logo-assets/logo1.png 1x, img/logo/logo-assets/logo2.png 2x, img/logo/logo-assets/logo3.png 3x">
+                    </figure>
+                </a>
                 <div class="text">
                     <h1>Dragon's Keep</h1>
                 </div>
@@ -33,7 +35,7 @@
                 <ul class="mainUL hidden">
                     <li><a href="#">Blog</a></li>
                     <li class="subNavLi">
-                        <a href="#">Stores &#9660;</a>
+                        <a href="#">Stores <span class="downArrow">&#9660;</span></a>
                         <ul class="subNav hidden">
                             <li><a href="#">Provo</a></li>
                             <li><a href="#">Orem</a></li>
@@ -50,9 +52,15 @@
     <div id="mainWrapper">
         <main>
             <div class="HeroContainer">
-                <!-- This is placeholder -->
-                <img class="heroImg" src="img/content/hero-imgs/tablet-desktop/hero1.jpg" alt="test" width="1600"
-                    height="500">
+                <div class="hero-img">
+                    <picture class="my-picture heroOne">
+                        <source media="(max-width: 320px)" srcset="img/content/hero-imgs/mobile/hero1.jpg">
+                        <source media="(min-width: 560px)" srcset="img/content/hero-imgs/tablet-desktop/hero1.jpg">
+                        <img class="heroImg" src="img/content/hero-imgs/originals/comicWall.jpg" alt="test" width="1600"
+                            height="500">
+                    </picture>
+                    <div class="img-cta"></div>
+                </div>
             </div>
 
             <div class="introContainer">
@@ -69,9 +77,19 @@
             </div>
 
             <div class="serviceCards">
+                <h2>We offer...</h2>
                 <div class="card card1">
-                    <img src="" alt="" class="cardImg">
-                    <h3>Comics</h3>
+                    <div class="figure">
+                        <picture>
+                            <source media="(max-width: 320px)" srcset="img/content/page-imgs-mobile/comicBook.jpg">
+                            <source media="(min-width: 560px)" srcset="img/content/page-imgs/comicBook.jpg">
+                            <img src="img/content/page-imgs/comicBook.jpg" alt="Comics" class="cardImg" width="1600"
+                                height="500">
+                        </picture>
+                        <div>
+                            <h3>Comics</h3>
+                        </div>
+                    </div>
                     <p>
                         We are proud to proclaim that we are the only comic book shop in Utah Valley. We carry the
                         greatest comic hits, ranging from the awesome, adventure packed Marvel Comics to some of the
@@ -83,8 +101,17 @@
                     </p>
                 </div>
                 <div class="card card2">
-                    <img src="" alt="" class="cardImg">
-                    <h3>Miniature Gaming</h3>
+                    <div class="figure">
+                        <picture>
+                            <source media="(max-width: 320px)" srcset="img/content/page-imgs-mobile/miniatureGame.jpg">
+                            <source media="(min-width: 560px)" srcset="img/content/page-imgs/miniatureGame.jpg">
+                            <img src="img/content/page-imgs/miniatureGame.jpg" alt="Comics" class="cardImg" width="1600"
+                                height="500">
+                        </picture>
+                        <div>
+                            <h3>Miniature Gaming</h3>
+                        </div>
+                    </div>
                     <p>
                         Warhammer 40K and Age of Sigmar are Dragon's Keeps Staples when it comes to war gaming
                         miniatures. We have escalation leagues that are 6 weeks long for Warhammer that have a
@@ -95,8 +122,17 @@
                     </p>
                 </div>
                 <div class="card card3">
-                    <img src="" alt="" class="cardImg">
-                    <h3>Trading Card Games</h3>
+                    <div class="figure">
+                        <picture>
+                            <source media="(max-width: 320px)" srcset="img/content/page-imgs-mobile/tradingCards.jpg">
+                            <source media="(min-width: 560px)" srcset="img/content/page-imgs/tradingCards.jpg">
+                            <img src="img/content/page-imgs/tradingCards.jpg" alt="Comics" class="cardImg" width="1600"
+                                height="500">
+                        </picture>
+                        <div>
+                            <h3>Trading Card Games</h3>
+                        </div>
+                    </div>
                     <p>
                         Trading Card Games are the lifeblood of Dragon’s Keep. We hold major events for card games
                         including but not limited to Magic The Gathering, Pokemon, YuGiOh!, and Dragon Ball Super, plus
@@ -107,8 +143,17 @@
                     </p>
                 </div>
                 <div class="card card4">
-                    <img src="" alt="" class="cardImg">
-                    <h3>Board Games</h3>
+                    <div class="figure">
+                        <picture>
+                            <source media="(max-width: 320px)" srcset="img/content/page-imgs-mobile/boardGame.jpg">
+                            <source media="(min-width: 560px)" srcset="img/content/page-imgs/boardGame.jpg">
+                            <img src="img/content/page-imgs/boardGame.jpg" alt="Comics" class="cardImg" width="1600"
+                                height="500">
+                        </picture>
+                        <div>
+                            <h3>Board Games</h3>
+                        </div>
+                    </div>
                     <p>
                         Board games are a great way for families to bond during family game night! We carry a wide
                         variety of different board games from card games like Smash Up and Fluxx, to adventurous dungeon
@@ -120,8 +165,17 @@
                     </p>
                 </div>
                 <div class="card card5">
-                    <img src="" alt="" class="cardImg">
-                    <h3>Role-Playing Games</h3>
+                    <div class="figure">
+                        <picture>
+                            <source media="(max-width: 320px)" srcset="img/content/page-imgs-mobile/dnd-Dice.jpg">
+                            <source media="(min-width: 560px)" srcset="img/content/page-imgs/dnd-Dice.jpg">
+                            <img src="img/content/page-imgs/dnd-Dice.jpg" alt="Comics" class="cardImg" width="1600"
+                                height="500">
+                        </picture>
+                        <div>
+                            <h3>Role-Playing Games</h3>
+                        </div>
+                    </div>
                     <p>
                         Here at the Dragon's Keep, RPGs are one of the activities we are most known for! Most of our
                         stores have a variety of Dice, Books, Mats as well as miniatures for purchase. Our most played
@@ -134,13 +188,16 @@
             </div>
 
             <div class="newLetterContainer">
-                <h2>Join Our Newsletter!</h2>
-                <p>
-                    Join our newsletter to receive updates on events, sales, and new products we receive in each of our
-                    stores!
-                </p>
-                <form action="">
-                    <input type="email" name="email" id="userEmail">
+                <div class="formText">
+                    <h2>Join Our Newsletter!</h2>
+                    <p>
+                        Join our newsletter to receive updates on events, sales, and new products we receive in each of
+                        our
+                        stores!
+                    </p>
+                </div>
+                <form action="" class="formSection">
+                    <input type="email" name="email" id="userEmail" placeholder="joe@email.com">
                     <input type="submit" value="Sign Up">
                 </form>
             </div>

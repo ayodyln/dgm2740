@@ -1,6 +1,6 @@
-/* rules here will be applied to all sizes, medium and large will modify from that */
+//* rules here will be applied to all sizes, medium and large will modify from that *//
 
-/* Apply a natural box layout model to all elements */
+//* Apply a natural box layout model to all elements *//
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -9,32 +9,38 @@
 html {
   overflow-x: hidden;
 }
-
 body {
-  // background-color: red;
-}
-img.heroImg {
-  width: 100%;
-  height: auto;
+  font-family: sans-serif;
+  overflow-x: hidden;
 }
 
+//TODO: Page Styling Below.
+
+//? Header/Nav Styling
 div#header-nav-Wrapper {
-  background-color: grey;
-
   nav {
-    padding: 0.5rem 0.5rem;
-
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    background-color: $light-grey;
+    width: 100%;
+    //? Logomark div styling
     div.logoMark {
       display: flex;
       align-items: flex-end;
-      figure {
-        padding: 0;
-        margin: 0;
-        margin-right: 12px;
+      border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+      padding: 0.5rem;
+      a.homeAnchor {
         width: 7rem;
-        img {
-          width: 100%;
-          height: auto;
+        margin: 0;
+        figure {
+          padding: 0;
+          margin: 0;
+          margin-right: 12px;
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
       }
       div.text {
@@ -47,45 +53,193 @@ div#header-nav-Wrapper {
       }
     }
 
+    //? Nav button styling
     div.navBtnDiv {
       display: flex;
       justify-content: flex-end;
-      margin: 12px 0;
-      margin-bottom: 0;
-
+      background-color: $red;
       button {
         position: relative;
         background: none;
         border: none;
         padding: 0;
+        color: white;
+        font-size: 32px;
+        padding: 0.5rem;
       }
     }
 
+    //? Nav mobile styling
     div.ul-nav {
-      background-color: cadetblue;
+      background-color: $red;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       margin: 0;
+
       ul.mainUL {
         padding: 0;
         margin: 0;
         list-style: none;
         text-align: right;
+        padding: 0.5rem 0.5rem;
+        width: 100%;
         li {
+          margin-bottom: 24px;
           a {
             text-decoration: none;
+            color: white;
+            font-size: 20px;
           }
           ul.subNav {
             list-style: none;
+            border-top: solid 1px darken($red, 5%);
+
+            li {
+              margin: 16px 1rem;
+            }
           }
         }
       }
     }
   }
 }
+span.downArrow {
+  font-size: 16px;
+}
 
-//! clear fix
+//? Main
+div#mainWrapper {
+  //! Fix for the space below nav
+  margin-top: 123.33px;
+
+  main {
+    //? Hero Image Styling
+    div.HeroContainer {
+      picture.my-picture {
+        img.heroImg {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    //? Intro Div Styling
+    div.introContainer {
+      background-color: #eaeaea;
+      padding: 0.5rem;
+      h1 {
+        margin: 0;
+      }
+    }
+
+    //? Service Card Styling
+    div.serviceCards {
+      padding: 0 0.5rem;
+      margin: 0.5rem 0;
+      @for $i from 0 through 5 {
+        .card#{$i} {
+          border-bottom: solid 1px $red;
+          margin-bottom: 1rem;
+        }
+        .card5 {
+          border-bottom: none;
+        }
+      }
+
+      div.card {
+        div.figure {
+          position: relative;
+          margin: 0;
+
+          picture {
+            padding: 0;
+            margin: 0;
+            img.cardImg {
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          div {
+            position: absolute;
+            bottom: 0.25rem;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 0.5rem;
+            width: 100%;
+            h3 {
+              margin: 0;
+              padding: 0;
+              color: white;
+            }
+          }
+        }
+
+        p {
+          margin: 0.5rem 0;
+        }
+      }
+    }
+
+    //? newsletter section styling
+    div.newLetterContainer {
+      background-color: $light-grey;
+      padding: 1rem 0.5rem;
+
+      div.formText {
+        text-align: center;
+        h2 {
+          margin-bottom: 0.5rem;
+          margin-top: 0;
+        }
+        p {
+          margin: 0;
+        }
+      }
+
+      form.formSection {
+        margin: 0.5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        :nth-child(1) {
+          width: 100%;
+          margin-bottom: 1rem;
+          padding: 0.5rem;
+        }
+
+        :nth-child(2) {
+          width: 75%;
+          padding: 0.5rem;
+          background-color: $red;
+          color: white;
+          font-size: 1.2rem;
+          border-radius: 5px;
+          border-style: none;
+          cursor: pointer;
+        }
+        :nth-child(2):hover {
+          background-color: darken($red, 5%);
+        }
+      }
+    }
+  }
+}
+
+//? Footer styling
+div#footerWrapper {
+  background-color: $red;
+  footer {
+    text-align: center;
+    color: white;
+    padding: 0.5rem;
+  }
+}
+
+//* clear fix
 .clearfix:after {
   content: "";
   display: table;
@@ -94,3 +248,5 @@ div#header-nav-Wrapper {
 .hidden {
   display: none;
 }
+
+//! PAGES STYLING: Blog, Stores, Thank You page, and more.

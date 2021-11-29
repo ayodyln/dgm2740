@@ -14,6 +14,6 @@ navBtn.addEventListener("click", () => {
 
 const subNav = document.querySelector(".subNavLi");
 
-subNav.addEventListener("mouseover", () => {
+subNav.addEventListener("click", () => {
   document.querySelector(".subNav").classList.toggle("hidden");
 });

@@ -1,0 +1,46 @@
+//? Header/Nav Styling
+div#header-nav-Wrapper {
+  nav {
+    //? Logomark div styling
+    div.logoMark {
+    }
+
+    //? Nav button styling
+    div.navBtnDiv {
+    }
+
+    //? Nav mobile styling
+    div.ul-nav {
+      ul.mainUL {
+      }
+    }
+  }
+}
+
+//? Main
+div#mainWrapper {
+  //! Fix for the space below nav
+  margin-top: 123.33px;
+
+  main {
+    //? Hero Image Styling
+    div.HeroContainer {
+    }
+
+    //? Intro Div Styling
+    div.introContainer {
+    }
+
+    //? Service Card Styling
+    div.serviceCards {
+    }
+
+    //? newsletter section styling
+    div.newLetterContainer {
+    }
+  }
+}
+
+//? Footer styling
+div#footerWrapper {
+}
