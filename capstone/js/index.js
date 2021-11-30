@@ -17,3 +17,15 @@ const subNav = document.querySelector(".subNavLi");
 subNav.addEventListener("click", () => {
   document.querySelector(".subNav").classList.toggle("hidden");
 });
+
+$(document).ready(function () {
+  $(".HeroContainer").slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 1000,
+    cssEase: "ease-in",
+    autoplay: true,
+    autoplaySpeed: 30000,
+  });
+});
