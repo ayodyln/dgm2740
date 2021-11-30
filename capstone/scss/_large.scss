@@ -1,3 +1,10 @@
+nav,
+main,
+footer {
+  margin: auto;
+  max-width: 60rem;
+}
+
 //? Header/Nav Styling
 div#header-nav-Wrapper {
   nav {
@@ -20,7 +27,6 @@ div#header-nav-Wrapper {
 //? Main
 div#mainWrapper {
   //! Fix for the space below nav
-  margin-top: 123.33px;
 
   main {
     //? Hero Image Styling
@@ -43,4 +49,6 @@ div#mainWrapper {
 
 //? Footer styling
 div#footerWrapper {
+  footer {
+  }
 }

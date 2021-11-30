@@ -713,6 +713,8 @@ div#mainWrapper main div.newLetterContainer form.formSection :nth-child(1) {
   width: 100%;
   margin-bottom: 1rem;
   padding: 0.5rem;
+  border-radius: 5px;
+  border: solid 1px rgba(0, 0, 0, 0.3);
 }
 
 div#mainWrapper main div.newLetterContainer form.formSection :nth-child(2) {
@@ -764,10 +766,24 @@ div#footerWrapper footer {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    padding: 0;
   }
   div#header-nav-Wrapper nav div.ul-nav ul.mainUL li {
     margin: 0;
-    margin-left: 1rem;
+    padding: 0;
+    height: 100%;
+    border-left: solid 1px #bd2137;
+  }
+  div#header-nav-Wrapper nav div.ul-nav ul.mainUL li a {
+    display: block;
+    margin: 0;
+    padding: 0.5rem 1rem;
+  }
+  div#header-nav-Wrapper nav div.ul-nav ul.mainUL :nth-child(1) {
+    border: none;
+  }
+  div#header-nav-Wrapper nav div.ul-nav ul.mainUL li:hover {
+    background-color: #bd2137;
   }
   div#header-nav-Wrapper nav div.ul-nav ul.mainUL li.subNavLi {
     position: relative;
@@ -780,6 +796,10 @@ div#footerWrapper footer {
     background-color: #a71d31;
     margin: 0;
     padding: 0;
+    -webkit-animation: slide 0.2s ease-out;
+            animation: slide 0.2s ease-out;
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
   }
   div#header-nav-Wrapper nav div.ul-nav ul.mainUL li.subNavLi ul.subNav li {
     margin: 0;
@@ -800,10 +820,68 @@ div#footerWrapper footer {
   div#mainWrapper {
     margin: 0;
   }
+  div#mainWrapper main div.serviceCards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  div#mainWrapper main div.newLetterContainer form.formSection {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  div#mainWrapper main div.newLetterContainer form.formSection :nth-child(1) {
+    margin: 0;
+  }
+  div#mainWrapper main div.newLetterContainer form.formSection :nth-child(2) {
+    width: 50%;
+    margin-left: 1rem;
+  }
+  div#footerWrapper footer {
+    padding: 0.25rem;
+  }
+  @-webkit-keyframes slide {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      opacity: 0;
+    }
+    80% {
+      -webkit-transform: scaleY(0.8);
+              transform: scaleY(0.8);
+      opacity: 0.5;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+  }
+  @keyframes slide {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      opacity: 0;
+    }
+    80% {
+      -webkit-transform: scaleY(0.8);
+              transform: scaleY(0.8);
+      opacity: 0.5;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+  }
 }
 
 @media only screen and (min-width: 1028px) {
-  div#mainWrapper {
-    margin-top: 123.33px;
+  nav,
+  main,
+  footer {
+    margin: auto;
+    max-width: 60rem;
   }
 }

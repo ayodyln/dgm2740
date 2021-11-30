@@ -11,9 +11,24 @@ div#header-nav-Wrapper {
       ul.mainUL {
         display: flex;
         justify-content: flex-end;
+        padding: 0;
         li {
           margin: 0;
-          margin-left: 1rem;
+          padding: 0;
+          height: 100%;
+          border-left: solid 1px lighten($red, 5%);
+          a {
+            display: block;
+            margin: 0;
+            padding: 0.5rem 1rem;
+          }
+        }
+        :nth-child(1) {
+          border: none;
+        }
+
+        li:hover {
+          background-color: lighten($red, 5%);
         }
         li.subNavLi {
           position: relative;
@@ -26,6 +41,10 @@ div#header-nav-Wrapper {
             background-color: $red;
             margin: 0;
             padding: 0;
+
+            animation: slide 0.2s ease-out;
+            transform-origin: top center;
+
             li {
               margin: 0;
               padding: 0;
@@ -57,23 +76,50 @@ div#mainWrapper {
 
   main {
     //? Hero Image Styling
-    div.HeroContainer {
-    }
 
     //? Intro Div Styling
-    div.introContainer {
-    }
 
     //? Service Card Styling
     div.serviceCards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
     }
 
     //? newsletter section styling
     div.newLetterContainer {
+      form.formSection {
+        flex-direction: row;
+
+        :nth-child(1) {
+          margin: 0;
+        }
+        :nth-child(2) {
+          width: 50%;
+          margin-left: 1rem;
+        }
+      }
     }
   }
 }
 
 //? Footer styling
 div#footerWrapper {
+  footer {
+    padding: 0.25rem;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scaleY(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
