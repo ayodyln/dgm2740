@@ -14,11 +14,39 @@ div#header-nav-Wrapper {
 
     //? Nav button styling
     div.navBtnDiv {
+      display: none;
     }
 
     //? Nav mobile styling
     div.ul-nav {
       ul.mainUL {
+        display: unset;
+        display: flex;
+        justify-content: flex-end;
+
+        li.subNavLi {
+          position: relative;
+          
+          ul.subNav {
+            position: absolute;
+            background-color: $red;
+            top: 2rem;
+            right: 0rem;
+            width: 140px;
+            li:hover {
+              background-color: darken($red, 5%);
+              
+            }
+          }
+        }
+        li.subNavLi:hover {
+         
+          ul.subNav {
+            display: unset;
+            animation: slide 0.5s;
+            transform-origin: top center;
+          }
+        }
       }
     }
   }
@@ -50,5 +78,16 @@ div#mainWrapper {
 //? Footer styling
 div#footerWrapper {
   footer {
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
   }
 }

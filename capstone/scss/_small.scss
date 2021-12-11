@@ -58,6 +58,7 @@ div#header-nav-Wrapper {
       display: flex;
       justify-content: flex-end;
       background-color: $red;
+      border-bottom: solid 1px darken($red, 10%);
       button {
         position: relative;
         background: none;
@@ -72,34 +73,56 @@ div#header-nav-Wrapper {
     //? Nav mobile styling
     div.ul-nav {
       background-color: $red;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
       margin: 0;
 
       ul.mainUL {
         padding: 0;
         margin: 0;
         list-style: none;
-        text-align: right;
-        padding: 0.5rem 0.5rem;
+        // padding: 0.5rem 0.5rem;
         width: 100%;
         li {
-          margin-bottom: 24px;
+          height: 44px;
+          border-bottom: solid 1px darken($red, 5%);
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding: 0 0.5rem;
           a {
             text-decoration: none;
             color: white;
             font-size: 20px;
           }
-          ul.subNav {
-            list-style: none;
-            border-top: solid 1px darken($red, 5%);
+        }
 
+        li.subNavLi {
+          height: auto;
+          padding: 10px 0.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          a {
+            width: 100%;
+            text-align: right;
+          }
+
+          ul.subNav {
+            width: 100%;
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+            margin-top: 0.5rem;
             li {
-              margin: 16px 1rem;
+              width: 100%;
+              border: none;
+              a {
+                width: 100%;
+              }
             }
           }
         }
+        
+        
       }
     }
   }
@@ -131,6 +154,10 @@ div#mainWrapper {
       h1 {
         margin: 0;
       }
+    }
+
+    h2.we-Offer-Header {
+      padding: 0 0.5rem;
     }
 
     //? Service Card Styling
@@ -233,11 +260,11 @@ div#mainWrapper {
 
 //? Footer styling
 div#footerWrapper {
-  background-color: $red;
   footer {
     text-align: center;
     color: white;
     padding: 0.5rem;
+    background-color: $red;
   }
 }
 

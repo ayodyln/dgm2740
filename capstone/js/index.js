@@ -12,7 +12,7 @@ navBtn.addEventListener("click", () => {
   document.querySelector(".mainUL").classList.toggle("hidden");
 });
 
-const subNav = document.querySelector(".subNavLi");
+const subNav = document.querySelector(".subNavEvent");
 
 subNav.addEventListener("click", () => {
   document.querySelector(".subNav").classList.toggle("hidden");
