@@ -95,6 +95,8 @@ div#footerWrapper {
   }
 }
 
+//! ANIMTAIONS
+
 @keyframes slide {
   0% {
     transform: scaleY(0);
@@ -110,7 +112,7 @@ div#footerWrapper {
 
 //? THIS IS FOR THE BLOG PAGE
 div#mainWrapper {
-  margin-bottom: 5rem;
+  
   main {
     div.newBlogPost-Container {
       grid-template-areas: "info img";

@@ -1025,9 +1025,6 @@ div#mainWrapper main div.laterBlogPost-Container div.card div.cardInfo button {
       opacity: 1;
     }
   }
-  div#mainWrapper {
-    margin-bottom: 5rem;
-  }
   div#mainWrapper main div.newBlogPost-Container {
         grid-template-areas: "info img";
   }

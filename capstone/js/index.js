@@ -41,6 +41,7 @@ const subNav = document.querySelector(".subNavEvent");
 subNav.addEventListener("click", () => {
   document.querySelector(".subNav").classList.toggle("hidden");
   document.querySelector(".subNav").classList.toggle("Monke");
+  
 });
 
 //! BLOG PAGE JS
