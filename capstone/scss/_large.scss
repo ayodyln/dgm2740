@@ -26,31 +26,28 @@ div#header-nav-Wrapper {
 
         li.subNavLi {
           position: relative;
-          
+
           ul.subNav {
             position: absolute;
             background-color: $red;
             top: 2rem;
             right: 0rem;
             width: 140px;
-            
+
             li:hover {
               background-color: darken($red, 5%);
-              
             }
           }
         }
-        // li.subNavLi:hover {
-         
-        //   ul.subNav {
-        //     display: unset;
-        //     animation: slide 0.5s;
-        //     transform-origin: top center;
-        //   }
-        // }
       }
     }
   }
+}
+
+ul.subNav.Monke {
+  display: unset;
+  animation: slide 0.5s;
+  transform-origin: top center;
 }
 
 //? Main
@@ -108,3 +105,69 @@ div#footerWrapper {
     opacity: 1;
   }
 }
+
+//! PAGES STYLING: Blog, Stores, Thank You page, and more.
+
+//? THIS IS FOR THE BLOG PAGE
+div#mainWrapper {
+  margin-bottom: 5rem;
+  main {
+    div.newBlogPost-Container {
+      grid-template-areas: "info img";
+
+      div.blogInfo {
+        grid-area: info;
+
+        h2 {
+        }
+        p {
+        }
+        button {
+        }
+      }
+      div.Blog-Img {
+        grid-area: img;
+
+        img {
+          height: 20rem;
+        }
+      }
+    }
+
+    div.laterBlogPost-Container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      div.card {
+        div.cardImg {
+          div {
+            h2 {
+            }
+          }
+
+          img {
+          }
+        }
+
+        div.cardInfo {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          height: 14rem;
+          div {
+            p {
+              margin: 1rem 0;
+            }
+
+            :nth-child(2) {
+              margin-bottom: 0;
+            }
+          }
+          button {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+//? END OF BLOG PAGE STYLING

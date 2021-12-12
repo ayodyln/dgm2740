@@ -966,6 +966,13 @@ div#mainWrapper main div.laterBlogPost-Container div.card div.cardInfo button {
   div#header-nav-Wrapper nav div.ul-nav ul.mainUL li.subNavLi ul.subNav li:hover {
     background-color: #91192b;
   }
+  ul.subNav.Monke {
+    display: unset;
+    -webkit-animation: slide 0.5s;
+            animation: slide 0.5s;
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+  }
   div#mainWrapper main div.serviceCards {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -1017,5 +1024,50 @@ div#mainWrapper main div.laterBlogPost-Container div.card div.cardInfo button {
               transform: scaleY(1);
       opacity: 1;
     }
+  }
+  div#mainWrapper {
+    margin-bottom: 5rem;
+  }
+  div#mainWrapper main div.newBlogPost-Container {
+        grid-template-areas: "info img";
+  }
+  div#mainWrapper main div.newBlogPost-Container div.blogInfo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: info;
+  }
+  div#mainWrapper main div.newBlogPost-Container div.Blog-Img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: img;
+  }
+  div#mainWrapper main div.newBlogPost-Container div.Blog-Img img {
+    height: 20rem;
+  }
+  div#mainWrapper main div.laterBlogPost-Container {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  div#mainWrapper main div.laterBlogPost-Container div.card div.cardInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 14rem;
+  }
+  div#mainWrapper main div.laterBlogPost-Container div.card div.cardInfo div p {
+    margin: 1rem 0;
+  }
+  div#mainWrapper main div.laterBlogPost-Container div.card div.cardInfo div :nth-child(2) {
+    margin-bottom: 0;
+  }
+  div#mainWrapper main div.laterBlogPost-Container div.card div.cardInfo button {
+    cursor: pointer;
   }
 }

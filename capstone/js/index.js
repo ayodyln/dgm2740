@@ -6,7 +6,7 @@ const blogPostArr = [
     info: "D&D has been around for years, but recently it has been popular again. Here is a intro on how to play D&D, so you and your friends can explore all of your fantasies.",
   },
   {
-    title: "Marvel Comics: SpiderMan",
+    title: "Marvel: SpiderMan",
     date: "July 16, 2021",
     info: "A introduction to everything about who and what Spider Man is, from first appearance to most recent comic run. This will catch you up to speed on everything you need to know about Spider Man. ",
   },
@@ -40,6 +40,7 @@ const subNav = document.querySelector(".subNavEvent");
 
 subNav.addEventListener("click", () => {
   document.querySelector(".subNav").classList.toggle("hidden");
+  document.querySelector(".subNav").classList.toggle("Monke");
 });
 
 //! BLOG PAGE JS
@@ -88,3 +89,4 @@ function blogCards(blogCard) {
   });
 }
 blogCards(blogPostArr);
+
