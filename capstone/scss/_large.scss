@@ -1,5 +1,6 @@
 nav,
 main,
+
 footer {
   margin: auto;
   max-width: 60rem;
@@ -112,7 +113,6 @@ div#footerWrapper {
 
 //? THIS IS FOR THE BLOG PAGE
 div#mainWrapper {
-  
   main {
     div.newBlogPost-Container {
       grid-template-areas: "info img";
@@ -173,3 +173,7 @@ div#mainWrapper {
   }
 }
 //? END OF BLOG PAGE STYLING
+
+//? THIS IS FOR CONTACT US PAGE
+
+//? END OF CONTACT US PAGE

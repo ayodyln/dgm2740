@@ -104,3 +104,52 @@ div#mainWrapper {
   }
 }
 //? END OF BLOG PAGE STYLING
+
+//? THIS IS FOR CONTACT US PAGE
+div#mainWrapper {
+  main.contactUs-Main {
+    margin: 0;
+
+    div.formWrapper {
+      
+      h1 {
+        
+      }
+
+      form.form {
+        
+        fieldset {
+          
+
+          @for $x from 1 through 4 {
+            label.label#{$x} {
+              display: flex;
+              flex-direction: column;
+              span {
+                font-size: 75%;
+              }
+              input {
+                height: 44px;
+              }
+            }
+
+            label.label4 {
+              
+              span {
+                
+              }
+            }
+          }
+        }
+
+        input.submitBtn {
+          
+        }
+        input.submitBtn:hover {
+          
+        }
+      }
+    }
+  }
+}
+//? END OF CONTACT US PAGE

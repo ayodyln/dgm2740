@@ -53,7 +53,30 @@
 
     <div id="mainWrapper">
         <main>
-            
+            <div class="formWrapper">
+                <h1>Contact Us</h1>
+                <form action="thanks.html" method="get" class="form">
+                    <fieldset>
+                        <label class="label1"><span>Full Name</span>
+                            <input type="text" name="fname" placeholder="Jon Doe" required>
+                        </label>
+
+                        <label class="label2"><span>Phone</span>
+                            <input type="tel" name="phone" required>
+                        </label>
+
+                        <label class="label3"><span>Email</span>
+                            <input type="email" name="email" placeholder="my@email.com" required>
+                        </label>
+
+                        <label class="label4"><span>Message</span>
+                            <textarea name="text" id="message" rows="5" required></textarea>
+                        </label>
+                    </fieldset>
+
+                    <input type="submit" value="Send Message" class="submitBtn">
+                </form>
+            </div>
         </main>
     </div>
 
