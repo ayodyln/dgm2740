@@ -84,30 +84,27 @@ div#mainWrapper {
 //? END OF BLOG PAGE STYLING
 
 //? THIS IS FOR CONTACT US PAGE
-div#mainWrapper {
-  main.contactUs-Main {
-    margin: 0;
 
-    div.formWrapper {
-      form.form {
-        fieldset {
-          @for $x from 1 through 4 {
-            label.label#{$x} {
-              display: flex;
-              flex-direction: column;
-              span {
-                font-size: 75%;
-              }
-              input {
-                height: 44px;
-              }
-            }
+div.formWrapper {
+  margin-top: 1rem;
+  form.form {
+    fieldset {
+      @for $x from 1 through 4 {
+        label.label#{$x} {
+          display: flex;
+          flex-direction: column;
+          span {
+            font-size: 75%;
+          }
+          input {
+            height: 44px;
           }
         }
       }
     }
   }
 }
+
 //? END OF CONTACT US PAGE
 
 //! START OF SF PAGE

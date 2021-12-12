@@ -149,6 +149,11 @@ div#mainWrapper {
 //? THIS IS FOR CONTACT US PAGE
 
 div.formWrapper {
+  max-width: 70%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
   form.form {
     fieldset {
       @for $x from 1 through 4 {
@@ -159,7 +164,7 @@ div.formWrapper {
             font-size: 75%;
           }
           input {
-            padding: 0.5rem;
+            height: 44px;
           }
         }
       }

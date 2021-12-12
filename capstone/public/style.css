@@ -869,19 +869,19 @@ div#mainWrapper main div.laterBlogPost-Container div.card div.cardInfo button {
   border-radius: 5px;
 }
 
-div#mainWrapper main div.formWrapper {
+div.formWrapper {
   background-color: #eaeaea;
   padding-top: 0.5rem;
-  max-width: 70%;
-  margin: 1rem auto;
+  margin-top: 9rem;
+  margin-bottom: 1rem;
 }
 
-div#mainWrapper main div.formWrapper h1 {
+div.formWrapper h1 {
   margin: 0 0.5rem;
   color: #a71d31;
 }
 
-div#mainWrapper main div.formWrapper form.form {
+div.formWrapper form.form {
   margin-top: 1rem;
   padding: 1rem 0.5rem;
   padding-top: 0;
@@ -890,13 +890,13 @@ div#mainWrapper main div.formWrapper form.form {
   display: grid;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset {
+div.formWrapper form.form fieldset {
   border: none;
   padding: 0;
   margin: 0;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label1 {
+div.formWrapper form.form fieldset label.label1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -906,41 +906,41 @@ div#mainWrapper main div.formWrapper form.form fieldset label.label1 {
           flex-direction: column;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label1 span {
+div.formWrapper form.form fieldset label.label1 span {
   font-size: 75%;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label1 input {
+div.formWrapper form.form fieldset label.label1 input {
   margin: 0.5rem 0;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label1 input:required {
+div.formWrapper form.form fieldset label.label1 input:required {
   border: none;
   border-left: #da2a2a solid 6px;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label1 input:required:valid {
+div.formWrapper form.form fieldset label.label1 input:required:valid {
   border-left: #2a44da solid 6px;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 {
+div.formWrapper form.form fieldset label.label4 {
   margin-bottom: 1rem;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 span {
+div.formWrapper form.form fieldset label.label4 span {
   margin-bottom: 0.5rem;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 textarea:required {
+div.formWrapper form.form fieldset label.label4 textarea:required {
   border: none;
   border-left: #da2a2a solid 6px;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 textarea:required:valid {
+div.formWrapper form.form fieldset label.label4 textarea:required:valid {
   border-left: #2a44da solid 6px;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label2 {
+div.formWrapper form.form fieldset label.label2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -950,41 +950,41 @@ div#mainWrapper main div.formWrapper form.form fieldset label.label2 {
           flex-direction: column;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label2 span {
+div.formWrapper form.form fieldset label.label2 span {
   font-size: 75%;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label2 input {
+div.formWrapper form.form fieldset label.label2 input {
   margin: 0.5rem 0;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label2 input:required {
+div.formWrapper form.form fieldset label.label2 input:required {
   border: none;
   border-left: #da2a2a solid 6px;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label2 input:required:valid {
+div.formWrapper form.form fieldset label.label2 input:required:valid {
   border-left: #2a44da solid 6px;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 {
+div.formWrapper form.form fieldset label.label4 {
   margin-bottom: 1rem;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 span {
+div.formWrapper form.form fieldset label.label4 span {
   margin-bottom: 0.5rem;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 textarea:required {
+div.formWrapper form.form fieldset label.label4 textarea:required {
   border: none;
   border-left: #da2a2a solid 6px;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 textarea:required:valid {
+div.formWrapper form.form fieldset label.label4 textarea:required:valid {
   border-left: #2a44da solid 6px;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label3 {
+div.formWrapper form.form fieldset label.label3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -994,41 +994,41 @@ div#mainWrapper main div.formWrapper form.form fieldset label.label3 {
           flex-direction: column;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label3 span {
+div.formWrapper form.form fieldset label.label3 span {
   font-size: 75%;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label3 input {
+div.formWrapper form.form fieldset label.label3 input {
   margin: 0.5rem 0;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label3 input:required {
+div.formWrapper form.form fieldset label.label3 input:required {
   border: none;
   border-left: #da2a2a solid 6px;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label3 input:required:valid {
+div.formWrapper form.form fieldset label.label3 input:required:valid {
   border-left: #2a44da solid 6px;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 {
+div.formWrapper form.form fieldset label.label4 {
   margin-bottom: 1rem;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 span {
+div.formWrapper form.form fieldset label.label4 span {
   margin-bottom: 0.5rem;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 textarea:required {
+div.formWrapper form.form fieldset label.label4 textarea:required {
   border: none;
   border-left: #da2a2a solid 6px;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 textarea:required:valid {
+div.formWrapper form.form fieldset label.label4 textarea:required:valid {
   border-left: #2a44da solid 6px;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 {
+div.formWrapper form.form fieldset label.label4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1038,41 +1038,41 @@ div#mainWrapper main div.formWrapper form.form fieldset label.label4 {
           flex-direction: column;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 span {
+div.formWrapper form.form fieldset label.label4 span {
   font-size: 75%;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 input {
+div.formWrapper form.form fieldset label.label4 input {
   margin: 0.5rem 0;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 input:required {
+div.formWrapper form.form fieldset label.label4 input:required {
   border: none;
   border-left: #da2a2a solid 6px;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 input:required:valid {
+div.formWrapper form.form fieldset label.label4 input:required:valid {
   border-left: #2a44da solid 6px;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 {
+div.formWrapper form.form fieldset label.label4 {
   margin-bottom: 1rem;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 span {
+div.formWrapper form.form fieldset label.label4 span {
   margin-bottom: 0.5rem;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 textarea:required {
+div.formWrapper form.form fieldset label.label4 textarea:required {
   border: none;
   border-left: #da2a2a solid 6px;
 }
 
-div#mainWrapper main div.formWrapper form.form fieldset label.label4 textarea:required:valid {
+div.formWrapper form.form fieldset label.label4 textarea:required:valid {
   border-left: #2a44da solid 6px;
 }
 
-div#mainWrapper main div.formWrapper form.form input.submitBtn {
+div.formWrapper form.form input.submitBtn {
   width: 50%;
   height: 44px;
   background-color: #a71d31;
@@ -1082,7 +1082,7 @@ div#mainWrapper main div.formWrapper form.form input.submitBtn {
   cursor: pointer;
 }
 
-div#mainWrapper main div.formWrapper form.form input.submitBtn:hover {
+div.formWrapper form.form input.submitBtn:hover {
   background-color: #7c1524;
 }
 
@@ -1193,10 +1193,10 @@ div.storeWrapper div.storeInfo div.divContact ul li i {
   div#mainWrapper main div.laterBlogPost-Container div.card div.cardInfo div p {
     margin: 1rem 0;
   }
-  div#mainWrapper main.contactUs-Main {
-    margin: 0;
+  div.formWrapper {
+    margin-top: 1rem;
   }
-  div#mainWrapper main.contactUs-Main div.formWrapper form.form fieldset label.label1 {
+  div.formWrapper form.form fieldset label.label1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1205,13 +1205,13 @@ div.storeWrapper div.storeInfo div.divContact ul li i {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  div#mainWrapper main.contactUs-Main div.formWrapper form.form fieldset label.label1 span {
+  div.formWrapper form.form fieldset label.label1 span {
     font-size: 75%;
   }
-  div#mainWrapper main.contactUs-Main div.formWrapper form.form fieldset label.label1 input {
+  div.formWrapper form.form fieldset label.label1 input {
     height: 44px;
   }
-  div#mainWrapper main.contactUs-Main div.formWrapper form.form fieldset label.label2 {
+  div.formWrapper form.form fieldset label.label2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1220,13 +1220,13 @@ div.storeWrapper div.storeInfo div.divContact ul li i {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  div#mainWrapper main.contactUs-Main div.formWrapper form.form fieldset label.label2 span {
+  div.formWrapper form.form fieldset label.label2 span {
     font-size: 75%;
   }
-  div#mainWrapper main.contactUs-Main div.formWrapper form.form fieldset label.label2 input {
+  div.formWrapper form.form fieldset label.label2 input {
     height: 44px;
   }
-  div#mainWrapper main.contactUs-Main div.formWrapper form.form fieldset label.label3 {
+  div.formWrapper form.form fieldset label.label3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1235,13 +1235,13 @@ div.storeWrapper div.storeInfo div.divContact ul li i {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  div#mainWrapper main.contactUs-Main div.formWrapper form.form fieldset label.label3 span {
+  div.formWrapper form.form fieldset label.label3 span {
     font-size: 75%;
   }
-  div#mainWrapper main.contactUs-Main div.formWrapper form.form fieldset label.label3 input {
+  div.formWrapper form.form fieldset label.label3 input {
     height: 44px;
   }
-  div#mainWrapper main.contactUs-Main div.formWrapper form.form fieldset label.label4 {
+  div.formWrapper form.form fieldset label.label4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1250,10 +1250,10 @@ div.storeWrapper div.storeInfo div.divContact ul li i {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  div#mainWrapper main.contactUs-Main div.formWrapper form.form fieldset label.label4 span {
+  div.formWrapper form.form fieldset label.label4 span {
     font-size: 75%;
   }
-  div#mainWrapper main.contactUs-Main div.formWrapper form.form fieldset label.label4 input {
+  div.formWrapper form.form fieldset label.label4 input {
     height: 44px;
   }
   div.storeWrapper {
@@ -1457,6 +1457,12 @@ div.storeWrapper div.storeInfo div.divContact ul li i {
   div#mainWrapper main div.laterBlogPost-Container div.card div.cardInfo button {
     cursor: pointer;
   }
+  div.formWrapper {
+    max-width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
   div.formWrapper form.form fieldset label.label1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1470,7 +1476,7 @@ div.storeWrapper div.storeInfo div.divContact ul li i {
     font-size: 75%;
   }
   div.formWrapper form.form fieldset label.label1 input {
-    padding: 0.5rem;
+    height: 44px;
   }
   div.formWrapper form.form fieldset label.label2 {
     display: -webkit-box;
@@ -1485,7 +1491,7 @@ div.storeWrapper div.storeInfo div.divContact ul li i {
     font-size: 75%;
   }
   div.formWrapper form.form fieldset label.label2 input {
-    padding: 0.5rem;
+    height: 44px;
   }
   div.formWrapper form.form fieldset label.label3 {
     display: -webkit-box;
@@ -1500,7 +1506,7 @@ div.storeWrapper div.storeInfo div.divContact ul li i {
     font-size: 75%;
   }
   div.formWrapper form.form fieldset label.label3 input {
-    padding: 0.5rem;
+    height: 44px;
   }
   div.formWrapper form.form fieldset label.label4 {
     display: -webkit-box;
@@ -1515,7 +1521,7 @@ div.storeWrapper div.storeInfo div.divContact ul li i {
     font-size: 75%;
   }
   div.formWrapper form.form fieldset label.label4 input {
-    padding: 0.5rem;
+    height: 44px;
   }
   div.storeWrapper {
     margin: 1rem 0;

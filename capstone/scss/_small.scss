@@ -361,80 +361,77 @@ div#mainWrapper {
 //? END OF BLOG PAGE STYLING
 
 //? THIS IS FOR CONTACT US PAGE
-div#mainWrapper {
-  main {
-    div.formWrapper {
-      background-color: $light-grey;
-      padding-top: 0.5rem;
-      max-width: 70%;
-      margin: 1rem auto;
-      h1 {
-        margin: 0 0.5rem;
-        color: $red;
-      }
+div.formWrapper {
+  background-color: $light-grey;
+  padding-top: 0.5rem;
+  margin-top: 9rem;
+  margin-bottom: 1rem;
+  h1 {
+    margin: 0 0.5rem;
+    color: $red;
+  }
 
-      form.form {
-        margin-top: 1rem;
-        padding: 1rem 0.5rem;
-        padding-top: 0;
-        color: black;
-        display: grid;
-        fieldset {
-          border: none;
-          padding: 0;
-          margin: 0;
+  form.form {
+    margin-top: 1rem;
+    padding: 1rem 0.5rem;
+    padding-top: 0;
+    color: black;
+    display: grid;
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 0;
 
-          @for $x from 1 through 4 {
-            label.label#{$x} {
-              display: flex;
-              flex-direction: column;
-              span {
-                font-size: 75%;
-              }
-              input {
-                margin: 0.5rem 0;
-              }
-              input:required {
-                border: none;
-                border-left: rgb(218, 42, 42) solid 6px;
-              }
-              input:required:valid {
-                border-left: rgb(42, 68, 218) solid 6px;
-              }
-            }
-
-            label.label4 {
-              margin-bottom: 1rem;
-              span {
-                margin-bottom: 0.5rem;
-              }
-              textarea:required {
-                border: none;
-                border-left: rgb(218, 42, 42) solid 6px;
-              }
-              textarea:required:valid {
-                border-left: rgb(42, 68, 218) solid 6px;
-              }
-            }
+      @for $x from 1 through 4 {
+        label.label#{$x} {
+          display: flex;
+          flex-direction: column;
+          span {
+            font-size: 75%;
+          }
+          input {
+            margin: 0.5rem 0;
+          }
+          input:required {
+            border: none;
+            border-left: rgb(218, 42, 42) solid 6px;
+          }
+          input:required:valid {
+            border-left: rgb(42, 68, 218) solid 6px;
           }
         }
 
-        input.submitBtn {
-          width: 50%;
-          height: 44px;
-          background-color: $red;
-          border: none;
-          border-radius: 5px;
-          color: white;
-          cursor: pointer;
-        }
-        input.submitBtn:hover {
-          background-color: darken($red, 10%);
+        label.label4 {
+          margin-bottom: 1rem;
+          span {
+            margin-bottom: 0.5rem;
+          }
+          textarea:required {
+            border: none;
+            border-left: rgb(218, 42, 42) solid 6px;
+          }
+          textarea:required:valid {
+            border-left: rgb(42, 68, 218) solid 6px;
+          }
         }
       }
     }
+
+    input.submitBtn {
+      width: 50%;
+      height: 44px;
+      background-color: $red;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+    input.submitBtn:hover {
+      background-color: darken($red, 10%);
+    }
   }
 }
+
 //? END OF CONTACT US PAGE
 
 //! START OF SF PAGE
