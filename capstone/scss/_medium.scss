@@ -111,16 +111,11 @@ div#mainWrapper {
     margin: 0;
 
     div.formWrapper {
-      
       h1 {
-        
       }
 
       form.form {
-        
         fieldset {
-          
-
           @for $x from 1 through 4 {
             label.label#{$x} {
               display: flex;
@@ -134,19 +129,15 @@ div#mainWrapper {
             }
 
             label.label4 {
-              
               span {
-                
               }
             }
           }
         }
 
         input.submitBtn {
-          
         }
         input.submitBtn:hover {
-          
         }
       }
     }

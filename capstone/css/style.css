@@ -1347,4 +1347,64 @@ div#mainWrapper main div.formWrapper form.form input.submitBtn:hover {
   div#mainWrapper main div.laterBlogPost-Container div.card div.cardInfo button {
     cursor: pointer;
   }
+  div.formWrapper form.form fieldset label.label1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.formWrapper form.form fieldset label.label1 span {
+    font-size: 75%;
+  }
+  div.formWrapper form.form fieldset label.label1 input {
+    padding: 0.5rem;
+  }
+  div.formWrapper form.form fieldset label.label2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.formWrapper form.form fieldset label.label2 span {
+    font-size: 75%;
+  }
+  div.formWrapper form.form fieldset label.label2 input {
+    padding: 0.5rem;
+  }
+  div.formWrapper form.form fieldset label.label3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.formWrapper form.form fieldset label.label3 span {
+    font-size: 75%;
+  }
+  div.formWrapper form.form fieldset label.label3 input {
+    padding: 0.5rem;
+  }
+  div.formWrapper form.form fieldset label.label4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.formWrapper form.form fieldset label.label4 span {
+    font-size: 75%;
+  }
+  div.formWrapper form.form fieldset label.label4 input {
+    padding: 0.5rem;
+  }
 }
