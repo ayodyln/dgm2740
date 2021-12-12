@@ -5,31 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Dragon's Keeps</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Dragons Keep</title>
 </head>
 
 <body>
     <div id="header-nav-Wrapper">
         <nav>
             <div class="logoMark">
-                <img src="img/Untitled-1.png" alt="logoMark">
+                <a href="index.html" class="homeAnchor">
+                    <figure>
+                        <img src="../img/logo/logo.png" alt="Logo" width="1600" height="500"
+                            srcset="../img/logo/logo-assets/logo1.png 1x, ../img/logo/logo-assets/logo2.png 2x, ../img/logo/logo-assets/logo3.png 3x">
+                    </figure>
+                </a>
                 <div class="text">
-                    <h1>The Dragon's Keep</h1>
+                    <h1>Dragon's Keep</h1>
                 </div>
             </div>
+
+            <div class="navBtnDiv">
+                <button id="navBtn">
+                    <span class="open">&#9776;</span>
+                    <span class="close hidden">&#10006;</span>
+                </button>
+            </div>
+
             <div class="ul-nav">
-                <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li>
-                        <a href="#">Stores
-                            <ul class="subNav">
-                                <li><a href="#">Provo</a></li>
-                                <li><a href="#">Orem</a></li>
-                                <li><a href="#">Spanish Fork</a></li>
-                                <li><a href="#">Lehi</a></li>
-                            </ul>
-                        </a>
+                <ul class="mainUL hidden">
+                    <li><a href="../index.html">About</a></li>
+                    <li><a href="pages/blog.html">Blog</a></li>
+                    <li class="subNavLi">
+                        <a href="#" class="subNavEvent">Stores<span class="downArrow">&#9660;</span></a>
+                        <ul class="subNav hidden">
+                            <li><a href="#">Spanish Fork</a></li>
+                            <li><a href="#">Provo</a></li>
+                            <li><a href="#">Orem</a></li>
+                            <li><a href="#">Lehi</a></li>
+                        </ul>
+
                     </li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
@@ -39,58 +53,22 @@
 
     <div id="mainWrapper">
         <main>
-            <div class="newBlogContainer">
-                <div class="left">
+            <div class="newBlogPost-Container">
+                <div class="blogInfo">
                     <h2>Marvel Comics: Shang Chi</h2>
                     <p>September 1, 2021</p>
-                    <p>
-                        In celebration of the new Shang Chi movie coming out, as fans of the comics, we wanted to help
-                        introduce who Shang Chi is to those who haven't read his comic books.
-                    </p>
+                    <p>In Celebration of the new Shang Chi movie coming out, as fans of the comics, we wanted to help
+                        introduce who Shang Chi is to those who haven't read his comic books.</p>
+                    <button class="learnMore">Read More</button>
                 </div>
-                <div class="right">
-                    <img src="" alt="">
-                </div>
-            </div>
-
-            <div class="blogGrid">
-                <div class="blogCard">
-                    <a href="#">
-                        <img src="" alt="">
-                        <h3>Marvel Comics: SpiderMan</h3>
-                        <p>July 16, 2021</p>
-                        <p>
-                            A introduction to everything about who and what Spider Man is, from first appearance to most
-                            recent comic run. This will catch you up to speed on everything you need to know about
-                            Spider Man.
-                        </p>
-                    </a>
-                </div>
-                <div class="blogCard">
-                    <a href="#">
-                        <img src="" alt="">
-                        <h3>DC: Injustice</h3>
-                        <p>July 1, 2021</p>
-                        <p>
-                            The Injustice comic book run is an infamous series. Here is a review and synopsis of what we
-                            thought about the run.
-                        </p>
-                    </a>
-                </div>
-                <div class="blogCard">
-                    <a href="#">
-                        <img src="" alt="">
-                        <h3>DC: Batman</h3>
-                        <p>May 12, 2021</p>
-                        <p>
-                            In celebration of the upcoming Batman movie starring Robert Pattinson, we wanted to provide
-                            a rundown of what we think this Batman movie will be drawing inspiration from the comic
-                            books.
-                        </p>
-                    </a>
+                <div class="Blog-Img">
+                    <img src="../img/content/page-imgs/comicBook.jpg" alt="" width="1600" height="500" loading="lazy">
                 </div>
             </div>
 
+            <div class="laterBlogPost-Container">
+
+            </div>
         </main>
     </div>
 
@@ -99,6 +77,8 @@
             <p>© Dragons Keep 2021</p>
         </footer>
     </div>
+
+    <script src="../js/index.js"></script>
 </body>
 
 </html>

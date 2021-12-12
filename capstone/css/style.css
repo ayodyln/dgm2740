@@ -781,6 +781,57 @@ div#footerWrapper footer {
   display: none;
 }
 
+div#mainWrapper main div.newBlogPost-Container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "img" "info";
+}
+
+div#mainWrapper main div.newBlogPost-Container div.blogInfo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: info;
+  padding: 0.5rem;
+}
+
+div#mainWrapper main div.newBlogPost-Container div.blogInfo h2 {
+  margin: 0.5rem 0;
+}
+
+div#mainWrapper main div.newBlogPost-Container div.blogInfo p {
+  margin: 1rem 0;
+}
+
+div#mainWrapper main div.newBlogPost-Container div.blogInfo button {
+  background-color: #a71d31;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+div#mainWrapper main div.newBlogPost-Container div.Blog-Img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img;
+  padding: 0.5rem;
+}
+
+div#mainWrapper main div.newBlogPost-Container div.Blog-Img img {
+  width: 100%;
+  height: auto;
+}
+
+div#mainWrapper main div.laterBlogPost-Container {
+  border-top: solid 1px #a71d31;
+  margin: 1rem 0.5rem;
+}
+
+div#mainWrapper main div.laterBlogPost-Container div.card div.cardImg img {
+  width: 100%;
+  height: auto;
+}
+
 @media only screen and (min-width: 560px) {
   div#header-nav-Wrapper nav {
     position: relative;
@@ -845,12 +896,33 @@ div#footerWrapper footer {
   div#header-nav-Wrapper nav div.ul-nav ul.mainUL li.subNavLi ul.subNav li:hover {
     background-color: #91192b;
   }
-  div#header-nav-Wrapper nav div.ul-nav ul.mainUL li.subNavLi:hover ul.subNav {
-    display: unset;
-    -webkit-animation: slide 0.5s;
-            animation: slide 0.5s;
-    -webkit-transform-origin: top center;
-            transform-origin: top center;
+  div#mainWrapper main div.serviceCards {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  div#mainWrapper main div.serviceCards .card0 {
+    border-bottom: solid 1px #a71d31;
+  }
+  div#mainWrapper main div.serviceCards .card1 {
+    border-bottom: solid 1px #a71d31;
+  }
+  div#mainWrapper main div.serviceCards .card2 {
+    border-bottom: solid 1px #a71d31;
+  }
+  div#mainWrapper main div.serviceCards .card3 {
+    border-bottom: solid 1px #a71d31;
+  }
+  div#mainWrapper main div.serviceCards .card4 {
+    border-bottom: solid 1px #a71d31;
+  }
+  div#mainWrapper main div.serviceCards .card5 {
+    border-bottom: solid 1px #a71d31;
+  }
+  div#mainWrapper main div.newLetterContainer form.formSection input#userEmail {
+    width: 50%;
+  }
+  div#mainWrapper main div.newLetterContainer form.formSection input#sbtBtn {
+    width: 25%;
   }
   @-webkit-keyframes slide {
     0% {

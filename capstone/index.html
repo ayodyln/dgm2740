@@ -45,7 +45,7 @@
                             <li><a href="#">Orem</a></li>
                             <li><a href="#">Lehi</a></li>
                         </ul>
-                       
+
                     </li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
@@ -107,7 +107,7 @@
                     the Utah Valley.
                 </p>
             </div>
-            <h2 class="we-Offer-Header">We offer...</h2>
+            <h2 class="we-Offer-Header">What we offer:</h2>
             <div class="serviceCards">
 
                 <div class="card card1">
@@ -230,7 +230,7 @@
                 </div>
                 <form action="" class="formSection">
                     <input type="email" name="email" id="userEmail" placeholder="joe@email.com">
-                    <input type="submit" value="Sign Up">
+                    <input type="submit" value="Sign Up" id="sbtBtn">
                 </form>
             </div>
         </main>
@@ -245,6 +245,19 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".HeroContainer").slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 1000,
+                cssEase: "ease-in",
+                autoplay: true,
+                autoplaySpeed: 30000,
+            });
+        });
+    </script>
     <script src="js/index.js"></script>
 </body>
 

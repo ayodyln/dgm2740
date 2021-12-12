@@ -121,8 +121,6 @@ div#header-nav-Wrapper {
             }
           }
         }
-        
-        
       }
     }
   }
@@ -279,3 +277,59 @@ div#footerWrapper {
 }
 
 //! PAGES STYLING: Blog, Stores, Thank You page, and more.
+
+//? THIS IS FOR THE BLOG PAGE
+div#mainWrapper {
+  main {
+    div.newBlogPost-Container {
+      display: grid;
+      grid-template-areas: "img" "info";
+
+      div.blogInfo {
+        grid-area: info;
+        padding: 0.5rem;
+
+        h2 {
+          margin: 0.5rem 0;
+        }
+        p {
+          margin: 1rem 0;
+        }
+        button {
+          background-color: $red;
+          color: white;
+          border: none;
+          padding: 0.5rem 1rem;
+          border-radius: 5px;
+        }
+      }
+      div.Blog-Img {
+        grid-area: img;
+        padding: 0.5rem;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    div.laterBlogPost-Container {
+      border-top: solid 1px $red;
+      margin: 1rem 0.5rem;
+      div.card {
+        div.cardImg {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        div.cardInfo {
+          
+        }
+      }
+    }
+  }
+}
+//? END OF BLOG PAGE STYLING

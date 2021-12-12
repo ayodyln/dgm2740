@@ -33,20 +33,21 @@ div#header-nav-Wrapper {
             top: 2rem;
             right: 0rem;
             width: 140px;
+            
             li:hover {
               background-color: darken($red, 5%);
               
             }
           }
         }
-        li.subNavLi:hover {
+        // li.subNavLi:hover {
          
-          ul.subNav {
-            display: unset;
-            animation: slide 0.5s;
-            transform-origin: top center;
-          }
-        }
+        //   ul.subNav {
+        //     display: unset;
+        //     animation: slide 0.5s;
+        //     transform-origin: top center;
+        //   }
+        // }
       }
     }
   }
@@ -67,10 +68,26 @@ div#mainWrapper {
 
     //? Service Card Styling
     div.serviceCards {
+      grid-template-columns: 1fr 1fr 1fr;
+
+      @for $i from 0 through 5 {
+        .card#{$i} {
+          border-bottom: solid 1px $red;
+        }
+      }
     }
 
     //? newsletter section styling
     div.newLetterContainer {
+      form.formSection {
+        input#userEmail {
+          width: 50%;
+        }
+
+        input#sbtBtn {
+          width: 25%;
+        }
+      }
     }
   }
 }

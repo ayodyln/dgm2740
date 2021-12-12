@@ -1,3 +1,27 @@
+//! Creating a mock array for blog posts
+const blogPostArr = [
+  {
+    title: "Dungeons and Dragons",
+    date: "August 15, 2021",
+    info: "D&D has been around for years, but recently it has been popular again. Here is a intro on how to play D&D, so you and your friends can explore all of your fantasies.",
+  },
+  {
+    title: "Marvel Comics: SpiderMan",
+    date: "July 16, 2021",
+    info: "A introduction to everything about who and what Spider Man is, from first appearance to most recent comic run. This will catch you up to speed on everything you need to know about Spider Man. ",
+  },
+  {
+    title: "DC: Injustice",
+    date: "July 1, 2021",
+    info: "The Injustice comic book run is an infamous series. Here is a review and synopsis of what we thought about the run.",
+  },
+  {
+    title: "DC: Batman",
+    date: "May 12, 2021",
+    info: "In celebration of the upcoming Batman movie starring Robert Pattinson, we wanted to provide a rundown of what we think this Batman movie will be drawing inspiration from the comic books.",
+  },
+];
+
 // grabbing DOM elements
 const navBtn = document.getElementById("navBtn");
 
@@ -18,14 +42,47 @@ subNav.addEventListener("click", () => {
   document.querySelector(".subNav").classList.toggle("hidden");
 });
 
-$(document).ready(function () {
-  $(".HeroContainer").slick({
-    dots: true,
-    arrows: false,
-    infinite: true,
-    speed: 1000,
-    cssEase: "ease-in",
-    autoplay: true,
-    autoplaySpeed: 30000,
+//! BLOG PAGE JS
+const blogArea = document.querySelector(".laterBlogPost-Container");
+
+function blogCards(blogCard) {
+  console.log(blogCard);
+
+  blogCard.forEach((el, i, arr) => {
+    let card = document.createElement("div");
+    let cardTitle = document.createElement("h2");
+    let cardDate = document.createElement("p");
+    let cardInfo = document.createElement("p");
+    let cardCTA = document.createElement("button");
+
+    cardTitle.textContent = el.title;
+    cardDate.textContent = el.date;
+    cardInfo.textContent = el.info;
+    cardCTA.textContent = `Read More`;
+    card.className = "cardInfo";
+
+    card.appendChild(cardTitle);
+    card.appendChild(cardDate);
+    card.appendChild(cardInfo);
+    card.appendChild(cardCTA);
+
+    let cardImgWrapper = document.createElement("div");
+    let cardImg = document.createElement("img");
+
+    cardImg.src = `../img/content/page-imgs/dnd-Dice.jpg`;
+    cardImg.setAttribute("width", "1600");
+    cardImg.setAttribute("height", "500");
+    cardImg.setAttribute("loading", "lazy");
+    cardImgWrapper.className = "cardImg";
+
+    cardImgWrapper.appendChild(cardImg);
+
+    let finalCard = document.createElement("div");
+    finalCard.className = 'card'
+    finalCard.appendChild(cardImgWrapper);
+    finalCard.appendChild(card);
+
+    blogArea.appendChild(finalCard);
   });
-});
+}
+blogCards(blogPostArr);
