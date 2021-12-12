@@ -912,6 +912,7 @@ div.formWrapper form.form fieldset label.label1 span {
 
 div.formWrapper form.form fieldset label.label1 input {
   margin: 0.5rem 0;
+  height: 44px;
 }
 
 div.formWrapper form.form fieldset label.label1 input:required {
@@ -956,6 +957,7 @@ div.formWrapper form.form fieldset label.label2 span {
 
 div.formWrapper form.form fieldset label.label2 input {
   margin: 0.5rem 0;
+  height: 44px;
 }
 
 div.formWrapper form.form fieldset label.label2 input:required {
@@ -1000,6 +1002,7 @@ div.formWrapper form.form fieldset label.label3 span {
 
 div.formWrapper form.form fieldset label.label3 input {
   margin: 0.5rem 0;
+  height: 44px;
 }
 
 div.formWrapper form.form fieldset label.label3 input:required {
@@ -1044,6 +1047,7 @@ div.formWrapper form.form fieldset label.label4 span {
 
 div.formWrapper form.form fieldset label.label4 input {
   margin: 0.5rem 0;
+  height: 44px;
 }
 
 div.formWrapper form.form fieldset label.label4 input:required {
