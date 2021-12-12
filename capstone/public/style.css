@@ -785,6 +785,7 @@ div#mainWrapper main div.newBlogPost-Container {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "img" "info";
+  background-color: #eaeaea;
 }
 
 div#mainWrapper main div.newBlogPost-Container div.blogInfo {
@@ -824,12 +825,48 @@ div#mainWrapper main div.newBlogPost-Container div.Blog-Img img {
 
 div#mainWrapper main div.laterBlogPost-Container {
   border-top: solid 1px #a71d31;
-  margin: 1rem 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding-top: 0.5rem;
+  gap: 0.5rem;
+  margin: 0.5rem;
+}
+
+div#mainWrapper main div.laterBlogPost-Container div.card {
+  background-color: whitesmoke;
+}
+
+div#mainWrapper main div.laterBlogPost-Container div.card div.cardImg {
+  position: relative;
+}
+
+div#mainWrapper main div.laterBlogPost-Container div.card div.cardImg div {
+  position: absolute;
+  bottom: 0.25rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding: 0.5rem;
+}
+
+div#mainWrapper main div.laterBlogPost-Container div.card div.cardImg div h2 {
+  margin: 0;
+  color: white;
+  font-size: 110%;
 }
 
 div#mainWrapper main div.laterBlogPost-Container div.card div.cardImg img {
   width: 100%;
   height: auto;
+}
+
+div#mainWrapper main div.laterBlogPost-Container div.card div.cardInfo button {
+  background-color: #a71d31;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }
 
 @media only screen and (min-width: 560px) {
@@ -861,6 +898,39 @@ div#mainWrapper main div.laterBlogPost-Container div.card div.cardImg img {
   }
   div#footerWrapper footer {
     padding: 0.25rem;
+  }
+  div#mainWrapper main div.newBlogPost-Container {
+        grid-template-areas: "info img";
+  }
+  div#mainWrapper main div.newBlogPost-Container div.blogInfo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: info;
+  }
+  div#mainWrapper main div.newBlogPost-Container div.Blog-Img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: img;
+  }
+  div#mainWrapper main div.laterBlogPost-Container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  div#mainWrapper main div.laterBlogPost-Container div.card div.cardInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 13.5rem;
+  }
+  div#mainWrapper main div.laterBlogPost-Container div.card div.cardInfo div p {
+    margin: 1rem 0;
   }
 }
 

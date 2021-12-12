@@ -46,3 +46,61 @@ div#footerWrapper {
   }
 }
 
+//! PAGES STYLING: Blog, Stores, Thank You page, and more.
+
+//? THIS IS FOR THE BLOG PAGE
+div#mainWrapper {
+  main {
+    div.newBlogPost-Container {
+      grid-template-areas: "info img";
+
+      div.blogInfo {
+        grid-area: info;
+
+        h2 {
+        }
+        p {
+        }
+        button {
+        }
+      }
+      div.Blog-Img {
+        grid-area: img;
+
+        img {
+        }
+      }
+    }
+
+    div.laterBlogPost-Container {
+      grid-template-columns: 1fr 1fr;
+
+      div.card {
+        div.cardImg {
+          div {
+            h2 {
+            }
+          }
+
+          img {
+          }
+        }
+
+        div.cardInfo {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          height: 13.5rem;
+          div {
+            p {
+              margin: 1rem 0;
+            }
+          }
+          button {
+          }
+        }
+      }
+    }
+  }
+}
+//? END OF BLOG PAGE STYLING

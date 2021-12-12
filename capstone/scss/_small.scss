@@ -284,6 +284,7 @@ div#mainWrapper {
     div.newBlogPost-Container {
       display: grid;
       grid-template-areas: "img" "info";
+      background-color: $light-grey;
 
       div.blogInfo {
         grid-area: info;
@@ -316,9 +317,28 @@ div#mainWrapper {
 
     div.laterBlogPost-Container {
       border-top: solid 1px $red;
-      margin: 1rem 0.5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-top: 0.5rem;
+      gap: 0.5rem;
+      margin: 0.5rem;
       div.card {
+        background-color: whitesmoke;
         div.cardImg {
+          position: relative;
+          div {
+            position: absolute;
+            bottom: 0.25rem;
+            background-color: rgba(0, 0, 0, 0.3);
+            width: 100%;
+            padding: 0.5rem;
+            h2 {
+              margin: 0;
+              color: white;
+              font-size: 110%;
+            }
+          }
+
           img {
             width: 100%;
             height: auto;
@@ -326,7 +346,13 @@ div#mainWrapper {
         }
 
         div.cardInfo {
-          
+          button {
+            background-color: $red;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+          }
         }
       }
     }

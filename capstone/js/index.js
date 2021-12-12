@@ -46,14 +46,14 @@ subNav.addEventListener("click", () => {
 const blogArea = document.querySelector(".laterBlogPost-Container");
 
 function blogCards(blogCard) {
-  console.log(blogCard);
-
   blogCard.forEach((el, i, arr) => {
     let card = document.createElement("div");
     let cardTitle = document.createElement("h2");
+    let cardTitleDiv = document.createElement("div");
     let cardDate = document.createElement("p");
     let cardInfo = document.createElement("p");
     let cardCTA = document.createElement("button");
+    let cardInfoDiv = document.createElement("div");
 
     cardTitle.textContent = el.title;
     cardDate.textContent = el.date;
@@ -61,9 +61,9 @@ function blogCards(blogCard) {
     cardCTA.textContent = `Read More`;
     card.className = "cardInfo";
 
-    card.appendChild(cardTitle);
-    card.appendChild(cardDate);
-    card.appendChild(cardInfo);
+    cardInfoDiv.appendChild(cardDate);
+    cardInfoDiv.appendChild(cardInfo);
+    card.appendChild(cardInfoDiv);
     card.appendChild(cardCTA);
 
     let cardImgWrapper = document.createElement("div");
@@ -75,10 +75,12 @@ function blogCards(blogCard) {
     cardImg.setAttribute("loading", "lazy");
     cardImgWrapper.className = "cardImg";
 
+    cardTitleDiv.appendChild(cardTitle);
+    cardImgWrapper.appendChild(cardTitleDiv);
     cardImgWrapper.appendChild(cardImg);
 
     let finalCard = document.createElement("div");
-    finalCard.className = 'card'
+    finalCard.className = "card";
     finalCard.appendChild(cardImgWrapper);
     finalCard.appendChild(card);
 
