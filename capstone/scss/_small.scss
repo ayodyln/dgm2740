@@ -436,3 +436,41 @@ div#mainWrapper {
   }
 }
 //? END OF CONTACT US PAGE
+
+//! START OF SF PAGE
+div.storeWrapper {
+  margin: 1rem 0;
+  div.storeInfo {
+    padding: 0 0.5rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.divContact {
+      background-color: $light-grey;
+      border-radius: 5px;
+      padding: 1rem;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      margin-bottom: 1.5rem;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          display: flex;
+          align-items: center;
+          margin: 0.5rem 0;
+          i {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+}
+//! END OF SF PAGE

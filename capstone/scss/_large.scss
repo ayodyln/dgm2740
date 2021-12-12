@@ -9,8 +9,6 @@ footer {
 div#header-nav-Wrapper {
   nav {
     //? Logomark div styling
-    div.logoMark {
-    }
 
     //? Nav button styling
     div.navBtnDiv {
@@ -56,12 +54,8 @@ div#mainWrapper {
 
   main {
     //? Hero Image Styling
-    div.HeroContainer {
-    }
 
     //? Intro Div Styling
-    div.introContainer {
-    }
 
     //? Service Card Styling
     div.serviceCards {
@@ -90,10 +84,6 @@ div#mainWrapper {
 }
 
 //? Footer styling
-div#footerWrapper {
-  footer {
-  }
-}
 
 //! ANIMTAIONS
 
@@ -118,13 +108,6 @@ div#mainWrapper {
 
       div.blogInfo {
         grid-area: info;
-
-        h2 {
-        }
-        p {
-        }
-        button {
-        }
       }
       div.Blog-Img {
         grid-area: img;
@@ -139,16 +122,6 @@ div#mainWrapper {
       grid-template-columns: 1fr 1fr 1fr 1fr;
 
       div.card {
-        div.cardImg {
-          div {
-            h2 {
-            }
-          }
-
-          img {
-          }
-        }
-
         div.cardInfo {
           display: flex;
           justify-content: space-between;
@@ -176,9 +149,6 @@ div#mainWrapper {
 //? THIS IS FOR CONTACT US PAGE
 
 div.formWrapper {
-  h1 {
-  }
-
   form.form {
     fieldset {
       @for $x from 1 through 4 {
@@ -192,19 +162,42 @@ div.formWrapper {
             padding: 0.5rem;
           }
         }
-
-        label.label4 {
-          span {
-          }
-        }
       }
-    }
-
-    input.submitBtn {
-    }
-    input.submitBtn:hover {
     }
   }
 }
 
 //? END OF CONTACT US PAGE
+
+//! START OF SF PAGE
+div.storeWrapper {
+  margin: 1rem 0;
+
+  div.storeInfo {
+    grid-template-areas:
+      "img info"
+      "contact info"
+      "map info";
+    gap: 0.5rem;
+    img {
+      grid-area: img;
+      width: 100%;
+      justify-self: center;
+    }
+
+    div.text {
+      grid-area: info;
+      margin-top: 0;
+    }
+
+    div.divContact {
+      grid-area: contact;
+      margin: 1rem 0;
+    }
+
+    iframe {
+      grid-area: map;
+    }
+  }
+}
+//! END OF SF PAGE
